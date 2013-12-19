@@ -7,7 +7,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
+    <link href="stylesheets/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,48 +16,56 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="index.html">About Me</a>
-            </li>
-            <li>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-          </ul>
+    <div id="wrap">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="index.html">About Me</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+            </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.facebook.com/salehhamadeh" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-            <li><a href="https://twitter.com/salehhamadeh" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-            <li><a href="https://github.com/salehhamadeh" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-            <li><a href="http://www.linkedin.com/profile/view?id=223192346" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://www.facebook.com/salehhamadeh" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li><a href="https://twitter.com/salehhamadeh" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a href="https://github.com/salehhamadeh" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+              <li><a href="http://www.linkedin.com/profile/view?id=223192346" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Saleh Hamadeh</h1>
+            <h4>Enthusiastic Software Developer</h4>
+            <img data-src="js/holder.js/250x250" alt="Profile Picture" class="img-circle" width="250" height="250"/>
+            <dl>
+              <dt>Location</dt>
+              <dd>Kennesaw, <abbr title="Georgia">GA</abbr></dd>
+              <dt>Email</dt>
+              <dd><a href="mailto:saleh@shamadeh.com">saleh@shamadeh.com</a></dd>
+            </dl>
+          </div>
+          <div class="col-md-8">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Saleh Hamadeh</h1>
-          <h4>Enthusiastic Software Developer</h4>
-          <img data-src="js/holder.js/250x250" alt="Profile Picture" class="img-circle" width="250" height="250"/>
-          <dl>
-            <dt>Location</dt>
-            <dd>Kennesaw, <abbr title="Georgia">GA</abbr></dd>
-            <dt>Email</dt>
-            <dd><a href="mailto:saleh@shamadeh.com">saleh@shamadeh.com</a></dd>
-          </dl>
-        </div>
-        <div class="col-md-8">
-          <h2>About me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+    <div id="footer">
+      <div class="container">
+        <p class="text-center">Proudly hosted on Github Pages</p>
       </div>
     </div>
 
@@ -66,7 +74,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
-    
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-46641204-1']);
