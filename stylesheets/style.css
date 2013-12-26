@@ -79,6 +79,11 @@ div.post {
 
 .post { color: #333; }
 
+.post .body {
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
 .post h1 a {
   text-decoration: none;
   clear: left;
