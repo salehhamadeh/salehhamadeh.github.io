@@ -96,3 +96,9 @@ div.post {
 }
 
 .post br { margin-bottom: 10px;}
+
+/*------------ Endpage-box ---------------*/
+.endpage-box {
+  color: white;
+  font-size: large;
+}
