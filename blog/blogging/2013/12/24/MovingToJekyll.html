@@ -41,62 +41,11 @@
           <link rel="stylesheet" href="/stylesheets/endpage-box.css">
           <script src="/js/jquery.endpage-box.min.js"></script>
           <script type="text/javascript">
-            var related_posts = [{}
-              
-                , {
-                  title: "Make a Blog Social (Without a Database)",
-                  date: "28 Dec 2013",
-                  url: "/blog/web/2013/12/28/MakeABlogSocial.html"
-                }
-              
-                , {
-                  title: "What if Cars had APIs",
-                  date: "26 Dec 2013",
-                  url: "/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html"
-                }
-              
-                , {
-                  title: "Kennesaw State University Student Barbecue",
-                  date: "10 Sep 2012",
-                  url: "/blog/android/2012/09/10/KSUBarbecue.html"
-                }
-              
-                , {
-                  title: "Diclopedia is 1 Month Old",
-                  date: "14 May 2012",
-                  url: "/blog/android/2012/05/14/DiclopediaOneMonth.html"
-                }
-              
-                , {
-                  title: "Diclopedia Statistics: First Week",
-                  date: "20 Apr 2012",
-                  url: "/blog/android/2012/04/20/DiclopediaStatistics.html"
-                }
-              
-                , {
-                  title: "Beginning Android App Development",
-                  date: "13 Apr 2012",
-                  url: "/blog/android/2012/04/13/Diclopedia.html"
-                }
-              
-                , {
-                  title: "Beginning Android App Development",
-                  date: "21 Mar 2012",
-                  url: "/blog/android/2012/03/21/BeginningAppDev.html"
-                }
-              
-            ];  //The first blank element is a hack to fix liquid's for loop comma problem
-
-            var post_index = function (min, max) {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
-
             $(window).load( function() {
               $("#endpage-box").endpage_box({
                 animation: "fade",
                 from: "50%",
                 to: "110%", //the extra 10% is to support the over scrolling effect you get from OSX's Chrome and Safari
-                content: 'Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>'
               });
             });
           </script>
@@ -183,6 +132,58 @@
           </div>
           
             <div id="endpage-box" class="endpage-box"></div>
+            <script>
+              var related_posts = [{}
+                
+                  , {
+                    title: "Make a Blog Social (Without a Database)",
+                    date: "28 Dec 2013",
+                    url: "/blog/web/2013/12/28/MakeABlogSocial.html"
+                  }
+                
+                  , {
+                    title: "What if Cars had APIs",
+                    date: "26 Dec 2013",
+                    url: "/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html"
+                  }
+                
+                  , {
+                    title: "Kennesaw State University Student Barbecue",
+                    date: "10 Sep 2012",
+                    url: "/blog/android/2012/09/10/KSUBarbecue.html"
+                  }
+                
+                  , {
+                    title: "Diclopedia is 1 Month Old",
+                    date: "14 May 2012",
+                    url: "/blog/android/2012/05/14/DiclopediaOneMonth.html"
+                  }
+                
+                  , {
+                    title: "Diclopedia Statistics: First Week",
+                    date: "20 Apr 2012",
+                    url: "/blog/android/2012/04/20/DiclopediaStatistics.html"
+                  }
+                
+                  , {
+                    title: "Beginning Android App Development",
+                    date: "13 Apr 2012",
+                    url: "/blog/android/2012/04/13/Diclopedia.html"
+                  }
+                
+                  , {
+                    title: "Beginning Android App Development",
+                    date: "21 Mar 2012",
+                    url: "/blog/android/2012/03/21/BeginningAppDev.html"
+                  }
+                
+              ];  //The first blank element is a hack to fix liquid's for loop comma problem
+
+              var post_index = function (min, max) {
+                  return Math.floor(Math.random() * (max - min + 1)) + min;
+              }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
+              $("#endpage-box").html('Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>');
+            </script>
           
         </div>
 
