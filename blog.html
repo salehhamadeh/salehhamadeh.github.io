@@ -87,6 +87,21 @@
               
   
   <div class='post'>
+    <span class='date'>24 Feb 2014</span>
+    <h1><a href='/blog/web/2014/02/24/WebPerformanceTrends.html'>Web Performance Trends: One Load, That's All</a></h1>
+    <div class='body'><p>After all the HTML 5 buzz, I couldn&#39;t but notice the new direction in which the web is being taken. At first, the Internet was a collection of pages (most of it still is). However, now we start feeling that some websites are not pages anymore. Take <a href="https://trello.com/">Trello</a>, a project management web application by Fog Creek Software, for a example. After signing into Trello, all your clicks show instantaneous results, and you feel that the website is really an application more than a website. However, the link in the navbar still shows that you are moving between pages. You know that your internet connection is not that fast, so what exactly is happening? Trello, along with many other <a href="www.wikipedia.org/wiki/Single-page_application">SPA&#39;s</a>, utilize HTML5&#39;s History API to achieve this. The History API allows web developers to manipulate your browser&#39;s history (they cannot view it) by adding new links. In this way, the user thinks that he was directed to a new page when this is not quite the case. Client-side templating engines, like <a href="http://mustache.github.io/">Mustache</a> and <a href="http://handlebarsjs.com/">Handlebars</a>, can let the browser download the whole website upon the first load. Then, these websites use the History API alongside the client-side templating engines to render instantaneous pages.</p>
+
+<p>Looking at the performace aspect of this technique, we can see that sites are shifting from the traditional load-on-page-request approach to the &quot;One Load, That&#39;s All&quot; approach. In this way, the website is going to take a longer time to download, but once it is downloaded, everything else is instantaneous. Using HTML5&#39;s LocalStorage API, one can save the website&#39;s pages and templates so that the user will not have to download the entire website every time he visits it.</p>
+
+<p>However, the new approach has some limitations. First, they can only work that way on devices that support HTML5. Moreover, they require strong devices to run on, memory-wise and computation-wise.</p>
+
+<p>So, what do you think is the better approach for websites at the moment?</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>09 Feb 2014</span>
     <h1><a href='/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html'>Why You should have a Virtual Machine in the Cloud</a></h1>
     <div class='body'><p><a href="http://www.dropbox.com">Dropbox</a> lets users access there files from anywhere and on any machine. Google Chrome lets users have their customized browser from any machine. By customized, I mean that it saves the settings, favorites, history, and saved passwords. The internet made it possible for people to feel that any computer is their personal computer. However, there is still one piece missing. Even though our files and preferences are shared everywhere, we know that we are not using our same computer when we go to the library or somewhere else. By having a virtual machine in the cloud, we will be able to use our computer from any machine. This is only one of the many reasons to get your private virtual machine.</p>
@@ -201,31 +216,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>24 Dec 2013</span>
-    <h1><a href='/blog/blogging/2013/12/24/MovingToJekyll.html'>Moving the Blog to Jekyll</a></h1>
-    <div class='body'><p>After two hours of non-stop coding, I crafted this blog and added it to my website. Of course, this would have not been possible without the contributions of the open-source community, namely <a href="http://jekyllrb.com">Jekyll</a>, <a href="http://pages.github.com">Github Pages</a>, and <a href="https://github.com/schacon/schacon.github.com">Scott Chacon</a>.</p>
-
-<p>For those who have never heard of Jekyll, Jekyll is a tool for creating blogs. I chose Jekyll for the following reasons:</p>
-
-<ul>
-<li>  It generates static websites.</li>
-<li>  It is fully customizable.</li>
-</ul>
-
-<p>I will clarify what I mean by a static site. Unlike Wordpress and most other blogging tools, Jekyll does not need a database or back-end scripting. When I first read about that, it was impossible to believe. The site was saying that the blog works without data, which is essential for any blog. If this was true, then anyone can use Jekyll to host a blog using any of the free file servers. I can host a blog on Dropbox. I can host a blog using Apache ONLY. It turns out that what Jekyll claimed was true. Instead of being the blog, Jekyll is the blog generator. It takes in markdown files or text files, runs them through several parsers and templates, and creates a complete site with HTML and CSS. Since Jekyll blogs do not need any back-end scripting, it was the perfect tool for hosting a blog on Github Pages.</p>
-
-<p>Since I use many tools to develop my website (<a href="http://jquery.com">jQuery</a>, <a href="http://getbootstrap.com">Twitter Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, ...), I prefer to use tools that do not conflict with the others. I love the tools that give the developers the freedom to use any other libraries and that focus on one thing and do it perfectly. Jekyll met both of my needs. As a website generator, it gives me the blog out of the oven. I did not use any extra link or script tags. Jekyll granted me full customization of the shape of my blog. Using the <a href="http://docs.shopify.com/themes/liquid-basics">Liquid</a> template language, I was able to seemlessly integrate the blog posts with my website. Even though the blog and the site are two different projects on my computer, the blog appears to be part of the website when it is hosted online.</p>
-
-<p>Jekyll was not only the best choice for my blog, but was also extremely easy to learn. I encourage anyone who is interested in Jekyll to install it, create an empty blog (it comes with all the necessary files), and skim through the blog&#39;s source code. Look at the code, tweak it, and read Jekyll&#39;s getting started guide, and you will have your own static and fully-customizable blog in no time.</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/blogging/2013/12/24/MovingToJekyll.html'>Moving the Blog to Jekyll</a></th>
+      <td>24 Dec 2013</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/android/2012/09/10/KSUBarbecue.html'>Kennesaw State University Student Barbecue</a></th>
