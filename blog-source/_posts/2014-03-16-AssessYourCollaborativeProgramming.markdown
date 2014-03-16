@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Assess your Collaborative Programming Skills"
+date:   2014-04-16 9:45:00
+categories: programming
+---
+
+After working a couple of jobs in software development, I noticed that one of the most-valued skills that employers are looking for is your collaboration skills. In other words, you need to blend well with the other programmers. When you are first hired, you will spend a decent amount of time just going through the code to understand how things work. If you find yourself confident enough to start extending the code, then the person who wrote it is a collaborative programmer.
+
+The first step to become a collaborative programmer is to keep in mind that one day a new programmer who had never looked at your code will need to work with it. I can't stress how important this practice is. There are many programmers out their who can do extraordinary stuff, but when a coworker looks at what they did, the coworker enters a labyrinth. When you go and ask the "smart" person about his code, you can see that he understands everything. This scenario is just like attending the lecture of a world-renowned professor and falling asleep in the middle of the lecture.
+
+All programming languages have comments for a reason: comments are essential for every program. Comments are not only to help other people, but also to help you understand your own code. I was one of the people who would never comment a line of code. I used to think that if I wrote the code then I will always know what it does. I was wrong. Last year, I looked at the source code of a scientific calculator simulator that I had written 4 years ago. I felt as if I were reading some gibberish text. Commenting is a great practice for you as well as others.
+
+Last but not least is consistency. Stay consistent in your code. I try to have all my variable declarations at the beginning of a function definition. Then, I follow it with the function's logic. If the function returns a value, I usually store the value in a variable named ret. It may sometimes be very tempting to declare a variable in the middle of a function or to use global variables to solve problems fast. However, keep in mind that quick fixes cause quick problems. There are no perfect guidelines for writing code. Every person is unique and has his own patterns. What is important is that you stick to your pattern. If you do that, you will not need to execute a lot of code in your mind to reach the spot that needs changing; you just go to it. A good analogy is audio tapes and CDs. Using an audio tape, you have to go through all the previous songs to reach the song that you want to play. In a CD, the drive goes to the song directly without having to go through the other songs.
+
+So you think you can code? Think again. To assess your collaboration skills, write an app or a game, say tic-tac-toe. After 4 weeks without looking at the source code, add a new functionality to your game, such as a leaderboard. If you find yourself struggling in placing functions or moving data around, then you need to improve your collaboration skills.

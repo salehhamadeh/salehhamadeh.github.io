@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Kennesaw State University Student Barbecue"
+date:   2012-09-10 13:35:15
+categories: android
+---
+
+Last week, the International Student Association at Kennesaw State University held a barbecue that is open for all in the campus green. Because barbecue is the love of my life, I had to go. When I reached the location of the barbecue, I saw a line that seemed endless. The photo above shows nearly 2/3rd of the line. I felt a pain in my heart. I knew that there were grilled chicken, hot dogs, and hamburgers near me. The luring odor of the food was all around me. I can even smell it without a nose. Although the barbecue was less than 100 feet from me, I felt that it was at the other end of the world. Finally, I decided to stand in line before it gets even longer.
+
+After waiting for more than half an hour, I reached the stall. At first, I took a plate of potato salad. Then, I took a burger. As I was heading toward the chicken, a girl stopped me. She said that I had to choose one of the following: hamburger, chicken, or hot dog. I suddenly felt very upset. After all what I had done, I can only pick one. So, I had a look at the choices in front of me. The hamburgers seem to be calling me, and the chicken was shouting with all its might for me. I couldn't resist the look of the juicy chicken. So, I took a piece of the chicken. Then, I grabbed my plate and took a seat at one of the tables next to the student center. Now is the time for the chicken to go where it belongs. When I had my first bite, I felt my mouth go on fire. Immediately, I got up and threw my plate in the garbage. I had never eaten something so spicy. As I was anticipating the symptoms of my allergy, I started sweating. Then, I felt that the temperature rose up 10 degrees. In less than a minute, I was feeling itchy and tears were going out of my eyes. I don't need to describe the other symptoms because I'm afraid that a child may read this post.
+
+I learned that I can never know how can something turn out. What has always appeared like a happy day actually turned into a nightmare. After that incidence, I felt really dumb because I hadn't even thought that the chicken might be spicy although I saw black pepper all over it.
