@@ -1,0 +1,48 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+
+#tweets {
+	width:300px;
+	background:#dff;
+	border: 1px solid black;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding:5px;
+	margin-bottom: 20px;
+}
+
+#tweets ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#tweets li {
+	padding: 5px;
+	color: black;
+	line-height:150%;
+	list-style-type: none;
+	font-size: small;
+	font-style: italic;
+}
+
+#tweets li .timestamp {text-align:right;}
+
+#tweets li.tweet_content_0 {
+	border-top:0px none;
+}
+#tweets li:last-child{
+	border-bottom:0px none;	
+}
+
+#tweets .hash { color: black; } 
+#tweets .reply { color: black; } 
+
+#tweets a:link { text-decoration:underline; color: black;}
+#tweets a:active { text-decoration:underline; color: black;}
+#tweets a:hover { text-decoration:underline; color: black;}
+#tweets a:visited { text-decoration:underline; color: black;}

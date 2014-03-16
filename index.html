@@ -11,6 +11,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Tweetable Tweets Box -->
+    <link href="stylesheets/tweetable-style.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,6 +70,7 @@
               <dt>Email</dt>
               <dd><a href="mailto:saleh@shamadeh.com">saleh@shamadeh.com</a></dd>
             </dl>
+            <div id="tweets"></div>
           </div>
           <div class="col-md-8">
             <h2>About me</h2>
@@ -97,6 +100,29 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/holder.js"></script>
+    <!-- Tweetable plugin -->
+    <script type="text/javascript" src="js/jquery.tweetable.js"></script>
+    <script type="text/javascript" src="js/jquery.timeago.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+      $('#tweets').tweetable({
+        username: 'salehhamadeh', 
+        time: true,
+        rotate: true,
+        speed: 4000, 
+        limit: 5,
+        replies: false,
+        position: 'append',
+        failed: "Sorry, twitter is currently unavailable for this user.",
+        loading: "Loading tweets...",
+        html5: true,
+        onComplete:function($ul){
+          $('time').timeago();
+        }
+      });
+    });
+    </script>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
