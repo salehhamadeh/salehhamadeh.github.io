@@ -22,6 +22,7 @@ Other users may use this security weakness to get more traffic. If the "bad" use
 What Defenses can Web Developers Take to Keep their Websites Safe?
 ------------------------------------------------------------------
 The easiest way to keep your sites safe is to stay away from redirection using query string parameters. If this is not something that you can easily do, here are some strategies that you can use:
+
 *   Keep a hash map of URLs. In other words, instead of having the URL in the query string, have a key that refers to that URL there. In this way, only the URLs for the keys that YOU define are redirectable.
 *   A better method is to have a domain name dedicated to URL redirections. [Twitter][twitter] uses [t.co][t-co] to track its users' whereabouts while explicitly showing them that they will be redirected. [Yahoo][yahoo] uses r.search.yahoo.com for the same purpose.
 
