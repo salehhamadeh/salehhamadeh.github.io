@@ -10,6 +10,7 @@ Did you expect to be on Google or some other page but found yourself here? Then,
 What Happened?
 --------------
 The link that you clicked is probably a redirection link, such as those found in Google's search results. Companies like Google and Twitter use redirection links to track where their users are going. It helps them gather information and hide information. For example, using redirection URLs, websites can:
+
 *   Track where their userbase is going.
 *   Hide referral information (search query strings, etc...) from the websites that the users are redirected to.
 
