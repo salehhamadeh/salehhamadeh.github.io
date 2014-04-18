@@ -16,7 +16,7 @@ The link that you clicked is probably a redirection link, such as those found in
 
 Why is this a Threat?
 ---------------------
-Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trusted. Now if a malicious user creates a website that clones Google's login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.
+Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trustworthy. Now if a malicious user creates a website that clones Google's login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.
 
 Other users may use this security weakness to get more traffic. If the "bad" users serve ads, they make more money.
 
