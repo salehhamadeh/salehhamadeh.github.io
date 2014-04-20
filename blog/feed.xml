@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Saleh Hamadeh&#39;s Blog</title>
+		<description>Saleh Hamadeh&#39;s personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.</description>		
+		<link>http://www.shamadeh.com</link>
+		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Web Security: Unvalidated Redirects</title>
+				<description>&lt;p&gt;Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: &lt;a href=&quot;https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards&quot;&gt;Unvalidated Redirects&lt;/a&gt;. Do not worry, you are in safe hands (this blog).&lt;/p&gt;
+
+&lt;h2&gt;What Happened?&lt;/h2&gt;
+
+&lt;p&gt;The link that you clicked is probably a redirection link, such as those found in Google&amp;#39;s search results. Companies like Google and Twitter use redirection links to track where their users are going. It helps them gather information and hide information. For example, using redirection URLs, websites can:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Track where their userbase is going.&lt;/li&gt;
+&lt;li&gt;  Hide referral information (search query strings, etc...) from the websites that the users are redirected to.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Why is this a Threat?&lt;/h2&gt;
+
+&lt;p&gt;Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trustworthy. Now if a malicious user creates a website that clones Google&amp;#39;s login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.&lt;/p&gt;
+
+&lt;p&gt;Other users may use this security weakness to get more traffic. If the &amp;quot;bad&amp;quot; users serve ads, they make more money.&lt;/p&gt;
+
+&lt;h2&gt;What Defenses can Web Developers Take to Keep their Websites Safe?&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to keep your sites safe is to stay away from redirection using query string parameters. If this is not something that you can easily do, here are some strategies that you can use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Keep a hash map of URLs. In other words, instead of having the URL in the query string, have a key that refers to that URL there. In this way, only the URLs for the keys that YOU define are redirectable.&lt;/li&gt;
+&lt;li&gt;  A better method is to have a domain name dedicated to URL redirections. &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt; uses &lt;a href=&quot;https://support.twitter.com//entries/109623&quot;&gt;t.co&lt;/a&gt; to track its users&amp;#39; whereabouts while explicitly showing them that they will be redirected. &lt;a href=&quot;https://www.yahoo.com/&quot;&gt;Yahoo&lt;/a&gt; uses r.search.yahoo.com for the same purpose.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What Defenses can Users Take to Stay Safe?&lt;/h2&gt;
+
+&lt;p&gt;Look at the full URL before visiting a link. The first part of it does not tell you everything. For some URLs, this practice can be tedious. In that case, look at the URL every time you are about to submit a form or enter sensitive information.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 06 Apr 2014 10:00:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</guid>
+			</item>
+		
+			<item>
+				<title>Assess your Collaborative Programming Skills</title>
+				<description>&lt;p&gt;After working a couple of jobs in software development, I noticed that one of the most-valued skills that employers are looking for is your collaboration skills. In other words, you need to blend well with the other programmers. When you are first hired, you will spend a decent amount of time just going through the code to understand how things work. If you find yourself confident enough to start extending the code, then the person who wrote it is a collaborative programmer.&lt;/p&gt;
+
+&lt;p&gt;The first step to become a collaborative programmer is to keep in mind that one day a new programmer who had never looked at your code will need to work with it. I can&amp;#39;t stress how important this practice is. There are many programmers out their who can do extraordinary stuff, but when a coworker looks at what they did, the coworker enters a labyrinth. When you go and ask the &amp;quot;smart&amp;quot; person about his code, you can see that he understands everything. This scenario is just like attending the lecture of a world-renowned professor and falling asleep in the middle of the lecture.&lt;/p&gt;
+
+&lt;p&gt;All programming languages have comments for a reason: comments are essential for every program. Comments are not only to help other people, but also to help you understand your own code. I was one of the people who would never comment a line of code. I used to think that if I wrote the code then I will always know what it does. I was wrong. Last year, I looked at the source code of a scientific calculator simulator that I had written 4 years ago. I felt as if I were reading some gibberish text. Commenting is a great practice for you as well as others.&lt;/p&gt;
+
+&lt;p&gt;Last but not least is consistency. Stay consistent in your code. I try to have all my variable declarations at the beginning of a function definition. Then, I follow it with the function&amp;#39;s logic. If the function returns a value, I usually store the value in a variable named ret. It may sometimes be very tempting to declare a variable in the middle of a function or to use global variables to solve problems fast. However, keep in mind that quick fixes cause quick problems. There are no perfect guidelines for writing code. Every person is unique and has his own patterns. What is important is that you stick to your pattern. If you do that, you will not need to execute a lot of code in your mind to reach the spot that needs changing; you just go to it. A good analogy is audio tapes and CDs. Using an audio tape, you have to go through all the previous songs to reach the song that you want to play. In a CD, the drive goes to the song directly without having to go through the other songs.&lt;/p&gt;
+
+&lt;p&gt;So you think you can code? Think again. To assess your collaboration skills, write an app or a game, say tic-tac-toe. After 4 weeks without looking at the source code, add a new functionality to your game, such as a leaderboard. If you find yourself struggling in placing functions or moving data around, then you need to improve your collaboration skills.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 16 Mar 2014 09:45:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</guid>
+			</item>
+		
+			<item>
+				<title>Web Performance Trends: One Load, That&#39;s All</title>
+				<description>&lt;p&gt;After all the HTML 5 buzz, I couldn&amp;#39;t but notice the new direction in which the web is being taken. At first, the Internet was a collection of pages (most of it still is). However, now we start feeling that some websites are not pages anymore. Take &lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt;, a project management web application by Fog Creek Software, for a example. After signing into Trello, all your clicks show instantaneous results, and you feel that the website is really an application more than a website. However, the link in the navbar still shows that you are moving between pages. You know that your internet connection is not that fast, so what exactly is happening? Trello, along with many other &lt;a href=&quot;www.wikipedia.org/wiki/Single-page_application&quot;&gt;SPA&amp;#39;s&lt;/a&gt;, utilize HTML5&amp;#39;s History API to achieve this. The History API allows web developers to manipulate your browser&amp;#39;s history (they cannot view it) by adding new links. In this way, the user thinks that he was directed to a new page when this is not quite the case. Client-side templating engines, like &lt;a href=&quot;http://mustache.github.io/&quot;&gt;Mustache&lt;/a&gt; and &lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;, can let the browser download the whole website upon the first load. Then, these websites use the History API alongside the client-side templating engines to render instantaneous pages.&lt;/p&gt;
+
+&lt;p&gt;Looking at the performace aspect of this technique, we can see that sites are shifting from the traditional load-on-page-request approach to the &amp;quot;One Load, That&amp;#39;s All&amp;quot; approach. In this way, the website is going to take a longer time to download, but once it is downloaded, everything else is instantaneous. Using HTML5&amp;#39;s LocalStorage API, one can save the website&amp;#39;s pages and templates so that the user will not have to download the entire website every time he visits it.&lt;/p&gt;
+
+&lt;p&gt;However, the new approach has some limitations. First, they can only work that way on devices that support HTML5. Moreover, they require strong devices to run on, memory-wise and computation-wise.&lt;/p&gt;
+
+&lt;p&gt;So, what do you think is the better approach for websites at the moment?&lt;/p&gt;
+</description>
+				<pubDate>Mon, 24 Feb 2014 05:15:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</guid>
+			</item>
+		
+			<item>
+				<title>Why You should have a Virtual Machine in the Cloud</title>
+				<description>&lt;p&gt;&lt;a href=&quot;http://www.dropbox.com&quot;&gt;Dropbox&lt;/a&gt; lets users access there files from anywhere and on any machine. Google Chrome lets users have their customized browser from any machine. By customized, I mean that it saves the settings, favorites, history, and saved passwords. The internet made it possible for people to feel that any computer is their personal computer. However, there is still one piece missing. Even though our files and preferences are shared everywhere, we know that we are not using our same computer when we go to the library or somewhere else. By having a virtual machine in the cloud, we will be able to use our computer from any machine. This is only one of the many reasons to get your private virtual machine.&lt;/p&gt;
+
+&lt;h2&gt;Reason 1: No need to carry a computer&lt;/h2&gt;
+
+&lt;p&gt;Everyone agrees that carrying a computer can be a hassle. Whether you are at the airport or walking alone at night, your physical computer is a trouble. By having a virtual machine in the cloud, you do not need to carry your computer because you can reach it from any machine that is connected to the internet.&lt;/p&gt;
+
+&lt;h2&gt;Reason 2: It is always on, and it works fine&lt;/h2&gt;
+
+&lt;p&gt;If you have ever tried serving a website from your home computer, you know how bad it is to keep it running 24/7. This can cause the computer to wear down, the fan gets louder over time, your internet connection slows down, and your family members complain a lot. With a cloud instance, all the maintenace is taken care of by the service provider. You can use the machine to serve as many websites as you want, make money out of it, and never get bothered.&lt;/p&gt;
+
+&lt;h2&gt;Reason 3: If you can program, then you can...&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Track all your device locations from anywhere, If any of your devices is stolen, just make it ping your virtual machine and send the device&amp;#39;s location to the cops.&lt;/li&gt;
+&lt;li&gt;Create a home controller that lets you do anything with your home from anywhere.&lt;/li&gt;
+&lt;li&gt;Develop POS systems for your neighborhood grocery for as cheap as $5/month.&lt;/li&gt;
+&lt;li&gt;Rule the World!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;If you are convinced by now, don&amp;#39;t stop here. Take a look at the following cloud hosting providers and take action.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com&quot;&gt;Digital Ocean&lt;/a&gt;: Simple cloud hosting on Sold-State Drives.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/ec2&quot;&gt;Amazon EC2&lt;/a&gt;: Advanced cloud computing service that comes along with tools to handle web applications, databases, storage, and more.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 09 Feb 2014 05:15:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</guid>
+			</item>
+		
+			<item>
+				<title>Computer Science VS Software Engineering</title>
+				<description>&lt;p&gt;I could not count the number of times that I have been told, &amp;quot;You got accepted in Georgia Tech, and you are studying Computer Science. You must be crazy. Go major in some kind of engineering instead. Georgia Tech is one of the top universities in that.&amp;quot; At the same time, I hear people praising a person at another university who is majoring in Software Engineering. The sad thing is, people do not know what any of these majors really is. They also do not know that Software Engineering and Computer Science are different words used to identify the same thing.&lt;/p&gt;
+
+&lt;p&gt;Using two different words to identify the same degree creates confusion and misunderstanding. What do you think is the more suitable word? Computer scientist or software engineer. To be able to answer these questions, let us consider what the words &lt;em&gt;science&lt;/em&gt; and &lt;em&gt;engineering&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2&gt;What is science?&lt;/h2&gt;
+
+&lt;p&gt;According to Longman Dictionary of Contemporary English, &lt;a href=&quot;http://www.ldoceonline.com/dictionary/science&quot;&gt;science&lt;/a&gt; is &amp;quot;knowledge about the world, especially based on examining, testing, and proving facts.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;According to Oxford Advanced Learner&amp;#39;s Dictionary, &lt;a href=&quot;http://oald8.oxfordlearnersdictionaries.com/dictionary/science&quot;&gt;science&lt;/a&gt; is &amp;quot;knowledge about the structure and behaviour of the natural and physical world, based on facts that you can prove, for example by experiments.&amp;quot;&lt;/p&gt;
+
+&lt;h2&gt;What is engineering?&lt;/h2&gt;
+
+&lt;p&gt;According to Longman Dictionary of Contemporary English, &lt;a href=&quot;http://www.ldoceonline.com/dictionary/engineering&quot;&gt;engineering&lt;/a&gt; is &amp;quot;the work involved in designing and building roads, bridges, machines etc.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;According to Oxford Advanced Learner&amp;#39;s Dictionary, &lt;a href=&quot;http://oald8.oxfordlearnersdictionaries.com/dictionary/engineering&quot;&gt;engineering&lt;/a&gt; is &amp;quot;the activity of applying scientific knowledge to the design, building and control of machines, roads, bridges, electrical equipment, etc.&amp;quot;&lt;/p&gt;
+
+&lt;h2&gt;What do Computer Scientists or Software Engineers do?&lt;/h2&gt;
+
+&lt;p&gt;Computer scientists and software engineers build new things. They plan an application, a website, or a database and build that thing incrementally. Occasionally, they need the help of graphic designers and writers to make their products look good. Finally, they publish their product to the internet for end users to use it.&lt;/p&gt;
+
+&lt;h2&gt;The answer&lt;/h2&gt;
+
+&lt;p&gt;What do the steps above remind you of? They remind me of a civil engineer working on a skyscraper. They remind me of electric engineers creating escalators, lighting, and computers for a shopping mall. I believe that computer scientists should really be software engineers since they &amp;quot;design, build and control.&amp;quot;&lt;/p&gt;
+</description>
+				<pubDate>Sun, 12 Jan 2014 10:07:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</guid>
+			</item>
+		
+			<item>
+				<title>Make a Blog Social (Without a Database)</title>
+				<description>&lt;p&gt;What does it mean by saying that a blog is social? Social, by definition, means humanly-interactive. In other words, it involves different human beings interacting with one another. In this article, I will show you the 3 steps that I took to make my static &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; blog social WITHOUT using A DATABASE.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add the &lt;a href=&quot;http://www.addthis.com/&quot;&gt;Addthis&lt;/a&gt; Smart Layer for sharing articles to social networks.&lt;/li&gt;
+&lt;li&gt;Create a mailing list to keep the blog subscribers notified about the latest news.&lt;/li&gt;
+&lt;li&gt;Add comments to each blog post.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Sharing on Social Networks&lt;/h2&gt;
+
+&lt;p&gt;The buttons that appear on the left-hand side of this page allow you to share any post on my blog to almost any social network you can think of. Even though this is a powerful feature, it is extremely easy to integrate it into your own website, thanks to &lt;a href=&quot;http://www.addthis.com/&quot;&gt;Addthis&lt;/a&gt;. Go to the &lt;a href=&quot;https://www.addthis.com/get/smart-layers&quot;&gt;Addthis Smart Layers&lt;/a&gt; page and customize the toolbar to fit your need. Then, click on Generate Code. This gives you HTML code, which you can paste anywhere inside your page&amp;#39;s HTML. That&amp;#39;s it! You created your blog&amp;#39;s first social interaction service.&lt;/p&gt;
+
+&lt;h2&gt;Mailing List&lt;/h2&gt;
+
+&lt;p&gt;You may wonder how to create a mailing list without a database or any server-side scripting. Is it possible? It&amp;#39;s not. However, there are Software-as-a-Services out there that do just that. The tool that I used for my own personal blog is &lt;a href=&quot;http://mailchimp.com/&quot;&gt;Mail Chimp&lt;/a&gt;. Mailchimp is free, as long as you do not send over 12,000 emails per month or have fewer than 2,000 subscribers. First, go ahead and create an account on Mail Chimp. In the registration&amp;#39;s sign up form, there is an Organization&amp;#39;s Name field. You do not need to be an organization to use that. The Organization Name is really the name of your website or blog. When you create an account and sign in, you will see the dashboard, which will show you the 3 steps that are needed to get you started. First, click on Create a List and create one. I called my list &amp;quot;Blog Subscribers.&amp;quot; After you create your list, click on Lists, click on the list you created, and then click on Signup forms. This will show you a page with 3 different choices: General forms, embedded forms, and form integrations. General forms create complete forms for registration, embedded forms are forms that can be embedded anywhere on your website (just like the one I use on my blog), and form integrations allow you to use Mail Chimp with other web services. You can choose whichever one fits your needs. If you choose embedded forms, you will see a page where you can create your own signup form and design it so it looks good. After going through the form-building process, copy the form&amp;#39;s HTML code and paste it wherever you want the form to appear on your website.&lt;/p&gt;
+
+&lt;h2&gt;Comments&lt;/h2&gt;
+
+&lt;p&gt;No website is really social without discussions and arguments. Without chicken there is no fried chicken, and without arguments there is no social life. I guess that was a bad comparison, but you get the point: discussion is the key to social interaction.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.disqus.com/&quot;&gt;Disqus&lt;/a&gt; is an amazing tool that you find everywhere but may not know its value. That&amp;#39;s exactly what happened with me. I remember seeing Disqus on many websites, but I had never tried to create an account to see what motivates all these people to use Disqus. Before 3 days, I decided to go to Disqus.com directly and see what it truly is. It turned out to be comments, profiles, a social media, and anaytics all-in-one. In addition to that, it was as easy as copying-and-pasting to integrate to my website.&lt;/p&gt;
+
+&lt;p&gt;Enough talking and let&amp;#39;s start getting this done. Head over to &lt;a href=&quot;http://www.disqus.com/&quot;&gt;Disqus&lt;/a&gt; and create an account. After that, click on the link that says, &amp;quot;Add Disqus to your website,&amp;quot; at the top-right corner of the screen. Fill out the site&amp;#39;s name and category and then click on Finish Registration. Then, you should see a list of platforms that you can use Disqus with. Choose the one that best fits your needs. This should give you step-by-step instructions to add Disqus to your blog. If you click on Universal Code, you will get the HTML for adding Disqus. Copy the HTML and paste it wherever you want to add Disqus in your blog.&lt;/p&gt;
+
+&lt;h2&gt;TADA!&lt;/h2&gt;
+
+&lt;p&gt;TADA! You now have a website that has social-media sharing, mailing lists, and discussions. Give yourself a pat on the back and have a look at the great work that you have done.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 28 Dec 2013 17:13:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</guid>
+			</item>
+		
+			<item>
+				<title>What if Cars had APIs</title>
+				<description>&lt;p&gt;As I was reading &lt;a href=&quot;http://readwrite.com/2012/08/21/u-michigan-launches-worlds-biggest-sandbox-for-wi-fi-connected-cars&quot;&gt;this article on ReadWrite&lt;/a&gt;, I had this unusual thought: What if cars had APIs? We have started to see the Internet of Things in toasters, lamps, and even &lt;a href=&quot;http://www.quirky.com/shop/619-Egg-Minder-Smart-Egg-Tray&quot;&gt;egg counters&lt;/a&gt;. People are getting pretty crazy with their inventions, but until now we did not see innovations in the automobile industry. What if there was a Car Operating System that can know all of the car&amp;#39;s internal details. What if there was a protocol for car-to-phone communication? Then, we can have custom dashboard apps that can be downloaded to tablets. We can detect all car thefts and bring justice. We can customize the safety of our cars using Python scripts. We can program the car not to run if the driver did not have the seatbelt on. We can put speed caps for teenagers. The car can send us notifications when oil needs changing, tires need air, or the car is out of gas.&lt;/p&gt;
+
+&lt;p&gt;What if car-to-car communication became a reality? If Car OS was connected to our GPS, the car can send driving directions to other cars in the form of requests. For example, my car will ask the car to my right, may I go right. The other car responds, go ahead. So, my car says that I am safe to turn right. Can this be the first step to commercializing driver-less cars? If it is, we may see car networks in the future.&lt;/p&gt;
+
+&lt;p&gt;What if cars were controlled by monitoring towers on the roads? The towers can be programmed to give the perfect car flow. There will be no more fighting to get to the next lane. No one will end up on a lane with a dead end. Traffic jams will fix themselves without stressing the drivers. The drivers can then have their cup of coffee or read the newspaper on the way to work. What if the car can read online newpapers instead of playing the radio?&lt;/p&gt;
+
+&lt;p&gt;What if the car network gets hacked. The hacker can make all the cars go to one direction. People&amp;#39;s doors will be locked and won&amp;#39;t open. Cars start running off bridges and hitting trees. People start flying out of the windows and get crushed by self-driving cars. Can this be the apocalypse, the day when the computers take over our virtual and real lives?&lt;/p&gt;
+</description>
+				<pubDate>Thu, 26 Dec 2013 18:26:00 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</guid>
+			</item>
+		
+			<item>
+				<title>Moving the Blog to Jekyll</title>
+				<description>&lt;p&gt;After two hours of non-stop coding, I crafted this blog and added it to my website. Of course, this would have not been possible without the contributions of the open-source community, namely &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, &lt;a href=&quot;http://pages.github.com&quot;&gt;Github Pages&lt;/a&gt;, and &lt;a href=&quot;https://github.com/schacon/schacon.github.com&quot;&gt;Scott Chacon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those who have never heard of Jekyll, Jekyll is a tool for creating blogs. I chose Jekyll for the following reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  It generates static websites.&lt;/li&gt;
+&lt;li&gt;  It is fully customizable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will clarify what I mean by a static site. Unlike Wordpress and most other blogging tools, Jekyll does not need a database or back-end scripting. When I first read about that, it was impossible to believe. The site was saying that the blog works without data, which is essential for any blog. If this was true, then anyone can use Jekyll to host a blog using any of the free file servers. I can host a blog on Dropbox. I can host a blog using Apache ONLY. It turns out that what Jekyll claimed was true. Instead of being the blog, Jekyll is the blog generator. It takes in markdown files or text files, runs them through several parsers and templates, and creates a complete site with HTML and CSS. Since Jekyll blogs do not need any back-end scripting, it was the perfect tool for hosting a blog on Github Pages.&lt;/p&gt;
+
+&lt;p&gt;Since I use many tools to develop my website (&lt;a href=&quot;http://jquery.com&quot;&gt;jQuery&lt;/a&gt;, &lt;a href=&quot;http://getbootstrap.com&quot;&gt;Twitter Bootstrap&lt;/a&gt;, &lt;a href=&quot;http://fontawesome.io&quot;&gt;Font Awesome&lt;/a&gt;, ...), I prefer to use tools that do not conflict with the others. I love the tools that give the developers the freedom to use any other libraries and that focus on one thing and do it perfectly. Jekyll met both of my needs. As a website generator, it gives me the blog out of the oven. I did not use any extra link or script tags. Jekyll granted me full customization of the shape of my blog. Using the &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; template language, I was able to seemlessly integrate the blog posts with my website. Even though the blog and the site are two different projects on my computer, the blog appears to be part of the website when it is hosted online.&lt;/p&gt;
+
+&lt;p&gt;Jekyll was not only the best choice for my blog, but was also extremely easy to learn. I encourage anyone who is interested in Jekyll to install it, create an empty blog (it comes with all the necessary files), and skim through the blog&amp;#39;s source code. Look at the code, tweak it, and read Jekyll&amp;#39;s getting started guide, and you will have your own static and fully-customizable blog in no time.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 24 Dec 2013 13:35:15 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/blogging/2013/12/24/MovingToJekyll.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/blogging/2013/12/24/MovingToJekyll.html</guid>
+			</item>
+		
+			<item>
+				<title>Kennesaw State University Student Barbecue</title>
+				<description>&lt;p&gt;Last week, the International Student Association at Kennesaw State University held a barbecue that is open for all in the campus green. Because barbecue is the love of my life, I had to go. When I reached the location of the barbecue, I saw a line that seemed endless. The photo above shows nearly 2/3rd of the line. I felt a pain in my heart. I knew that there were grilled chicken, hot dogs, and hamburgers near me. The luring odor of the food was all around me. I can even smell it without a nose. Although the barbecue was less than 100 feet from me, I felt that it was at the other end of the world. Finally, I decided to stand in line before it gets even longer.&lt;/p&gt;
+
+&lt;p&gt;After waiting for more than half an hour, I reached the stall. At first, I took a plate of potato salad. Then, I took a burger. As I was heading toward the chicken, a girl stopped me. She said that I had to choose one of the following: hamburger, chicken, or hot dog. I suddenly felt very upset. After all what I had done, I can only pick one. So, I had a look at the choices in front of me. The hamburgers seem to be calling me, and the chicken was shouting with all its might for me. I couldn&amp;#39;t resist the look of the juicy chicken. So, I took a piece of the chicken. Then, I grabbed my plate and took a seat at one of the tables next to the student center. Now is the time for the chicken to go where it belongs. When I had my first bite, I felt my mouth go on fire. Immediately, I got up and threw my plate in the garbage. I had never eaten something so spicy. As I was anticipating the symptoms of my allergy, I started sweating. Then, I felt that the temperature rose up 10 degrees. In less than a minute, I was feeling itchy and tears were going out of my eyes. I don&amp;#39;t need to describe the other symptoms because I&amp;#39;m afraid that a child may read this post.&lt;/p&gt;
+
+&lt;p&gt;I learned that I can never know how can something turn out. What has always appeared like a happy day actually turned into a nightmare. After that incidence, I felt really dumb because I hadn&amp;#39;t even thought that the chicken might be spicy although I saw black pepper all over it.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 10 Sep 2012 13:35:15 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</guid>
+			</item>
+		
+			<item>
+				<title>Diclopedia is 1 Month Old</title>
+				<description>&lt;p&gt;Diclopedia is getting quite mature now. During the first month, Diclopedia got better graphics, bug fixes, history, and suggestions. The total downloads for the first months are 432 downloads, which is not bad. Let&amp;#39;s hope that as Diclopedia grows older, it will have much more features. If you would like to share your ideas with me, post them in the comments. Thank you for your cooperation.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 14 May 2012 13:35:15 +0000</pubDate>
+				<link>http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</guid>
+			</item>
+		
+	</channel>
+</rss>
