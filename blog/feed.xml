@@ -7,6 +7,19 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Interning at BrainJocks</title>
+				<description>&lt;p&gt;On January 2nd of this year, I had the pleasure of being accepted for an internship at &lt;a href=&quot;http://www.brainjocks.com&quot;&gt;BrainJocks&lt;/a&gt;. BrainJocks is a small company of around 25 dedicated employees who work hard to build beautiful websites for enterprises. The Content Management System that we use is &lt;a href=&quot;http://www.sitecore.net&quot;&gt;Sitecore&lt;/a&gt;, but I did not have the chance to use it yet. For applications, the company uses whatever best solves the problem.&lt;/p&gt;
+
+&lt;p&gt;In the projects that I work on, I use ASP.NET MVC to build an application hosted on the Azure Cloud. The best quality that I find in BrainJocks is the freedom it gives its interns. I, as an intern, not only get to learn the cutting-edge tools used in the industry, but I also get the chance to apply them into the company&amp;#39;s projects. For instance, one of the tools that I introduced to the company is Azure Media Services, which handles video processing and streaming to large-scale applications. Even though this can be tedious, it is extremely rewarding to see the team approve my plans and add it into our workflow.&lt;/p&gt;
+
+&lt;p&gt;I built a simple impress.js presentation about my experience as an Intern. Check the &lt;a href=&quot;//co-op-presentation/index.html&quot;&gt;presentation&lt;/a&gt; now and apply immediately if you get a positive impression.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 28 May 2014 04:45:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</guid>
+			</item>
+		
+			<item>
 				<title>Web Security: Unvalidated Redirects</title>
 				<description>&lt;p&gt;Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: &lt;a href=&quot;https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards&quot;&gt;Unvalidated Redirects&lt;/a&gt;. Do not worry, you are in safe hands (this blog).&lt;/p&gt;
 
@@ -38,7 +51,7 @@
 
 &lt;p&gt;Look at the full URL before visiting a link. The first part of it does not tell you everything. For some URLs, this practice can be tedious. In that case, look at the URL every time you are about to submit a form or enter sensitive information.&lt;/p&gt;
 </description>
-				<pubDate>Sun, 06 Apr 2014 10:00:00 +0000</pubDate>
+				<pubDate>Sun, 06 Apr 2014 06:00:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</guid>
 			</item>
@@ -55,7 +68,7 @@
 
 &lt;p&gt;So you think you can code? Think again. To assess your collaboration skills, write an app or a game, say tic-tac-toe. After 4 weeks without looking at the source code, add a new functionality to your game, such as a leaderboard. If you find yourself struggling in placing functions or moving data around, then you need to improve your collaboration skills.&lt;/p&gt;
 </description>
-				<pubDate>Sun, 16 Mar 2014 09:45:00 +0000</pubDate>
+				<pubDate>Sun, 16 Mar 2014 05:45:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</guid>
 			</item>
@@ -70,7 +83,7 @@
 
 &lt;p&gt;So, what do you think is the better approach for websites at the moment?&lt;/p&gt;
 </description>
-				<pubDate>Mon, 24 Feb 2014 05:15:00 +0000</pubDate>
+				<pubDate>Mon, 24 Feb 2014 00:15:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</guid>
 			</item>
@@ -104,7 +117,7 @@
 
 &lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/ec2&quot;&gt;Amazon EC2&lt;/a&gt;: Advanced cloud computing service that comes along with tools to handle web applications, databases, storage, and more.&lt;/p&gt;
 </description>
-				<pubDate>Sun, 09 Feb 2014 05:15:00 +0000</pubDate>
+				<pubDate>Sun, 09 Feb 2014 00:15:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</guid>
 			</item>
@@ -135,7 +148,7 @@
 
 &lt;p&gt;What do the steps above remind you of? They remind me of a civil engineer working on a skyscraper. They remind me of electric engineers creating escalators, lighting, and computers for a shopping mall. I believe that computer scientists should really be software engineers since they &amp;quot;design, build and control.&amp;quot;&lt;/p&gt;
 </description>
-				<pubDate>Sun, 12 Jan 2014 10:07:00 +0000</pubDate>
+				<pubDate>Sun, 12 Jan 2014 05:07:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</guid>
 			</item>
@@ -170,7 +183,7 @@
 
 &lt;p&gt;TADA! You now have a website that has social-media sharing, mailing lists, and discussions. Give yourself a pat on the back and have a look at the great work that you have done.&lt;/p&gt;
 </description>
-				<pubDate>Sat, 28 Dec 2013 17:13:00 +0000</pubDate>
+				<pubDate>Sat, 28 Dec 2013 12:13:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</guid>
 			</item>
@@ -185,7 +198,7 @@
 
 &lt;p&gt;What if the car network gets hacked. The hacker can make all the cars go to one direction. People&amp;#39;s doors will be locked and won&amp;#39;t open. Cars start running off bridges and hitting trees. People start flying out of the windows and get crushed by self-driving cars. Can this be the apocalypse, the day when the computers take over our virtual and real lives?&lt;/p&gt;
 </description>
-				<pubDate>Thu, 26 Dec 2013 18:26:00 +0000</pubDate>
+				<pubDate>Thu, 26 Dec 2013 13:26:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</guid>
 			</item>
@@ -207,7 +220,7 @@
 
 &lt;p&gt;Jekyll was not only the best choice for my blog, but was also extremely easy to learn. I encourage anyone who is interested in Jekyll to install it, create an empty blog (it comes with all the necessary files), and skim through the blog&amp;#39;s source code. Look at the code, tweak it, and read Jekyll&amp;#39;s getting started guide, and you will have your own static and fully-customizable blog in no time.&lt;/p&gt;
 </description>
-				<pubDate>Tue, 24 Dec 2013 13:35:15 +0000</pubDate>
+				<pubDate>Tue, 24 Dec 2013 08:35:15 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/blogging/2013/12/24/MovingToJekyll.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/blogging/2013/12/24/MovingToJekyll.html</guid>
 			</item>
@@ -220,18 +233,9 @@
 
 &lt;p&gt;I learned that I can never know how can something turn out. What has always appeared like a happy day actually turned into a nightmare. After that incidence, I felt really dumb because I hadn&amp;#39;t even thought that the chicken might be spicy although I saw black pepper all over it.&lt;/p&gt;
 </description>
-				<pubDate>Mon, 10 Sep 2012 13:35:15 +0000</pubDate>
+				<pubDate>Mon, 10 Sep 2012 09:35:15 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</guid>
-			</item>
-		
-			<item>
-				<title>Diclopedia is 1 Month Old</title>
-				<description>&lt;p&gt;Diclopedia is getting quite mature now. During the first month, Diclopedia got better graphics, bug fixes, history, and suggestions. The total downloads for the first months are 432 downloads, which is not bad. Let&amp;#39;s hope that as Diclopedia grows older, it will have much more features. If you would like to share your ideas with me, post them in the comments. Thank you for your cooperation.&lt;/p&gt;
-</description>
-				<pubDate>Mon, 14 May 2012 13:35:15 +0000</pubDate>
-				<link>http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</guid>
 			</item>
 		
 	</channel>
