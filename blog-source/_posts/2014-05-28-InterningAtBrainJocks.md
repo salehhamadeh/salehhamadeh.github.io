@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interning at BrainJocks"
+title:  "My Internship at BrainJocks"
 date:   2014-05-28 8:45:00
 categories: life
 ---
