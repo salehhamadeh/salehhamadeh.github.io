@@ -13,5 +13,5 @@ I built a simple impress.js presentation about my experience as an Intern. Check
 
 [brain-jocks]: http://www.brainjocks.com
 [sitecore]: http://www.sitecore.net
-[coop-presentation]: //co-op-presentation/index.html
+[coop-presentation]: http://shamadeh.com/co-op-presentation/index.html
 
