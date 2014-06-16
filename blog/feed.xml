@@ -7,6 +7,19 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>My Internship at BrainJocks</title>
+				<description>&lt;p&gt;On January 2nd of this year, I had the pleasure of being accepted for an internship at &lt;a href=&quot;http://www.brainjocks.com&quot;&gt;BrainJocks&lt;/a&gt;. BrainJocks is a small company of around 25 dedicated employees who work hard to build beautiful websites for enterprises. The Content Management System that we use is &lt;a href=&quot;http://www.sitecore.net&quot;&gt;Sitecore&lt;/a&gt;, but I did not have the chance to use it yet. For applications, the company uses whatever best solves the problem.&lt;/p&gt;
+
+&lt;p&gt;In the projects that I work on, I use ASP.NET MVC to build an application hosted on the Azure Cloud. The best quality that I find in BrainJocks is the freedom it gives its interns. I, as an intern, not only get to learn the cutting-edge tools used in the industry, but I also get the chance to apply them into the company&amp;#39;s projects. For instance, one of the tools that I introduced to the company is Azure Media Services, which handles video processing and streaming to large-scale applications. Even though this can be tedious, it is extremely rewarding to see the team approve my plans and add it into our workflow.&lt;/p&gt;
+
+&lt;p&gt;I built a simple impress.js presentation about my experience as an Intern. Check the &lt;a href=&quot;http://shamadeh.com/co-op-presentation/index.html&quot;&gt;presentation&lt;/a&gt; now and apply immediately if you get a positive impression.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 28 May 2014 04:45:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</guid>
+			</item>
+		
+			<item>
 				<title>Web Security: Unvalidated Redirects</title>
 				<description>&lt;p&gt;Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: &lt;a href=&quot;https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards&quot;&gt;Unvalidated Redirects&lt;/a&gt;. Do not worry, you are in safe hands (this blog).&lt;/p&gt;
 
@@ -223,15 +236,6 @@
 				<pubDate>Mon, 10 Sep 2012 09:35:15 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/09/10/KSUBarbecue.html</guid>
-			</item>
-		
-			<item>
-				<title>Diclopedia is 1 Month Old</title>
-				<description>&lt;p&gt;Diclopedia is getting quite mature now. During the first month, Diclopedia got better graphics, bug fixes, history, and suggestions. The total downloads for the first months are 432 downloads, which is not bad. Let&amp;#39;s hope that as Diclopedia grows older, it will have much more features. If you would like to share your ideas with me, post them in the comments. Thank you for your cooperation.&lt;/p&gt;
-</description>
-				<pubDate>Mon, 14 May 2012 09:35:15 -0400</pubDate>
-				<link>http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/android/2012/05/14/DiclopediaOneMonth.html</guid>
 			</item>
 		
 	</channel>
