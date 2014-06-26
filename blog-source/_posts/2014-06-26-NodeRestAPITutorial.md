@@ -198,6 +198,7 @@ app.get( '/api/books', function( request, response ) {
             return response.send( books );
         } else {
             console.log( err );
+            response.send('ERROR');
         }
     });
 });
@@ -214,6 +215,7 @@ app.post( '/api/books', function( request, response ) {
             console.log( 'created' );
         } else {
             console.log( err );
+            return response.send('ERROR');
         }
         return response.send( book );
     });
@@ -224,7 +226,8 @@ app.get( '/api/books/:id', function( request, response ) {
         if( !err ) {
             return response.send( book );
         } else {
-            return console.log( err );
+            console.log( err );
+            return response.send('ERROR');
         }
     });
 });
@@ -240,6 +243,7 @@ app.put( '/api/books/:id', function( request, response ) {
                 console.log( 'book updated' );
             } else {
                 console.log( err );
+                return response.send('ERROR');
             }
             return response.send( book );
         });
@@ -254,6 +258,7 @@ app.delete( '/api/books/:id', function( request, response ) {
                 return response.send( '' );
             } else {
                 console.log( err );
+                return response.send('ERROR');
             }
         });
     });
@@ -282,6 +287,7 @@ function registerRoutes(app, mongoose) {
                 return response.send( books );
             } else {
                 console.log( err );
+                response.send('ERROR');
             }
         });
     });
@@ -297,6 +303,7 @@ function registerRoutes(app, mongoose) {
                     return response.send( '' );
                 } else {
                     console.log( err );
+                    return response.send('ERROR');
                 }
             });
         });
