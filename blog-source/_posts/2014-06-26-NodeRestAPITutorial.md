@@ -198,7 +198,7 @@ app.get( '/api/books', function( request, response ) {
             return response.send( books );
         } else {
             console.log( err );
-            response.send('ERROR');
+            return response.send('ERROR');
         }
     });
 });
