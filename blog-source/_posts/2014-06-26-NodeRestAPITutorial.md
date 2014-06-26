@@ -28,7 +28,7 @@ Before we start writing code, we need to fetch the dependencies. Even though the
 
 Now open up your terminal or command line and go to the project's directory. Type
 
-{% highlight bash %}
+{% highlight sh %}
 npm install
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ to install Express. It will be installed in the node_modules directory.
 
 Now that we have all the dependencies ready, let's create a simple server that will capture requests and respond with a Hello World.
 
-{% highlight javascript %}
+{% highlight js %}
 // Module dependencies.
 var application_root = __dirname,
     express = require( 'express' ); //Web framework
@@ -115,7 +115,7 @@ app.listen( port, function() {
 
 Save the file and run
 
-{% highlight bash %}
+{% highlight sh %}
 node server.js
 {% endhighlight %}
 
@@ -153,13 +153,13 @@ As always, before we start writing any code, we must have all the dependencies r
 
 and run
 
-{% highlight bash %}
+{% highlight sh %}
 npm install
 {% endhighlight %}
 
 To use Mongoose from our Node.js application, we first need to require it. Change the module dependencies code block to
 
-{% highlight javascript %}
+{% highlight js %}
 // Module dependencies.
 var application_root = __dirname,
     express = require( 'express' ),     //Web framework
@@ -169,14 +169,14 @@ var application_root = __dirname,
 
 Then, we need to connect Mongoose to our database. We use the connect method to connect it to our local (or remote) database. Note that the url points to the database inside MongoDB (in this case it is library_database).
 
-{% highlight javascript %}
+{% highlight js %}
 //Connect to database
 mongoose.connect( 'mongodb://localhost/library_database' );
 {% endhighlight %}
 
 Mongoose provides two neat classes for dealing with data: Schema and model. Schema is used for data validation, and Model is used to send and receive data from the database. We will now create a Schema and a Model that adhere to our original data model.
 
-{% highlight javascript %}
+{% highlight js %}
 //Schema
 var BookSchema = new mongoose.Schema({
     title: String,
@@ -189,7 +189,7 @@ var BookModel = mongoose.model( 'Book', BookSchema );
 
 Now we have everything ready to start responding to API requests. Since all of the request/response processing happens in the router, we will only change the router code it account for the persistent data. The new router should look as follows:
 
-{% highlight javascript %}
+{% highlight js %}
 //Router
 //Get a list of all books
 app.get( '/api/books', function( request, response ) {
@@ -272,7 +272,7 @@ There are hundreds of ways to improve our code. For demonstration, we will move 
 
 First, create a new file called router.js. In that file, create a function named registerRoutes that takes in the Express app and Mongoose as parameters. Then, move all the routing logic from server.js to the newly created function. The contents of router.js will be something like this:
 
-{% highlight javascript %}
+{% highlight js %}
 function registerRoutes(app, mongoose) {
     //Router
     //Get a list of all books

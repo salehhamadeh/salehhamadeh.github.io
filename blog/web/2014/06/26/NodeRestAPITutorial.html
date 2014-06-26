@@ -117,13 +117,13 @@
 
 <p>Now open up your terminal or command line and go to the project&#39;s directory. Type</p>
 
-<div class="highlight"><pre><code class="bash">npm install</code></pre></div>
+<div class="highlight"><pre><code class="sh">npm install</code></pre></div>
 
 <p>to install Express. It will be installed in the node_modules directory.</p>
 
 <p>Now that we have all the dependencies ready, let&#39;s create a simple server that will capture requests and respond with a Hello World.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="c1">// Module dependencies.</span>
+<div class="highlight"><pre><code class="js"><span class="c1">// Module dependencies.</span>
 <span class="kd">var</span> <span class="nx">application_root</span> <span class="o">=</span> <span class="nx">__dirname</span><span class="p">,</span>
     <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">);</span> <span class="c1">//Web framework</span>
 
@@ -200,7 +200,7 @@
 
 <p>Save the file and run</p>
 
-<div class="highlight"><pre><code class="bash">node server.js</code></pre></div>
+<div class="highlight"><pre><code class="sh">node server.js</code></pre></div>
 
 <p>to start the server. The server should response with the hardcoded data when you try to get a book and should echo back the data when you try to do another operation, such as inserting, deleting, or updating.</p>
 
@@ -234,11 +234,11 @@
 
 <p>and run</p>
 
-<div class="highlight"><pre><code class="bash">npm install</code></pre></div>
+<div class="highlight"><pre><code class="sh">npm install</code></pre></div>
 
 <p>To use Mongoose from our Node.js application, we first need to require it. Change the module dependencies code block to</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="c1">// Module dependencies.</span>
+<div class="highlight"><pre><code class="js"><span class="c1">// Module dependencies.</span>
 <span class="kd">var</span> <span class="nx">application_root</span> <span class="o">=</span> <span class="nx">__dirname</span><span class="p">,</span>
     <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">),</span>     <span class="c1">//Web framework</span>
     <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;path&#39;</span> <span class="p">),</span>           <span class="c1">//Utilities for dealing with file paths</span>
@@ -246,12 +246,12 @@
 
 <p>Then, we need to connect Mongoose to our database. We use the connect method to connect it to our local (or remote) database. Note that the url points to the database inside MongoDB (in this case it is library_database).</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="c1">//Connect to database</span>
+<div class="highlight"><pre><code class="js"><span class="c1">//Connect to database</span>
 <span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span> <span class="s1">&#39;mongodb://localhost/library_database&#39;</span> <span class="p">);</span></code></pre></div>
 
 <p>Mongoose provides two neat classes for dealing with data: Schema and model. Schema is used for data validation, and Model is used to send and receive data from the database. We will now create a Schema and a Model that adhere to our original data model.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="c1">//Schema</span>
+<div class="highlight"><pre><code class="js"><span class="c1">//Schema</span>
 <span class="kd">var</span> <span class="nx">BookSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">({</span>
     <span class="nx">title</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
     <span class="nx">author</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
@@ -262,7 +262,7 @@
 
 <p>Now we have everything ready to start responding to API requests. Since all of the request/response processing happens in the router, we will only change the router code it account for the persistent data. The new router should look as follows:</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="c1">//Router</span>
+<div class="highlight"><pre><code class="js"><span class="c1">//Router</span>
 <span class="c1">//Get a list of all books</span>
 <span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="s1">&#39;/api/books&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">request</span><span class="p">,</span> <span class="nx">response</span> <span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">BookModel</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span> <span class="nx">err</span><span class="p">,</span> <span class="nx">books</span> <span class="p">)</span> <span class="p">{</span>
@@ -343,7 +343,7 @@
 
 <p>First, create a new file called router.js. In that file, create a function named registerRoutes that takes in the Express app and Mongoose as parameters. Then, move all the routing logic from server.js to the newly created function. The contents of router.js will be something like this:</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">registerRoutes</span><span class="p">(</span><span class="nx">app</span><span class="p">,</span> <span class="nx">mongoose</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">registerRoutes</span><span class="p">(</span><span class="nx">app</span><span class="p">,</span> <span class="nx">mongoose</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">//Router</span>
     <span class="c1">//Get a list of all books</span>
     <span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="s1">&#39;/api/books&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">request</span><span class="p">,</span> <span class="nx">response</span> <span class="p">)</span> <span class="p">{</span>
