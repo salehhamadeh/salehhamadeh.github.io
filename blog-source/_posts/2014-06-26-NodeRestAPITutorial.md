@@ -213,11 +213,11 @@ app.post( '/api/books', function( request, response ) {
     book.save( function( err ) {
         if( !err ) {
             console.log( 'created' );
+            return response.send( book );
         } else {
             console.log( err );
             return response.send('ERROR');
         }
-        return response.send( book );
     });
 });
 //Get a single book by id
@@ -241,11 +241,11 @@ app.put( '/api/books/:id', function( request, response ) {
         return book.save( function( err ) {
             if( !err ) {
                 console.log( 'book updated' );
+                return response.send( book );
             } else {
                 console.log( err );
                 return response.send('ERROR');
             }
-            return response.send( book );
         });
     });
 });
@@ -287,7 +287,7 @@ function registerRoutes(app, mongoose) {
                 return response.send( books );
             } else {
                 console.log( err );
-                response.send('ERROR');
+                return response.send('ERROR');
             }
         });
     });

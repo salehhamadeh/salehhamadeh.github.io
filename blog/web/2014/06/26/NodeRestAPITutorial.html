@@ -285,11 +285,11 @@
     <span class="nx">book</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">err</span> <span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">err</span> <span class="p">)</span> <span class="p">{</span>
             <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;created&#39;</span> <span class="p">);</span>
+            <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="nx">book</span> <span class="p">);</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
             <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">err</span> <span class="p">);</span>
             <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
         <span class="p">}</span>
-        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="nx">book</span> <span class="p">);</span>
     <span class="p">});</span>
 <span class="p">});</span>
 <span class="c1">//Get a single book by id</span>
@@ -313,11 +313,11 @@
         <span class="k">return</span> <span class="nx">book</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">err</span> <span class="p">)</span> <span class="p">{</span>
             <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="nx">err</span> <span class="p">)</span> <span class="p">{</span>
                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;book updated&#39;</span> <span class="p">);</span>
+                <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="nx">book</span> <span class="p">);</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">err</span> <span class="p">);</span>
                 <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
             <span class="p">}</span>
-            <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="nx">book</span> <span class="p">);</span>
         <span class="p">});</span>
     <span class="p">});</span>
 <span class="p">});</span>
@@ -357,7 +357,7 @@
                 <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="nx">books</span> <span class="p">);</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">err</span> <span class="p">);</span>
-                <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
+                <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">});</span>
     <span class="p">});</span>
