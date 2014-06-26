@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Saleh Hamadeh's Blog</title>
+        <title>How to build a scalable REST API using Node.JS and Express</title>
         <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
         <meta name="author" content="Saleh Hamadeh" />
         <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
@@ -32,12 +32,6 @@
         </script>
         <!-- AddThis Smart Layers END -->
         
-          <!-- Mailchimp Styles -->
-          <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-          </style>
-        
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/stylesheets/syntax.css">
@@ -46,6 +40,18 @@
         <link rel="stylesheet" href="/stylesheets/style.css">
 
         <!-- Related article box code -->
+        
+          <link rel="stylesheet" href="/stylesheets/endpage-box.css">
+          <script src="/js/jquery.endpage-box.min.js"></script>
+          <script type="text/javascript">
+            $(window).load( function() {
+              $("#endpage-box").endpage_box({
+                animation: "fade",
+                from: "90%",
+                to: "1000%",
+              });
+            });
+          </script>
         
     </head>
     <body>
@@ -87,12 +93,10 @@
           <div class="row">
             <h1>Saleh Hamadeh's Blog</h1>
             <div class="col-md-8 col-md-offset-1">
-              
-  
-  <div class='post'>
-    <span class='date'>26 Jun 2014</span>
-    <h1><a href='/blog/web/2014/06/26/NodeRestAPITutorial.html'>How to build a scalable REST API using Node.JS and Express</a></h1>
-    <div class='body'><p>When I build an API, I like to have it as light-weight and scalable as possible. At the same time, I want to be able to easily add or remove features with the least amount of effort possible. Because <a href="http://nodejs.org/">Node.JS</a> and <a href="http://expressjs.com/">Express</a> give control over the inner workings of a web application, they are the perfect fit.</p>
+              <div class="post">
+	<span class='date'>26 Jun 2014</span>
+	<h1><a href=''>How to build a scalable REST API using Node.JS and Express</a></h1>
+	<div class='body'><p>When I build an API, I like to have it as light-weight and scalable as possible. At the same time, I want to be able to easily add or remove features with the least amount of effort possible. Because <a href="http://nodejs.org/">Node.JS</a> and <a href="http://expressjs.com/">Express</a> give control over the inner workings of a web application, they are the perfect fit.</p>
 
 <h2>What will we build?</h2>
 
@@ -375,202 +379,100 @@
 
 <p>Congratulations! You did it. You built a RESTful API. However, having the API is only one step of the journey. The more important lesson that you need to learn is to take your journey one step at a time. First, create a dumb app. Then, make it smarter. Then, refactor. The cycle goes on and on. The moral of this lesson is that refactoring is a crucial step in software development. Just like you cannot build a skyscraper with a shaky fundamental, you cannot build web applications with bad code. Farewell and good luck on your journey.</p>
 </div>
-  </div>
-  
+	
+    	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'shamadeh'; // required: replace example with your forum shortname
 
-  
-  <div class='post'>
-    <span class='date'>28 May 2014</span>
-    <h1><a href='/blog/life/2014/05/28/InterningAtBrainJocks.html'>My Internship at BrainJocks</a></h1>
-    <div class='body'><p>On January 2nd of this year, I had the pleasure of being accepted for an internship at <a href="http://www.brainjocks.com">BrainJocks</a>. BrainJocks is a small company of around 25 dedicated employees who work hard to build beautiful websites for enterprises. The Content Management System that we use is <a href="http://www.sitecore.net">Sitecore</a>, but I did not have the chance to use it yet. For applications, the company uses whatever best solves the problem.</p>
-
-<p>In the projects that I work on, I use ASP.NET MVC to build an application hosted on the Azure Cloud. The best quality that I find in BrainJocks is the freedom it gives its interns. I, as an intern, not only get to learn the cutting-edge tools used in the industry, but I also get the chance to apply them into the company&#39;s projects. For instance, one of the tools that I introduced to the company is Azure Media Services, which handles video processing and streaming to large-scale applications. Even though this can be tedious, it is extremely rewarding to see the team approve my plans and add it into our workflow.</p>
-
-<p>I built a simple impress.js presentation about my experience as an Intern. Check the <a href="http://shamadeh.com/co-op-presentation/index.html">presentation</a> now and apply immediately if you get a positive impression.</p>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  	
 </div>
-  </div>
-  
 
-  
-  <div class='post'>
-    <span class='date'>06 Apr 2014</span>
-    <h1><a href='/blog/web/2014/04/06/Unvalidated-Redirects.html'>Web Security: Unvalidated Redirects</a></h1>
-    <div class='body'><p>Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: <a href="https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards">Unvalidated Redirects</a>. Do not worry, you are in safe hands (this blog).</p>
 
-<h2>What Happened?</h2>
-
-<p>The link that you clicked is probably a redirection link, such as those found in Google&#39;s search results. Companies like Google and Twitter use redirection links to track where their users are going. It helps them gather information and hide information. For example, using redirection URLs, websites can:</p>
-
-<ul>
-<li>  Track where their userbase is going.</li>
-<li>  Hide referral information (search query strings, etc...) from the websites that the users are redirected to.</li>
-</ul>
-
-<h2>Why is this a Threat?</h2>
-
-<p>Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trustworthy. Now if a malicious user creates a website that clones Google&#39;s login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.</p>
-
-<p>Other users may use this security weakness to get more traffic. If the &quot;bad&quot; users serve ads, they make more money.</p>
-
-<h2>What Defenses can Web Developers Take to Keep their Websites Safe?</h2>
-
-<p>The easiest way to keep your sites safe is to stay away from redirection using query string parameters. If this is not something that you can easily do, here are some strategies that you can use:</p>
-
-<ul>
-<li>  Keep a hash map of URLs. In other words, instead of having the URL in the query string, have a key that refers to that URL there. In this way, only the URLs for the keys that YOU define are redirectable.</li>
-<li>  A better method is to have a domain name dedicated to URL redirections. <a href="https://twitter.com/">Twitter</a> uses <a href="https://support.twitter.com//entries/109623">t.co</a> to track its users&#39; whereabouts while explicitly showing them that they will be redirected. <a href="https://www.yahoo.com/">Yahoo</a> uses r.search.yahoo.com for the same purpose.</li>
-</ul>
-
-<h2>What Defenses can Users Take to Stay Safe?</h2>
-
-<p>Look at the full URL before visiting a link. The first part of it does not tell you everything. For some URLs, this practice can be tedious. In that case, look at the URL every time you are about to submit a form or enter sensitive information.</p>
-</div>
-  </div>
-  
-
-  
-  <div class='post'>
-    <span class='date'>16 Mar 2014</span>
-    <h1><a href='/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html'>Assess your Collaborative Programming Skills</a></h1>
-    <div class='body'><p>After working a couple of jobs in software development, I noticed that one of the most-valued skills that employers are looking for is your collaboration skills. In other words, you need to blend well with the other programmers. When you are first hired, you will spend a decent amount of time just going through the code to understand how things work. If you find yourself confident enough to start extending the code, then the person who wrote it is a collaborative programmer.</p>
-
-<p>The first step to become a collaborative programmer is to keep in mind that one day a new programmer who had never looked at your code will need to work with it. I can&#39;t stress how important this practice is. There are many programmers out their who can do extraordinary stuff, but when a coworker looks at what they did, the coworker enters a labyrinth. When you go and ask the &quot;smart&quot; person about his code, you can see that he understands everything. This scenario is just like attending the lecture of a world-renowned professor and falling asleep in the middle of the lecture.</p>
-
-<p>All programming languages have comments for a reason: comments are essential for every program. Comments are not only to help other people, but also to help you understand your own code. I was one of the people who would never comment a line of code. I used to think that if I wrote the code then I will always know what it does. I was wrong. Last year, I looked at the source code of a scientific calculator simulator that I had written 4 years ago. I felt as if I were reading some gibberish text. Commenting is a great practice for you as well as others.</p>
-
-<p>Last but not least is consistency. Stay consistent in your code. I try to have all my variable declarations at the beginning of a function definition. Then, I follow it with the function&#39;s logic. If the function returns a value, I usually store the value in a variable named ret. It may sometimes be very tempting to declare a variable in the middle of a function or to use global variables to solve problems fast. However, keep in mind that quick fixes cause quick problems. There are no perfect guidelines for writing code. Every person is unique and has his own patterns. What is important is that you stick to your pattern. If you do that, you will not need to execute a lot of code in your mind to reach the spot that needs changing; you just go to it. A good analogy is audio tapes and CDs. Using an audio tape, you have to go through all the previous songs to reach the song that you want to play. In a CD, the drive goes to the song directly without having to go through the other songs.</p>
-
-<p>So you think you can code? Think again. To assess your collaboration skills, write an app or a game, say tic-tac-toe. After 4 weeks without looking at the source code, add a new functionality to your game, such as a leaderboard. If you find yourself struggling in placing functions or moving data around, then you need to improve your collaboration skills.</p>
-</div>
-  </div>
-  
-
-  
-  <div class='post'>
-    <span class='date'>24 Feb 2014</span>
-    <h1><a href='/blog/web/2014/02/24/WebPerformanceTrends.html'>Web Performance Trends: One Load, That's All</a></h1>
-    <div class='body'><p>After all the HTML 5 buzz, I couldn&#39;t but notice the new direction in which the web is being taken. At first, the Internet was a collection of pages (most of it still is). However, now we start feeling that some websites are not pages anymore. Take <a href="https://trello.com/">Trello</a>, a project management web application by Fog Creek Software, for a example. After signing into Trello, all your clicks show instantaneous results, and you feel that the website is really an application more than a website. However, the link in the navbar still shows that you are moving between pages. You know that your internet connection is not that fast, so what exactly is happening? Trello, along with many other <a href="www.wikipedia.org/wiki/Single-page_application">SPA&#39;s</a>, utilize HTML5&#39;s History API to achieve this. The History API allows web developers to manipulate your browser&#39;s history (they cannot view it) by adding new links. In this way, the user thinks that he was directed to a new page when this is not quite the case. Client-side templating engines, like <a href="http://mustache.github.io/">Mustache</a> and <a href="http://handlebarsjs.com/">Handlebars</a>, can let the browser download the whole website upon the first load. Then, these websites use the History API alongside the client-side templating engines to render instantaneous pages.</p>
-
-<p>Looking at the performace aspect of this technique, we can see that sites are shifting from the traditional load-on-page-request approach to the &quot;One Load, That&#39;s All&quot; approach. In this way, the website is going to take a longer time to download, but once it is downloaded, everything else is instantaneous. Using HTML5&#39;s LocalStorage API, one can save the website&#39;s pages and templates so that the user will not have to download the entire website every time he visits it.</p>
-
-<p>However, the new approach has some limitations. First, they can only work that way on devices that support HTML5. Moreover, they require strong devices to run on, memory-wise and computation-wise.</p>
-
-<p>So, what do you think is the better approach for websites at the moment?</p>
-</div>
-  </div>
-  
-
-  
-    
-    <h3>Older Posts</h3>
-    <table class='post-list'>
-    
-    <tr>
-      <th><a href='/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html'>Why You should have a Virtual Machine in the Cloud</a></th>
-      <td>09 Feb 2014</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html'>Computer Science VS Software Engineering</a></th>
-      <td>12 Jan 2014</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/web/2013/12/28/MakeABlogSocial.html'>Make a Blog Social (Without a Database)</a></th>
-      <td>28 Dec 2013</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html'>What if Cars had APIs</a></th>
-      <td>26 Dec 2013</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/blogging/2013/12/24/MovingToJekyll.html'>Moving the Blog to Jekyll</a></th>
-      <td>24 Dec 2013</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/android/2012/09/10/KSUBarbecue.html'>Kennesaw State University Student Barbecue</a></th>
-      <td>10 Sep 2012</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/android/2012/05/14/DiclopediaOneMonth.html'>Diclopedia is 1 Month Old</a></th>
-      <td>14 May 2012</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/android/2012/04/20/DiclopediaStatistics.html'>Diclopedia Statistics: First Week</a></th>
-      <td>20 Apr 2012</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/android/2012/04/13/Diclopedia.html'>Beginning Android App Development</a></th>
-      <td>13 Apr 2012</td>
-    </tr>
-  
-
-  
-    
-    <tr>
-      <th><a href='/blog/android/2012/03/21/BeginningAppDev.html'>Beginning Android App Development</a></th>
-      <td>21 Mar 2012</td>
-    </tr>
-  
-
-</table>
             </div>
             
-              <div class="col-md-3">
-                <!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-	<form action="http://shamadeh.us3.list-manage1.com/subscribe/post?u=35a9df285ba128b01ee2552f6&amp;id=b98478fb0b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<h2>Subscribe</h2>
-	<div class="mc-field-group">
-		<label for="mce-NAME">Full Name </label>
-		<input type="text" value="" name="NAME" class="required" id="mce-NAME">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-EMAIL">Email Address </label>
-		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-	</div>
-		<div id="mce-responses" class="clear">
-			<div class="response" id="mce-error-response" style="display:none"></div>
-			<div class="response" id="mce-success-response" style="display:none"></div>
-		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-	    <div style="position: absolute; left: -5000px;"><input type="text" name="b_35a9df285ba128b01ee2552f6_b98478fb0b" value=""></div>
-		<div class="clear"><input type="submit" style="background-color: #336699" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-	</form>
-</div>
-<!--End mc_embed_signup-->
-              </div>
-            
           </div>
+          
+            <div id="endpage-box" class="endpage-box"></div>
+            <script>
+              var related_posts = [{}
+                
+                  , {
+                    title: "My Internship at BrainJocks",
+                    date: "28 May 2014",
+                    url: "/blog/life/2014/05/28/InterningAtBrainJocks.html"
+                  }
+                
+                  , {
+                    title: "Web Security: Unvalidated Redirects",
+                    date: "06 Apr 2014",
+                    url: "/blog/web/2014/04/06/Unvalidated-Redirects.html"
+                  }
+                
+                  , {
+                    title: "Assess your Collaborative Programming Skills",
+                    date: "16 Mar 2014",
+                    url: "/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html"
+                  }
+                
+                  , {
+                    title: "Web Performance Trends: One Load, That's All",
+                    date: "24 Feb 2014",
+                    url: "/blog/web/2014/02/24/WebPerformanceTrends.html"
+                  }
+                
+                  , {
+                    title: "Why You should have a Virtual Machine in the Cloud",
+                    date: "09 Feb 2014",
+                    url: "/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html"
+                  }
+                
+                  , {
+                    title: "Computer Science VS Software Engineering",
+                    date: "12 Jan 2014",
+                    url: "/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html"
+                  }
+                
+                  , {
+                    title: "Make a Blog Social (Without a Database)",
+                    date: "28 Dec 2013",
+                    url: "/blog/web/2013/12/28/MakeABlogSocial.html"
+                  }
+                
+                  , {
+                    title: "What if Cars had APIs",
+                    date: "26 Dec 2013",
+                    url: "/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html"
+                  }
+                
+                  , {
+                    title: "Moving the Blog to Jekyll",
+                    date: "24 Dec 2013",
+                    url: "/blog/blogging/2013/12/24/MovingToJekyll.html"
+                  }
+                
+                  , {
+                    title: "Kennesaw State University Student Barbecue",
+                    date: "10 Sep 2012",
+                    url: "/blog/android/2012/09/10/KSUBarbecue.html"
+                  }
+                
+              ];  //The first blank element is a hack to fix liquid's for loop comma problem
+
+              var post_index = function (min, max) {
+                  return Math.floor(Math.random() * (max - min + 1)) + min;
+              }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
+              $("#endpage-box").html('Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>');
+            </script>
           
         </div>
 
@@ -582,9 +484,6 @@
 
         <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-        
-          <!-- Mailchimp -->
-          <script src="/js/mailchimp.js"></script>
         
 
         <script type="text/javascript">
