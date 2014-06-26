@@ -97,6 +97,10 @@ div.post {
 
 .post br { margin-bottom: 10px;}
 
+code {
+  color: black;
+}
+
 /*------------ Endpage-box ---------------*/
 .endpage-box {
   color: white;
