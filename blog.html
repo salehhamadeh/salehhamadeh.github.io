@@ -90,6 +90,104 @@
               
   
   <div class='post'>
+    <span class='date'>20 Jul 2014</span>
+    <h1><a href='/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html'>How to host multiple websites using Express.js</a></h1>
+    <div class='body'><p>Hosting multiple websites using NodeJS and Express is made very simple using Express&#39;s <a href="https://github.com/expressjs/vhost">virtual hosts</a>. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&#39;s see!</p>
+
+<h2>Our Workspace</h2>
+
+<p>For demonstration, let us assume that we own two domain names: potato.com and tomato.com. We want www.potato.com to direct to the potato website, which is located in a directory named potato, and we want www.tomato.com to direct to the tomato website, which is located in a directory named tomato. For simplicity&#39;s sake, both websites are static websites.</p>
+
+<h2>Creating a Virtual Host</h2>
+
+<p>As I mentioned earlier, a virtual host is an Express app. This is not entirely true. A virtual host wraps up an application into a middleware. After it is wrapped up, we can use it in our main application. The code below shows how to create a virtual host (or vhost).</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+    <span class="c1">//parses request body and populates request.body</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
+    <span class="c1">//checks request.body for HTTP method overrides</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
+    <span class="c1">//Where to serve static content</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
+    <span class="c1">//Show errors</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
+
+    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>For our potato and tomato app, we will need to create two virtual hosts as follows:</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">potatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.potato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;potato&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">tomatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.tomato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;tomato&quot;</span><span class="p">);</span></code></pre></div>
+
+<h2>Using the Virtual Hosts</h2>
+
+<p>Using the virtual hosts is as simple as using any piece of middleware. All we have to do is pass them to app.use:</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">potatoHost</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">tomatoHost</span><span class="p">);</span></code></pre></div>
+
+<h2>The Full Server Code</h2>
+
+<div class="highlight"><pre><code class="js"><span class="c1">// Module dependencies.</span>
+<span class="kd">var</span> <span class="nx">application_root</span> <span class="o">=</span> <span class="nx">__dirname</span><span class="p">,</span>
+    <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+    <span class="c1">//parses request body and populates request.body</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
+    <span class="c1">//checks request.body for HTTP method overrides</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
+    <span class="c1">//Where to serve static content</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
+    <span class="c1">//Show errors</span>
+    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
+
+    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">//Create server</span>
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="c1">//Create the virtual hosts</span>
+<span class="kd">var</span> <span class="nx">potatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.potato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;potato&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">tomatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.tomato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;tomato&quot;</span><span class="p">);</span>
+
+<span class="c1">//Use the virtual hosts</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">potatoHost</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">tomatoHost</span><span class="p">);</span>
+
+<span class="c1">//Start server</span>
+<span class="kd">var</span> <span class="nx">port</span> <span class="o">=</span> <span class="mi">80</span><span class="p">;</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span> <span class="nx">port</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;Express server listening on port %d in %s mode&#39;</span><span class="p">,</span> <span class="nx">port</span><span class="p">,</span> <span class="nx">app</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">env</span> <span class="p">);</span>
+<span class="p">});</span></code></pre></div>
+
+<h2>Testing the Server</h2>
+
+<p>In order to see the server work, we must own both domain names and set their addresses to that of our server. Since we do not own the domain names and the process is arduous, we will modify the hosts file to make those domain names point to our local machine.</p>
+
+<p>On Windows, the hosts file can be found in c:\windows\system32\drivers\etc</p>
+
+<p>On Mac or Linux, the hosts file can be found in /etc</p>
+
+<p>The hosts file may be hidden on some systems. If you do not see it in the directory, make sure that you enable viewing hidden files from your folder options or control panel.</p>
+
+<p>Open the hosts file, add the following lines of code to the bottom of the file, and save it.</p>
+
+<div class="highlight"><pre><code class="sh">127.0.0.1 www.potato.com
+127.0.0.1 www.tomato.com</code></pre></div>
+
+<p>Now, run your NodeJS application and navigate to www.potato.com and www.tomato.com from any browser. Voila! You should now be directed to the potato website and the tomato website respectively. Give yourself a pat on the back and have some chicken alfredo with a potato and a tomato on the side.</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>26 Jun 2014</span>
     <h1><a href='/blog/web/2014/06/26/NodeRestAPITutorial.html'>How to build a scalable REST API using Node.JS and Express</a></h1>
     <div class='body'><p>When I build an API, I like to have it as light-weight and scalable as possible. At the same time, I want to be able to easily add or remove features with the least amount of effort possible. Because <a href="http://nodejs.org/">Node.JS</a> and <a href="http://expressjs.com/">Express</a> give control over the inner workings of a web application, they are the perfect fit.</p>
@@ -453,24 +551,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>24 Feb 2014</span>
-    <h1><a href='/blog/web/2014/02/24/WebPerformanceTrends.html'>Web Performance Trends: One Load, That's All</a></h1>
-    <div class='body'><p>After all the HTML 5 buzz, I couldn&#39;t but notice the new direction in which the web is being taken. At first, the Internet was a collection of pages (most of it still is). However, now we start feeling that some websites are not pages anymore. Take <a href="https://trello.com/">Trello</a>, a project management web application by Fog Creek Software, for a example. After signing into Trello, all your clicks show instantaneous results, and you feel that the website is really an application more than a website. However, the link in the navbar still shows that you are moving between pages. You know that your internet connection is not that fast, so what exactly is happening? Trello, along with many other <a href="www.wikipedia.org/wiki/Single-page_application">SPA&#39;s</a>, utilize HTML5&#39;s History API to achieve this. The History API allows web developers to manipulate your browser&#39;s history (they cannot view it) by adding new links. In this way, the user thinks that he was directed to a new page when this is not quite the case. Client-side templating engines, like <a href="http://mustache.github.io/">Mustache</a> and <a href="http://handlebarsjs.com/">Handlebars</a>, can let the browser download the whole website upon the first load. Then, these websites use the History API alongside the client-side templating engines to render instantaneous pages.</p>
-
-<p>Looking at the performace aspect of this technique, we can see that sites are shifting from the traditional load-on-page-request approach to the &quot;One Load, That&#39;s All&quot; approach. In this way, the website is going to take a longer time to download, but once it is downloaded, everything else is instantaneous. Using HTML5&#39;s LocalStorage API, one can save the website&#39;s pages and templates so that the user will not have to download the entire website every time he visits it.</p>
-
-<p>However, the new approach has some limitations. First, they can only work that way on devices that support HTML5. Moreover, they require strong devices to run on, memory-wise and computation-wise.</p>
-
-<p>So, what do you think is the better approach for websites at the moment?</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/web/2014/02/24/WebPerformanceTrends.html'>Web Performance Trends: One Load, That's All</a></th>
+      <td>24 Feb 2014</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html'>Why You should have a Virtual Machine in the Cloud</a></th>
