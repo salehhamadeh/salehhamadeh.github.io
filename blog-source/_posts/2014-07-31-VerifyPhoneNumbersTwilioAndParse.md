@@ -38,7 +38,7 @@ Parse.Cloud.define("sendVerificationCode", function(request, response) {
     twilio.sendSms({
 	    From: "<Your Twilio phone number>",
 	    To: request.params.phoneNumber,
-	    Body: "Start using WhereAt now. Your verification code is " + verificationCode + "."
+	    Body: "Your verification code is " + verificationCode + "."
     }, function(err, responseData) { 
 	    if (err) {
 	      response.error(err);

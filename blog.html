@@ -119,7 +119,7 @@
     <span class="nx">twilio</span><span class="p">.</span><span class="nx">sendSms</span><span class="p">({</span>
         <span class="nx">From</span><span class="o">:</span> <span class="s2">&quot;&lt;Your Twilio phone number&gt;&quot;</span><span class="p">,</span>
         <span class="nx">To</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">,</span>
-        <span class="nx">Body</span><span class="o">:</span> <span class="s2">&quot;Start using WhereAt now. Your verification code is &quot;</span> <span class="o">+</span> <span class="nx">verificationCode</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+        <span class="nx">Body</span><span class="o">:</span> <span class="s2">&quot;Your verification code is &quot;</span> <span class="o">+</span> <span class="nx">verificationCode</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
     <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">responseData</span><span class="p">)</span> <span class="p">{</span> 
         <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
