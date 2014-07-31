@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Verifying Phone Numbers Using Twilio and Parse</title>
+        <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
+        <meta name="author" content="Saleh Hamadeh" />
+        <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="Saleh Hamadeh's Blog" href="http://www.shamadeh.com/blog/feed.xml">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins and for endpage-box) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Twitter Bootstrap -->
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- AddThis Smart Layers BEGIN -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fee1032ce6a513"></script>
+        <script type="text/javascript">
+          addthis.layers({
+            'theme' : 'transparent',
+            'share' : {
+              'position' : 'left',
+              'numPreferredServices' : 5
+            }   
+          });
+        </script>
+        <!-- AddThis Smart Layers END -->
+        
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/stylesheets/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+
+        <!-- Related article box code -->
+        
+          <link rel="stylesheet" href="/stylesheets/endpage-box.css">
+          <script src="/js/jquery.endpage-box.min.js"></script>
+          <script type="text/javascript">
+            $(window).load( function() {
+              $("#endpage-box").endpage_box({
+                animation: "fade",
+                from: "90%",
+                to: "1000%",
+              });
+            });
+          </script>
+        
+    </head>
+    <body>
+      <div id="wrap">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/index.html">About Me</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li class="active">
+          <a href="/blog.html">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/salehhamadeh" target="_blank"><i class="fa fa-facebook fa-lg"></i><span class="sr-only">Facebook Profile</span></a></li>
+        <li><a href="https://twitter.com/salehhamadeh" target="_blank"><i class="fa fa-twitter fa-lg"></i><span class="sr-only">Twitter Profile</span></a></li>
+        <li><a href="https://github.com/salehhamadeh" target="_blank"><i class="fa fa-github fa-lg"></i><span class="sr-only">Github Profile</span></a></li>
+        <li><a href="http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2" target="_blank"><i class="fa fa-linkedin fa-lg"></i><span class="sr-only">LinkedIn Profile</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <div class="container">
+          <div class="row">
+            <h1>Saleh Hamadeh's Blog</h1>
+            <div class="col-md-8 col-md-offset-1">
+              <div class="post">
+	<span class='date'>31 Jul 2014</span>
+	<h1><a href=''>Verifying Phone Numbers Using Twilio and Parse</a></h1>
+	<div class='body'><p>Do you want to create an app that relies on a user&#39;s phone number to function? If so, you have probably heard about <a href="https://www.twilio.com/">Twilio</a>. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, <a href="https://parse.com/">Parse</a> has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&#39;t it? Let&#39;s get started.</p>
+
+<h2>Parse Cloud Functions</h2>
+
+<p>We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls <a href="https://www.parse.com/docs/cloud_code_guide">Cloud Functions</a>. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user&#39;s number.</p>
+
+<h2>Creating Your First Cloud Function</h2>
+
+<p>To start developing Cloud Functions, you must first have Parse&#39;s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the <a href="https://parse.com/docs/cloud_code_guide">Parse Cloud Code Guide</a>.</p>
+
+<h2>Send Verification Code</h2>
+
+<p>The first Cloud Function that we need to write is the one that send the verification code to the user&#39;s phone. Luckily, Parse comes with bundled with a <a href="https://www.parse.com/docs/cloud_modules_guide#twilio">Twilio Cloud Module</a>. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing <Your Twilio Account Sid> and <Your Twilio Auth Token> with their respective values from your Twilio dashboard.</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">twilio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;twilio&#39;</span><span class="p">)(</span><span class="s1">&#39;&lt;Your Twilio Account Sid&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;Your Twilio Auth Token&gt;&#39;</span><span class="p">);</span></code></pre></div>
+
+<p>Now, you have all you need to define your verfication code cloud function. I will call this function sendVerificationCode, but you can have any name that you like. The function is defined as follows:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;sendVerificationCode&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">999999</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
+    <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">,</span> <span class="nx">verificationCode</span><span class="p">);</span>
+    <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+    
+    <span class="nx">twilio</span><span class="p">.</span><span class="nx">sendSms</span><span class="p">({</span>
+        <span class="nx">From</span><span class="o">:</span> <span class="s2">&quot;&lt;Your Twilio phone number&gt;&quot;</span><span class="p">,</span>
+        <span class="nx">To</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">,</span>
+        <span class="nx">Body</span><span class="o">:</span> <span class="s2">&quot;Start using WhereAt now. Your verification code is &quot;</span> <span class="o">+</span> <span class="nx">verificationCode</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">responseData</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
+          <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></div>
+
+<p>This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user&#39;s record. Then, it sends that code to the user via Twilio.</p>
+
+<h2>Verify Phone Number</h2>
+
+<p>The second Cloud Function that we need to define is the one that verifies the user&#39;s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;verifyPhoneNumber&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">verificationCode</span> <span class="o">==</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneVerificationCode</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneNumber&quot;</span><span class="p">,</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">);</span>
+        <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Invalid verification code.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></div>
+
+<p>As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user&#39;s phone number to the number that the user included in his request.</p>
+
+<h2>Deploying the Cloud Functions</h2>
+
+<p>At this point, you are done with your server-side logic. Go ahead and save the main.js file. Then, use the command line to go to the root directory of your cloud code. When you are there, run the following command to push your code to Parse:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">parse</span> <span class="nx">deploy</span></code></pre></div>
+
+<h2>Next Steps</h2>
+
+<p>Now that your backend is ready to roll, it is time to connect your client-side. With Parse&#39;s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.</p>
+
+<p>Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.</p>
+</div>
+	
+    	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'shamadeh'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  	
+</div>
+
+
+            </div>
+            
+          </div>
+          
+            <div id="endpage-box" class="endpage-box"></div>
+            <script>
+              var related_posts = [{}
+                
+                  , {
+                    title: "How to host multiple websites using Express.js",
+                    date: "20 Jul 2014",
+                    url: "/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html"
+                  }
+                
+                  , {
+                    title: "How to build a scalable REST API using Node.JS and Express",
+                    date: "26 Jun 2014",
+                    url: "/blog/web/2014/06/26/NodeRestAPITutorial.html"
+                  }
+                
+                  , {
+                    title: "My Internship at BrainJocks",
+                    date: "28 May 2014",
+                    url: "/blog/life/2014/05/28/InterningAtBrainJocks.html"
+                  }
+                
+                  , {
+                    title: "Web Security: Unvalidated Redirects",
+                    date: "06 Apr 2014",
+                    url: "/blog/web/2014/04/06/Unvalidated-Redirects.html"
+                  }
+                
+                  , {
+                    title: "Assess your Collaborative Programming Skills",
+                    date: "16 Mar 2014",
+                    url: "/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html"
+                  }
+                
+                  , {
+                    title: "Web Performance Trends: One Load, That's All",
+                    date: "24 Feb 2014",
+                    url: "/blog/web/2014/02/24/WebPerformanceTrends.html"
+                  }
+                
+                  , {
+                    title: "Why You should have a Virtual Machine in the Cloud",
+                    date: "09 Feb 2014",
+                    url: "/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html"
+                  }
+                
+                  , {
+                    title: "Computer Science VS Software Engineering",
+                    date: "12 Jan 2014",
+                    url: "/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html"
+                  }
+                
+                  , {
+                    title: "Make a Blog Social (Without a Database)",
+                    date: "28 Dec 2013",
+                    url: "/blog/web/2013/12/28/MakeABlogSocial.html"
+                  }
+                
+                  , {
+                    title: "What if Cars had APIs",
+                    date: "26 Dec 2013",
+                    url: "/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html"
+                  }
+                
+              ];  //The first blank element is a hack to fix liquid's for loop comma problem
+
+              var post_index = function (min, max) {
+                  return Math.floor(Math.random() * (max - min + 1)) + min;
+              }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
+              $("#endpage-box").html('Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>');
+            </script>
+          
+        </div>
+
+        <div id="footer">
+  <div class="container">
+    <p class="text-center">Proudly hosted by Github Pages</p>
+  </div>
+</div>
+
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+        
+
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-46641204-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+      </div>
+    </body>
+</html>

@@ -7,6 +7,82 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Verifying Phone Numbers Using Twilio and Parse</title>
+				<description>&lt;p&gt;Do you want to create an app that relies on a user&amp;#39;s phone number to function? If so, you have probably heard about &lt;a href=&quot;https://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt;. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, &lt;a href=&quot;https://parse.com/&quot;&gt;Parse&lt;/a&gt; has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&amp;#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&amp;#39;t it? Let&amp;#39;s get started.&lt;/p&gt;
+
+&lt;h2&gt;Parse Cloud Functions&lt;/h2&gt;
+
+&lt;p&gt;We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls &lt;a href=&quot;https://www.parse.com/docs/cloud_code_guide&quot;&gt;Cloud Functions&lt;/a&gt;. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user&amp;#39;s number.&lt;/p&gt;
+
+&lt;h2&gt;Creating Your First Cloud Function&lt;/h2&gt;
+
+&lt;p&gt;To start developing Cloud Functions, you must first have Parse&amp;#39;s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the &lt;a href=&quot;https://parse.com/docs/cloud_code_guide&quot;&gt;Parse Cloud Code Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Send Verification Code&lt;/h2&gt;
+
+&lt;p&gt;The first Cloud Function that we need to write is the one that send the verification code to the user&amp;#39;s phone. Luckily, Parse comes with bundled with a &lt;a href=&quot;https://www.parse.com/docs/cloud_modules_guide#twilio&quot;&gt;Twilio Cloud Module&lt;/a&gt;. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing &lt;Your Twilio Account Sid&gt; and &lt;Your Twilio Auth Token&gt; with their respective values from your Twilio dashboard.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;twilio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;twilio&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;Your Twilio Account Sid&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;Your Twilio Auth Token&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, you have all you need to define your verfication code cloud function. I will call this function sendVerificationCode, but you can have any name that you like. The function is defined as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Cloud&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;sendVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;999999&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    
+    &lt;span class=&quot;nx&quot;&gt;twilio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendSms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;From&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;Your Twilio phone number&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Start using WhereAt now. Your verification code is &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;responseData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+          &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user&amp;#39;s record. Then, it sends that code to the user via Twilio.&lt;/p&gt;
+
+&lt;h2&gt;Verify Phone Number&lt;/h2&gt;
+
+&lt;p&gt;The second Cloud Function that we need to define is the one that verifies the user&amp;#39;s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Cloud&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;verifyPhoneNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneVerificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Invalid verification code.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user&amp;#39;s phone number to the number that the user included in his request.&lt;/p&gt;
+
+&lt;h2&gt;Deploying the Cloud Functions&lt;/h2&gt;
+
+&lt;p&gt;At this point, you are done with your server-side logic. Go ahead and save the main.js file. Then, use the command line to go to the root directory of your cloud code. When you are there, run the following command to push your code to Parse:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deploy&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Now that your backend is ready to roll, it is time to connect your client-side. With Parse&amp;#39;s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.&lt;/p&gt;
+
+&lt;p&gt;Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 31 Jul 2014 03:50:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</guid>
+			</item>
+		
+			<item>
 				<title>How to host multiple websites using Express.js</title>
 				<description>&lt;p&gt;Hosting multiple websites using NodeJS and Express is made very simple using Express&amp;#39;s &lt;a href=&quot;https://github.com/expressjs/vhost&quot;&gt;virtual hosts&lt;/a&gt;. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&amp;#39;s see!&lt;/p&gt;
 
@@ -581,21 +657,6 @@
 				<pubDate>Sat, 28 Dec 2013 12:13:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</guid>
-			</item>
-		
-			<item>
-				<title>What if Cars had APIs</title>
-				<description>&lt;p&gt;As I was reading &lt;a href=&quot;http://readwrite.com/2012/08/21/u-michigan-launches-worlds-biggest-sandbox-for-wi-fi-connected-cars&quot;&gt;this article on ReadWrite&lt;/a&gt;, I had this unusual thought: What if cars had APIs? We have started to see the Internet of Things in toasters, lamps, and even &lt;a href=&quot;http://www.quirky.com/shop/619-Egg-Minder-Smart-Egg-Tray&quot;&gt;egg counters&lt;/a&gt;. People are getting pretty crazy with their inventions, but until now we did not see innovations in the automobile industry. What if there was a Car Operating System that can know all of the car&amp;#39;s internal details. What if there was a protocol for car-to-phone communication? Then, we can have custom dashboard apps that can be downloaded to tablets. We can detect all car thefts and bring justice. We can customize the safety of our cars using Python scripts. We can program the car not to run if the driver did not have the seatbelt on. We can put speed caps for teenagers. The car can send us notifications when oil needs changing, tires need air, or the car is out of gas.&lt;/p&gt;
-
-&lt;p&gt;What if car-to-car communication became a reality? If Car OS was connected to our GPS, the car can send driving directions to other cars in the form of requests. For example, my car will ask the car to my right, may I go right. The other car responds, go ahead. So, my car says that I am safe to turn right. Can this be the first step to commercializing driver-less cars? If it is, we may see car networks in the future.&lt;/p&gt;
-
-&lt;p&gt;What if cars were controlled by monitoring towers on the roads? The towers can be programmed to give the perfect car flow. There will be no more fighting to get to the next lane. No one will end up on a lane with a dead end. Traffic jams will fix themselves without stressing the drivers. The drivers can then have their cup of coffee or read the newspaper on the way to work. What if the car can read online newpapers instead of playing the radio?&lt;/p&gt;
-
-&lt;p&gt;What if the car network gets hacked. The hacker can make all the cars go to one direction. People&amp;#39;s doors will be locked and won&amp;#39;t open. Cars start running off bridges and hitting trees. People start flying out of the windows and get crushed by self-driving cars. Can this be the apocalypse, the day when the computers take over our virtual and real lives?&lt;/p&gt;
-</description>
-				<pubDate>Thu, 26 Dec 2013 13:26:00 -0500</pubDate>
-				<link>http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/sci-fi/2013/12/26/WhatIfCarsHadAPIs.html</guid>
 			</item>
 		
 	</channel>

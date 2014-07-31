@@ -90,6 +90,82 @@
               
   
   <div class='post'>
+    <span class='date'>31 Jul 2014</span>
+    <h1><a href='/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html'>Verifying Phone Numbers Using Twilio and Parse</a></h1>
+    <div class='body'><p>Do you want to create an app that relies on a user&#39;s phone number to function? If so, you have probably heard about <a href="https://www.twilio.com/">Twilio</a>. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, <a href="https://parse.com/">Parse</a> has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&#39;t it? Let&#39;s get started.</p>
+
+<h2>Parse Cloud Functions</h2>
+
+<p>We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls <a href="https://www.parse.com/docs/cloud_code_guide">Cloud Functions</a>. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user&#39;s number.</p>
+
+<h2>Creating Your First Cloud Function</h2>
+
+<p>To start developing Cloud Functions, you must first have Parse&#39;s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the <a href="https://parse.com/docs/cloud_code_guide">Parse Cloud Code Guide</a>.</p>
+
+<h2>Send Verification Code</h2>
+
+<p>The first Cloud Function that we need to write is the one that send the verification code to the user&#39;s phone. Luckily, Parse comes with bundled with a <a href="https://www.parse.com/docs/cloud_modules_guide#twilio">Twilio Cloud Module</a>. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing <Your Twilio Account Sid> and <Your Twilio Auth Token> with their respective values from your Twilio dashboard.</p>
+
+<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">twilio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;twilio&#39;</span><span class="p">)(</span><span class="s1">&#39;&lt;Your Twilio Account Sid&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;Your Twilio Auth Token&gt;&#39;</span><span class="p">);</span></code></pre></div>
+
+<p>Now, you have all you need to define your verfication code cloud function. I will call this function sendVerificationCode, but you can have any name that you like. The function is defined as follows:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;sendVerificationCode&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">999999</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
+    <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">,</span> <span class="nx">verificationCode</span><span class="p">);</span>
+    <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+    
+    <span class="nx">twilio</span><span class="p">.</span><span class="nx">sendSms</span><span class="p">({</span>
+        <span class="nx">From</span><span class="o">:</span> <span class="s2">&quot;&lt;Your Twilio phone number&gt;&quot;</span><span class="p">,</span>
+        <span class="nx">To</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">,</span>
+        <span class="nx">Body</span><span class="o">:</span> <span class="s2">&quot;Start using WhereAt now. Your verification code is &quot;</span> <span class="o">+</span> <span class="nx">verificationCode</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">responseData</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
+          <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></div>
+
+<p>This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user&#39;s record. Then, it sends that code to the user via Twilio.</p>
+
+<h2>Verify Phone Number</h2>
+
+<p>The second Cloud Function that we need to define is the one that verifies the user&#39;s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;verifyPhoneNumber&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">verificationCode</span> <span class="o">==</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneVerificationCode</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneNumber&quot;</span><span class="p">,</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">);</span>
+        <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Invalid verification code.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></div>
+
+<p>As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user&#39;s phone number to the number that the user included in his request.</p>
+
+<h2>Deploying the Cloud Functions</h2>
+
+<p>At this point, you are done with your server-side logic. Go ahead and save the main.js file. Then, use the command line to go to the root directory of your cloud code. When you are there, run the following command to push your code to Parse:</p>
+
+<div class="highlight"><pre><code class="js"><span class="nx">parse</span> <span class="nx">deploy</span></code></pre></div>
+
+<h2>Next Steps</h2>
+
+<p>Now that your backend is ready to roll, it is time to connect your client-side. With Parse&#39;s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.</p>
+
+<p>Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>20 Jul 2014</span>
     <h1><a href='/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html'>How to host multiple websites using Express.js</a></h1>
     <div class='body'><p>Hosting multiple websites using NodeJS and Express is made very simple using Express&#39;s <a href="https://github.com/expressjs/vhost">virtual hosts</a>. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&#39;s see!</p>
@@ -534,26 +610,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>16 Mar 2014</span>
-    <h1><a href='/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html'>Assess your Collaborative Programming Skills</a></h1>
-    <div class='body'><p>After working a couple of jobs in software development, I noticed that one of the most-valued skills that employers are looking for is your collaboration skills. In other words, you need to blend well with the other programmers. When you are first hired, you will spend a decent amount of time just going through the code to understand how things work. If you find yourself confident enough to start extending the code, then the person who wrote it is a collaborative programmer.</p>
-
-<p>The first step to become a collaborative programmer is to keep in mind that one day a new programmer who had never looked at your code will need to work with it. I can&#39;t stress how important this practice is. There are many programmers out their who can do extraordinary stuff, but when a coworker looks at what they did, the coworker enters a labyrinth. When you go and ask the &quot;smart&quot; person about his code, you can see that he understands everything. This scenario is just like attending the lecture of a world-renowned professor and falling asleep in the middle of the lecture.</p>
-
-<p>All programming languages have comments for a reason: comments are essential for every program. Comments are not only to help other people, but also to help you understand your own code. I was one of the people who would never comment a line of code. I used to think that if I wrote the code then I will always know what it does. I was wrong. Last year, I looked at the source code of a scientific calculator simulator that I had written 4 years ago. I felt as if I were reading some gibberish text. Commenting is a great practice for you as well as others.</p>
-
-<p>Last but not least is consistency. Stay consistent in your code. I try to have all my variable declarations at the beginning of a function definition. Then, I follow it with the function&#39;s logic. If the function returns a value, I usually store the value in a variable named ret. It may sometimes be very tempting to declare a variable in the middle of a function or to use global variables to solve problems fast. However, keep in mind that quick fixes cause quick problems. There are no perfect guidelines for writing code. Every person is unique and has his own patterns. What is important is that you stick to your pattern. If you do that, you will not need to execute a lot of code in your mind to reach the spot that needs changing; you just go to it. A good analogy is audio tapes and CDs. Using an audio tape, you have to go through all the previous songs to reach the song that you want to play. In a CD, the drive goes to the song directly without having to go through the other songs.</p>
-
-<p>So you think you can code? Think again. To assess your collaboration skills, write an app or a game, say tic-tac-toe. After 4 weeks without looking at the source code, add a new functionality to your game, such as a leaderboard. If you find yourself struggling in placing functions or moving data around, then you need to improve your collaboration skills.</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html'>Assess your Collaborative Programming Skills</a></th>
+      <td>16 Mar 2014</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/web/2014/02/24/WebPerformanceTrends.html'>Web Performance Trends: One Load, That's All</a></th>
