@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Verifying Phone Numbers Using Twilio and Parse"
+title:  "How to Verify Phone Numbers Using Twilio and Parse"
 date:   2014-07-31 7:50:00
 categories: [web, mobile, twilio, parse]
 ---

@@ -7,7 +7,7 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Verifying Phone Numbers Using Twilio and Parse</title>
+				<title>How to Verify Phone Numbers Using Twilio and Parse</title>
 				<description>&lt;p&gt;Do you want to create an app that relies on a user&amp;#39;s phone number to function? If so, you have probably heard about &lt;a href=&quot;https://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt;. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, &lt;a href=&quot;https://parse.com/&quot;&gt;Parse&lt;/a&gt; has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&amp;#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&amp;#39;t it? Let&amp;#39;s get started.&lt;/p&gt;
 
 &lt;h2&gt;Parse Cloud Functions&lt;/h2&gt;
