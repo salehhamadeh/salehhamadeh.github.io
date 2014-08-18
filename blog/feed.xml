@@ -7,6 +7,27 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Back to Tech</title>
+				<description>&lt;p&gt;After a hell of a summer, life went back to its usual route. School starts today, and my first class starts after less than 30 minutes. This semester, I am fresher and more enthusiastic about school than I had ever been. The way I spent summer is the main reason I feel so energetic now.&lt;/p&gt;
+
+&lt;p&gt;Right after spring semester ended, I went on a short excursion to Florida with a couple of high school friends. Swimming at the crystal-clear Clearwater beach, running into the wild at Busch Gardens, and going back to childhood and Disney World brought back the adrenaline into my bloodstream.&lt;/p&gt;
+
+&lt;p&gt;I spent the next week with my family in Saudi Arabia. To me, Saudi Arabia is one of the best places to study. When I am Saudi Arabia, especially in summer when none of my friends are there, I get bored. Boredom ignites creativity. When I sit home bored and lazy, I realize that I can spend my time doing something better than lying at the sofa. Eventually, I find myself at &lt;a href=&quot;http://www.edx.org&quot;&gt;EdX&lt;/a&gt; scrolling through the classes.&lt;/p&gt;
+
+&lt;p&gt;The next couple of weeks, I spent them in Lebanon. Saudi Arabia has the best learning environment. Lebanon has the worst. Internet is always slow. You do not know when will the electricity go off. Motorcycles, cars, and people are all cheering for their favorite World Cup teams at the top of their voices. The upbeat lifestyle is fun right after leaving the quiet KSA and USA, but it is definitely not my study environment.&lt;/p&gt;
+
+&lt;p&gt;After the fun and war excitement of Lebanon, I went back to Saudi Arabia for a week and then came back to the United States.&lt;/p&gt;
+
+&lt;p&gt;In the United States, I worked full-time at &lt;a href=&quot;http://www.brainjocks.com&quot;&gt;BrainJocks&lt;/a&gt; for the next 6 weeks. In these weeks, I learned more about building complex digital systems than I had ever learned in school. Test-Driven Development, Unit Testing, Dependency Injection, Inversion of Control, and ASP.NET MVC are just a little of what I learned about.&lt;/p&gt;
+
+&lt;p&gt;The professor is here now. I need to stop typing and focus on lecture. Oh, actually she is playing some techno before lecture. This semester is gonna be amazing!&lt;/p&gt;
+</description>
+				<pubDate>Mon, 18 Aug 2014 05:40:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</guid>
+			</item>
+		
+			<item>
 				<title>How to verify phone numbers using Twilio and Parse</title>
 				<description>&lt;p&gt;Do you want to create an app that relies on a user&amp;#39;s phone number to function? If so, you have probably heard about &lt;a href=&quot;https://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt;. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, &lt;a href=&quot;https://parse.com/&quot;&gt;Parse&lt;/a&gt; has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&amp;#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&amp;#39;t it? Let&amp;#39;s get started.&lt;/p&gt;
 
@@ -622,41 +643,6 @@
 				<pubDate>Sun, 12 Jan 2014 05:07:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/01/12/CompScieOrSoftEngineer.html</guid>
-			</item>
-		
-			<item>
-				<title>Make a Blog Social (Without a Database)</title>
-				<description>&lt;p&gt;What does it mean by saying that a blog is social? Social, by definition, means humanly-interactive. In other words, it involves different human beings interacting with one another. In this article, I will show you the 3 steps that I took to make my static &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; blog social WITHOUT using A DATABASE.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Add the &lt;a href=&quot;http://www.addthis.com/&quot;&gt;Addthis&lt;/a&gt; Smart Layer for sharing articles to social networks.&lt;/li&gt;
-&lt;li&gt;Create a mailing list to keep the blog subscribers notified about the latest news.&lt;/li&gt;
-&lt;li&gt;Add comments to each blog post.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2&gt;Sharing on Social Networks&lt;/h2&gt;
-
-&lt;p&gt;The buttons that appear on the left-hand side of this page allow you to share any post on my blog to almost any social network you can think of. Even though this is a powerful feature, it is extremely easy to integrate it into your own website, thanks to &lt;a href=&quot;http://www.addthis.com/&quot;&gt;Addthis&lt;/a&gt;. Go to the &lt;a href=&quot;https://www.addthis.com/get/smart-layers&quot;&gt;Addthis Smart Layers&lt;/a&gt; page and customize the toolbar to fit your need. Then, click on Generate Code. This gives you HTML code, which you can paste anywhere inside your page&amp;#39;s HTML. That&amp;#39;s it! You created your blog&amp;#39;s first social interaction service.&lt;/p&gt;
-
-&lt;h2&gt;Mailing List&lt;/h2&gt;
-
-&lt;p&gt;You may wonder how to create a mailing list without a database or any server-side scripting. Is it possible? It&amp;#39;s not. However, there are Software-as-a-Services out there that do just that. The tool that I used for my own personal blog is &lt;a href=&quot;http://mailchimp.com/&quot;&gt;Mail Chimp&lt;/a&gt;. Mailchimp is free, as long as you do not send over 12,000 emails per month or have fewer than 2,000 subscribers. First, go ahead and create an account on Mail Chimp. In the registration&amp;#39;s sign up form, there is an Organization&amp;#39;s Name field. You do not need to be an organization to use that. The Organization Name is really the name of your website or blog. When you create an account and sign in, you will see the dashboard, which will show you the 3 steps that are needed to get you started. First, click on Create a List and create one. I called my list &amp;quot;Blog Subscribers.&amp;quot; After you create your list, click on Lists, click on the list you created, and then click on Signup forms. This will show you a page with 3 different choices: General forms, embedded forms, and form integrations. General forms create complete forms for registration, embedded forms are forms that can be embedded anywhere on your website (just like the one I use on my blog), and form integrations allow you to use Mail Chimp with other web services. You can choose whichever one fits your needs. If you choose embedded forms, you will see a page where you can create your own signup form and design it so it looks good. After going through the form-building process, copy the form&amp;#39;s HTML code and paste it wherever you want the form to appear on your website.&lt;/p&gt;
-
-&lt;h2&gt;Comments&lt;/h2&gt;
-
-&lt;p&gt;No website is really social without discussions and arguments. Without chicken there is no fried chicken, and without arguments there is no social life. I guess that was a bad comparison, but you get the point: discussion is the key to social interaction.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.disqus.com/&quot;&gt;Disqus&lt;/a&gt; is an amazing tool that you find everywhere but may not know its value. That&amp;#39;s exactly what happened with me. I remember seeing Disqus on many websites, but I had never tried to create an account to see what motivates all these people to use Disqus. Before 3 days, I decided to go to Disqus.com directly and see what it truly is. It turned out to be comments, profiles, a social media, and anaytics all-in-one. In addition to that, it was as easy as copying-and-pasting to integrate to my website.&lt;/p&gt;
-
-&lt;p&gt;Enough talking and let&amp;#39;s start getting this done. Head over to &lt;a href=&quot;http://www.disqus.com/&quot;&gt;Disqus&lt;/a&gt; and create an account. After that, click on the link that says, &amp;quot;Add Disqus to your website,&amp;quot; at the top-right corner of the screen. Fill out the site&amp;#39;s name and category and then click on Finish Registration. Then, you should see a list of platforms that you can use Disqus with. Choose the one that best fits your needs. This should give you step-by-step instructions to add Disqus to your blog. If you click on Universal Code, you will get the HTML for adding Disqus. Copy the HTML and paste it wherever you want to add Disqus in your blog.&lt;/p&gt;
-
-&lt;h2&gt;TADA!&lt;/h2&gt;
-
-&lt;p&gt;TADA! You now have a website that has social-media sharing, mailing lists, and discussions. Give yourself a pat on the back and have a look at the great work that you have done.&lt;/p&gt;
-</description>
-				<pubDate>Sat, 28 Dec 2013 12:13:00 -0500</pubDate>
-				<link>http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2013/12/28/MakeABlogSocial.html</guid>
 			</item>
 		
 	</channel>

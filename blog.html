@@ -90,6 +90,27 @@
               
   
   <div class='post'>
+    <span class='date'>18 Aug 2014</span>
+    <h1><a href='/blog/life/2014/08/18/BackToTech.html'>Back to Tech</a></h1>
+    <div class='body'><p>After a hell of a summer, life went back to its usual route. School starts today, and my first class starts after less than 30 minutes. This semester, I am fresher and more enthusiastic about school than I had ever been. The way I spent summer is the main reason I feel so energetic now.</p>
+
+<p>Right after spring semester ended, I went on a short excursion to Florida with a couple of high school friends. Swimming at the crystal-clear Clearwater beach, running into the wild at Busch Gardens, and going back to childhood and Disney World brought back the adrenaline into my bloodstream.</p>
+
+<p>I spent the next week with my family in Saudi Arabia. To me, Saudi Arabia is one of the best places to study. When I am Saudi Arabia, especially in summer when none of my friends are there, I get bored. Boredom ignites creativity. When I sit home bored and lazy, I realize that I can spend my time doing something better than lying at the sofa. Eventually, I find myself at <a href="http://www.edx.org">EdX</a> scrolling through the classes.</p>
+
+<p>The next couple of weeks, I spent them in Lebanon. Saudi Arabia has the best learning environment. Lebanon has the worst. Internet is always slow. You do not know when will the electricity go off. Motorcycles, cars, and people are all cheering for their favorite World Cup teams at the top of their voices. The upbeat lifestyle is fun right after leaving the quiet KSA and USA, but it is definitely not my study environment.</p>
+
+<p>After the fun and war excitement of Lebanon, I went back to Saudi Arabia for a week and then came back to the United States.</p>
+
+<p>In the United States, I worked full-time at <a href="http://www.brainjocks.com">BrainJocks</a> for the next 6 weeks. In these weeks, I learned more about building complex digital systems than I had ever learned in school. Test-Driven Development, Unit Testing, Dependency Injection, Inversion of Control, and ASP.NET MVC are just a little of what I learned about.</p>
+
+<p>The professor is here now. I need to stop typing and focus on lecture. Oh, actually she is playing some techno before lecture. This semester is gonna be amazing!</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>31 Jul 2014</span>
     <h1><a href='/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html'>How to verify phone numbers using Twilio and Parse</a></h1>
     <div class='body'><p>Do you want to create an app that relies on a user&#39;s phone number to function? If so, you have probably heard about <a href="https://www.twilio.com/">Twilio</a>. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, <a href="https://parse.com/">Parse</a> has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&#39;t it? Let&#39;s get started.</p>
@@ -573,46 +594,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>06 Apr 2014</span>
-    <h1><a href='/blog/web/2014/04/06/Unvalidated-Redirects.html'>Web Security: Unvalidated Redirects</a></h1>
-    <div class='body'><p>Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: <a href="https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards">Unvalidated Redirects</a>. Do not worry, you are in safe hands (this blog).</p>
-
-<h2>What Happened?</h2>
-
-<p>The link that you clicked is probably a redirection link, such as those found in Google&#39;s search results. Companies like Google and Twitter use redirection links to track where their users are going. It helps them gather information and hide information. For example, using redirection URLs, websites can:</p>
-
-<ul>
-<li>  Track where their userbase is going.</li>
-<li>  Hide referral information (search query strings, etc...) from the websites that the users are redirected to.</li>
-</ul>
-
-<h2>Why is this a Threat?</h2>
-
-<p>Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trustworthy. Now if a malicious user creates a website that clones Google&#39;s login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.</p>
-
-<p>Other users may use this security weakness to get more traffic. If the &quot;bad&quot; users serve ads, they make more money.</p>
-
-<h2>What Defenses can Web Developers Take to Keep their Websites Safe?</h2>
-
-<p>The easiest way to keep your sites safe is to stay away from redirection using query string parameters. If this is not something that you can easily do, here are some strategies that you can use:</p>
-
-<ul>
-<li>  Keep a hash map of URLs. In other words, instead of having the URL in the query string, have a key that refers to that URL there. In this way, only the URLs for the keys that YOU define are redirectable.</li>
-<li>  A better method is to have a domain name dedicated to URL redirections. <a href="https://twitter.com/">Twitter</a> uses <a href="https://support.twitter.com//entries/109623">t.co</a> to track its users&#39; whereabouts while explicitly showing them that they will be redirected. <a href="https://www.yahoo.com/">Yahoo</a> uses r.search.yahoo.com for the same purpose.</li>
-</ul>
-
-<h2>What Defenses can Users Take to Stay Safe?</h2>
-
-<p>Look at the full URL before visiting a link. The first part of it does not tell you everything. For some URLs, this practice can be tedious. In that case, look at the URL every time you are about to submit a form or enter sensitive information.</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/web/2014/04/06/Unvalidated-Redirects.html'>Web Security: Unvalidated Redirects</a></th>
+      <td>06 Apr 2014</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html'>Assess your Collaborative Programming Skills</a></th>
