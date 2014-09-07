@@ -14,12 +14,14 @@
 
 &lt;p&gt;Before the days of the World-Wide Web, software was shipped in the form of floppy disks. Since companies could not easily send updates to their users, the Waterfall Method emerged. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Waterfall_model&quot;&gt;Waterfall Method&lt;/a&gt; divides the software engineering process into the following stages:&lt;/p&gt;
 
-&lt;p&gt;1- Requirements Specification: Gather information from clients and understand the problem.
-2- Design: Propose a solution and develop a model for construction.
-3- Implementation: Develop the full application.
-4- Verification: Customer uses the application and confirms that it works as expected.
-5- Testing: Heavily test application.
-6- Shipping: Customer uses or publishes his application.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Requirements Specification: Gather information from clients and understand the problem.&lt;/li&gt;
+&lt;li&gt;Design: Propose a solution and develop a model for construction.&lt;/li&gt;
+&lt;li&gt;Implementation: Develop the full application.&lt;/li&gt;
+&lt;li&gt;Verification: Customer uses the application and confirms that it works as expected.&lt;/li&gt;
+&lt;li&gt;Testing: Heavily test application.&lt;/li&gt;
+&lt;li&gt;Shipping: Customer uses or publishes his application.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png&quot; alt=&quot;Waterfall Method Comic&quot;&gt;&lt;/p&gt;
 
@@ -41,10 +43,12 @@
 
 &lt;p&gt;Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the Agile Methodology. The general stages of the Agile software development stages are:&lt;/p&gt;
 
-&lt;p&gt;1- Design and implement a small set of features.
-2- Publish the app.
-3- Listen to user feedback.
-4- Select new features based on user feedback and go back to step 1.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Design and implement a small set of features.&lt;/li&gt;
+&lt;li&gt;Publish the app.&lt;/li&gt;
+&lt;li&gt;Listen to user feedback.&lt;/li&gt;
+&lt;li&gt;Select new features based on user feedback and go back to step 1.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/agile-comic.png&quot; alt=&quot;Agile Method Comic&quot;&gt;&lt;/p&gt;
 

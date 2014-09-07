@@ -11,12 +11,12 @@ Improved Connectivity
 ----------------------
 Before the days of the World-Wide Web, software was shipped in the form of floppy disks. Since companies could not easily send updates to their users, the Waterfall Method emerged. The [Waterfall Method][waterfall] divides the software engineering process into the following stages:
 
-1- Requirements Specification: Gather information from clients and understand the problem.
-2- Design: Propose a solution and develop a model for construction.
-3- Implementation: Develop the full application.
-4- Verification: Customer uses the application and confirms that it works as expected.
-5- Testing: Heavily test application.
-6- Shipping: Customer uses or publishes his application.
+1. Requirements Specification: Gather information from clients and understand the problem.
+2. Design: Propose a solution and develop a model for construction.
+3. Implementation: Develop the full application.
+4. Verification: Customer uses the application and confirms that it works as expected.
+5. Testing: Heavily test application.
+6. Shipping: Customer uses or publishes his application.
 
 ![Waterfall Method Comic](https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png)
 
@@ -38,10 +38,10 @@ The [Agile Methodology][agile] Emerges
 --------------------------------------
 Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the Agile Methodology. The general stages of the Agile software development stages are:
 
-1- Design and implement a small set of features.
-2- Publish the app.
-3- Listen to user feedback.
-4- Select new features based on user feedback and go back to step 1.
+1. Design and implement a small set of features.
+2. Publish the app.
+3. Listen to user feedback.
+4. Select new features based on user feedback and go back to step 1.
 
 ![Agile Method Comic](https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/agile-comic.png)
 
