@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How Agile Changed the Software Workplace"
+title:  "How Agile Changed the Software Development Workplace"
 date:   2014-09-06 9:50:00
 categories: [programming]
 ---
