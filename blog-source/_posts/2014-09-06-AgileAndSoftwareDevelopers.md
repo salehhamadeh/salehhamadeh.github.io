@@ -22,7 +22,7 @@ Before the days of the World-Wide Web, software was shipped in the form of flopp
 
 When I first saw the photo above, I immediately thought that this comic was nonsense. In the couple of internships that I had, everyone on the team had a say on the project and met with the customers to define the products. I only understood the meaning of this comic when I had an interview at a company that showed me the cubicle that I will work in. It was dark and quiet, definitely not my kind.
 
-The main reason companies were done that way was the low connectivity people had back in the day. When a company spots a bug after it delivered its product, it will need to send floppy disks with the patches to all the consumers who bought the original application. Releasing a newer version of an application was a process that took several months and had enormous costs.
+The main reason companies were managed that way was the low level of connectivity people had back in the day. When a company spots a bug after it delivered its product, it will need to send floppy disks with the patches to all the consumers who bought the original application. Releasing a newer version of an application was a process that took several months and had enormous costs.
 
 As the Internet became widespread and connection speeds escalated, it became easier, faster, and cheaper for companies to release updates for their software. Programmers need no longer worry about all the edge cases and every single security loophole before releasing the application. As more bugs are discovered, the programmers fix them and publish the updates.
 
@@ -34,9 +34,9 @@ One branch of data is feedback. Let's take mobile apps as an example scenario. W
 
 If one user has a problem, then there are other users who have the same problem. Therefore, user suggestions help companies build software that appeals to the majority.
 
-The [Agile Methodology][agile] Emerges
+The Agile Methodology Emerges
 --------------------------------------
-Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the Agile Methodology. The general stages of the Agile software development stages are:
+Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the [Agile Methodology][agile]. The general stages of the Agile software development stages are:
 
 1. Design and implement a small set of features.
 2. Publish the app.
