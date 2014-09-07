@@ -10,7 +10,7 @@
 				<title>How Agile Changed the Software Workplace</title>
 				<description>&lt;p&gt;In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the proccess, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.&lt;/p&gt;
 
-&lt;h2&gt;Improved Connectivity&lt;/h2&gt;
+&lt;h2&gt;The Waterfall Method&lt;/h2&gt;
 
 &lt;p&gt;Before the days of the World-Wide Web, software was shipped in the form of floppy disks. Since companies could not easily send updates to their users, the Waterfall Method emerged. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Waterfall_model&quot;&gt;Waterfall Method&lt;/a&gt; divides the software engineering process into the following stages:&lt;/p&gt;
 
@@ -26,6 +26,8 @@
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png&quot; alt=&quot;Waterfall Method Comic&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;When I first saw the photo above, I immediately thought that this comic was nonsense. In the couple of internships that I had, everyone on the team had a say on the project and met with the customers to define the products. I only understood the meaning of this comic when I had an interview at a company that showed me the cubicle that I will work in. It was dark and quiet, definitely not my kind.&lt;/p&gt;
+
+&lt;h2&gt;Improved Connectivity&lt;/h2&gt;
 
 &lt;p&gt;The main reason companies were managed that way was the low level of connectivity people had back in the day. When a company spots a bug after it delivered its product, it will need to send floppy disks with the patches to all the consumers who bought the original application. Releasing a newer version of an application was a process that took several months and had enormous costs.&lt;/p&gt;
 
