@@ -7,6 +7,63 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>How Agile Changed the Software Workplace</title>
+				<description>&lt;p&gt;In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the proccess, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.&lt;/p&gt;
+
+&lt;h2&gt;Improved Connectivity&lt;/h2&gt;
+
+&lt;p&gt;Before the days of the World-Wide Web, software was shipped in the form of floppy disks. Since companies could not easily send updates to their users, the Waterfall Method emerged. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Waterfall_model&quot;&gt;Waterfall Method&lt;/a&gt; divides the software engineering process into the following stages:&lt;/p&gt;
+
+&lt;p&gt;1- Requirements Specification: Gather information from clients and understand the problem.
+2- Design: Propose a solution and develop a model for construction.
+3- Implementation: Develop the full application.
+4- Verification: Customer uses the application and confirms that it works as expected.
+5- Testing: Heavily test application.
+6- Shipping: Customer uses or publishes his application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png&quot; alt=&quot;Waterfall Method Comic&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;When I first saw the photo above, I immediately thought that this comic was nonsense. In the couple of internships that I had, everyone on the team had a say on the project and met with the customers to define the products. I only understood the meaning of this comic when I had an interview at a company that showed me the cubicle that I will work in. It was dark and quiet, definitely not my kind.&lt;/p&gt;
+
+&lt;p&gt;The main reason companies were done that way was the low connectivity people had back in the day. When a company spots a bug after it delivered its product, it will need to send floppy disks with the patches to all the consumers who bought the original application. Releasing a newer version of an application was a process that took several months and had enormous costs.&lt;/p&gt;
+
+&lt;p&gt;As the Internet became widespread and connection speeds escalated, it became easier, faster, and cheaper for companies to release updates for their software. Programmers need no longer worry about all the edge cases and every single security loophole before releasing the application. As more bugs are discovered, the programmers fix them and publish the updates.&lt;/p&gt;
+
+&lt;h2&gt;Easier Access to Data&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sas.com/en_us/insights/big-data/what-is-big-data.html&quot;&gt;Big Data&lt;/a&gt; is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted adversing. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.&lt;/p&gt;
+
+&lt;p&gt;One branch of data is feedback. Let&amp;#39;s take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user&amp;#39;s demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer&amp;#39;s personality.&lt;/p&gt;
+
+&lt;p&gt;If one user has a problem, then there are other users who have the same problem. Therefore, user suggestions help companies build software that appeals to the majority.&lt;/p&gt;
+
+&lt;h2&gt;The &lt;a href=&quot;http://agilemethodology.org/&quot;&gt;Agile Methodology&lt;/a&gt; Emerges&lt;/h2&gt;
+
+&lt;p&gt;Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the Agile Methodology. The general stages of the Agile software development stages are:&lt;/p&gt;
+
+&lt;p&gt;1- Design and implement a small set of features.
+2- Publish the app.
+3- Listen to user feedback.
+4- Select new features based on user feedback and go back to step 1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/agile-comic.png&quot; alt=&quot;Agile Method Comic&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Unlike the Waterfall Method, the Agile Method is against writing a full-blown plan. Plans are based on estimations and hypotheses, which are incorrect most of the time. A customer may want an app for arranging parties at first, but then he realizes that he really wants a social network. To increase customer satisfaction, software developers do not ask for everything and then build the product. Instead, software developers work with the customer to build the product. At the same time, the customer is frequently presented with demos and is in track with the internal tasks for managing the project.&lt;/p&gt;
+
+&lt;p&gt;Although &amp;quot;stop planning and start coding,&amp;quot; works for some projects, the better solution is &amp;quot;plan only for what you need at the moment.&amp;quot;&lt;/p&gt;
+
+&lt;h2&gt;The Workplace Shift&lt;/h2&gt;
+
+&lt;p&gt;The history of software engineering is completely changing the way we view computer science. When I meet new people and tell them that I am studying computer science, they think that I will spend the rest of my life in a dark cubicle typing an endless stream of zeroes and ones. Most people, excuse me for generalizing, view computer programming as the job for people who do not like to engage with society. Although this notion may apply to the programmers of the 80&amp;#39;s, I forcefully refute that this is the case nowadays. Agile is transforming the software development workplace. Programmers are becoming engineers, and open offices are replacing cubicle.&lt;/p&gt;
+
+&lt;p&gt;To get a better idea of what programmers or software developers do and how their workplace looks like, check out &lt;a href=&quot;http://brainjocks.com/company&quot;&gt;BrainJocks&lt;/a&gt;, the company where I currently intern.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 06 Sep 2014 05:50:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</guid>
+			</item>
+		
+			<item>
 				<title>CULC on a Wednesday Morning</title>
 				<description>&lt;p&gt;Now that two days of school have already passed, the students are starting to get back to the usual Techy routine. Some people are quiet, others are speaking in a low voice, and still others are falling. On the chair next to me, a Starbucks employee is snoring while holding a Starbucks coffee in her hand. Quite ironic, especially since it is 9:40 in the morning.&lt;/p&gt;
 
@@ -591,40 +648,6 @@
 				<pubDate>Mon, 24 Feb 2014 00:15:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</guid>
-			</item>
-		
-			<item>
-				<title>Why You should have a Virtual Machine in the Cloud</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://www.dropbox.com&quot;&gt;Dropbox&lt;/a&gt; lets users access there files from anywhere and on any machine. Google Chrome lets users have their customized browser from any machine. By customized, I mean that it saves the settings, favorites, history, and saved passwords. The internet made it possible for people to feel that any computer is their personal computer. However, there is still one piece missing. Even though our files and preferences are shared everywhere, we know that we are not using our same computer when we go to the library or somewhere else. By having a virtual machine in the cloud, we will be able to use our computer from any machine. This is only one of the many reasons to get your private virtual machine.&lt;/p&gt;
-
-&lt;h2&gt;Reason 1: No need to carry a computer&lt;/h2&gt;
-
-&lt;p&gt;Everyone agrees that carrying a computer can be a hassle. Whether you are at the airport or walking alone at night, your physical computer is a trouble. By having a virtual machine in the cloud, you do not need to carry your computer because you can reach it from any machine that is connected to the internet.&lt;/p&gt;
-
-&lt;h2&gt;Reason 2: It is always on, and it works fine&lt;/h2&gt;
-
-&lt;p&gt;If you have ever tried serving a website from your home computer, you know how bad it is to keep it running 24/7. This can cause the computer to wear down, the fan gets louder over time, your internet connection slows down, and your family members complain a lot. With a cloud instance, all the maintenace is taken care of by the service provider. You can use the machine to serve as many websites as you want, make money out of it, and never get bothered.&lt;/p&gt;
-
-&lt;h2&gt;Reason 3: If you can program, then you can...&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Track all your device locations from anywhere, If any of your devices is stolen, just make it ping your virtual machine and send the device&amp;#39;s location to the cops.&lt;/li&gt;
-&lt;li&gt;Create a home controller that lets you do anything with your home from anywhere.&lt;/li&gt;
-&lt;li&gt;Develop POS systems for your neighborhood grocery for as cheap as $5/month.&lt;/li&gt;
-&lt;li&gt;Rule the World!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2&gt;Next Steps&lt;/h2&gt;
-
-&lt;p&gt;If you are convinced by now, don&amp;#39;t stop here. Take a look at the following cloud hosting providers and take action.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com&quot;&gt;Digital Ocean&lt;/a&gt;: Simple cloud hosting on Sold-State Drives.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://aws.amazon.com/ec2&quot;&gt;Amazon EC2&lt;/a&gt;: Advanced cloud computing service that comes along with tools to handle web applications, databases, storage, and more.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 09 Feb 2014 00:15:00 -0500</pubDate>
-				<link>http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/02/09/WhyYouShouldHaveACloudVM.html</guid>
 			</item>
 		
 	</channel>
