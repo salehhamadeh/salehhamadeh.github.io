@@ -4,6 +4,7 @@
 		<title>Saleh Hamadeh&#39;s Blog</title>
 		<description>Saleh Hamadeh&#39;s personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.</description>		
 		<link>http://www.shamadeh.com</link>
+		<category>CodeProject</category>
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
@@ -656,5 +657,6 @@
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</guid>
 			</item>
 		
+
 	</channel>
 </rss>
