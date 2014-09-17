@@ -5,7 +5,7 @@ date:   2014-09-06 9:50:00
 categories: [programming]
 ---
 
-In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the proccess, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.
+In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the process, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.
 
 The Waterfall Method
 --------------------
