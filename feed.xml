@@ -8,6 +8,21 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Hackathons for a Better World</title>
+				<description>&lt;p&gt;For those of you who do not know what a hackathon is, a hackathon is an event in which teams compete to create a product that will solve a real-world problem. Most of the people who attend hackathons are programmers or hackers, but hackathons are open to anyone who feels creative.&lt;/p&gt;
+
+&lt;p&gt;Last week, I attended &lt;a href=&quot;http://hackgt.com/&quot;&gt;HackGT&lt;/a&gt;, a hackathon at &lt;a href=&quot;http://www.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt;. I was shocked by the amount of money that was spent on organizing this event. Aside from the food and travel reimbursements for 1,000 hackers, the grand prize itself was valued at about $140,000 ($10,000 in cash, $50,000 investment, $60,000 in Azure credits, and a trip to Boston). I estimate that the event gathered over $250,000 from sponsors.&lt;/p&gt;
+
+&lt;p&gt;It is amazing how companies are willing to put such an enormous amount of money to sponsor hackathons. However, what is even more amazing is the possibility of gathering the greatest minds in the universe and putting them under a single roof for 48 hours. Volunteers bring them food, drinks, and even pillows! To an outside viewer, a hackathon looks like a homeless shelter; to the competitors, a hachathon is heaven.&lt;/p&gt;
+
+&lt;p&gt;Over the weekend, hackers escape their lives&amp;#39; duties and look at the world from a different angle. Every once in a while, people should take a break from the real world to keep their creativity ignited. A person can read a novel and go to wonderland. They can also go to a hackathon and turn our world into wonderland.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 29 Sep 2014 05:50:00 -0400</pubDate>
+				<link>http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</guid>
+			</item>
+		
+			<item>
 				<title>How Agile Changed the Software Development Workplace</title>
 				<description>&lt;p&gt;In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the process, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.&lt;/p&gt;
 
@@ -36,7 +51,7 @@
 
 &lt;h2&gt;Easier Access to Data&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.sas.com/en_us/insights/big-data/what-is-big-data.html&quot;&gt;Big Data&lt;/a&gt; is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted adversing. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.sas.com/en_us/insights/big-data/what-is-big-data.html&quot;&gt;Big Data&lt;/a&gt; is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted advertising. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.&lt;/p&gt;
 
 &lt;p&gt;One branch of data is feedback. Let&amp;#39;s take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user&amp;#39;s demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer&amp;#39;s personality.&lt;/p&gt;
 
@@ -640,21 +655,6 @@
 				<pubDate>Sun, 16 Mar 2014 05:45:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/03/16/AssessYourCollaborativeProgramming.html</guid>
-			</item>
-		
-			<item>
-				<title>Web Performance Trends: One Load, That&#39;s All</title>
-				<description>&lt;p&gt;After all the HTML 5 buzz, I couldn&amp;#39;t but notice the new direction in which the web is being taken. At first, the Internet was a collection of pages (most of it still is). However, now we start feeling that some websites are not pages anymore. Take &lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt;, a project management web application by Fog Creek Software, for a example. After signing into Trello, all your clicks show instantaneous results, and you feel that the website is really an application more than a website. However, the link in the navbar still shows that you are moving between pages. You know that your internet connection is not that fast, so what exactly is happening? Trello, along with many other &lt;a href=&quot;www.wikipedia.org/wiki/Single-page_application&quot;&gt;SPA&amp;#39;s&lt;/a&gt;, utilize HTML5&amp;#39;s History API to achieve this. The History API allows web developers to manipulate your browser&amp;#39;s history (they cannot view it) by adding new links. In this way, the user thinks that he was directed to a new page when this is not quite the case. Client-side templating engines, like &lt;a href=&quot;http://mustache.github.io/&quot;&gt;Mustache&lt;/a&gt; and &lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;, can let the browser download the whole website upon the first load. Then, these websites use the History API alongside the client-side templating engines to render instantaneous pages.&lt;/p&gt;
-
-&lt;p&gt;Looking at the performace aspect of this technique, we can see that sites are shifting from the traditional load-on-page-request approach to the &amp;quot;One Load, That&amp;#39;s All&amp;quot; approach. In this way, the website is going to take a longer time to download, but once it is downloaded, everything else is instantaneous. Using HTML5&amp;#39;s LocalStorage API, one can save the website&amp;#39;s pages and templates so that the user will not have to download the entire website every time he visits it.&lt;/p&gt;
-
-&lt;p&gt;However, the new approach has some limitations. First, they can only work that way on devices that support HTML5. Moreover, they require strong devices to run on, memory-wise and computation-wise.&lt;/p&gt;
-
-&lt;p&gt;So, what do you think is the better approach for websites at the moment?&lt;/p&gt;
-</description>
-				<pubDate>Mon, 24 Feb 2014 00:15:00 -0500</pubDate>
-				<link>http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/02/24/WebPerformanceTrends.html</guid>
 			</item>
 		
 

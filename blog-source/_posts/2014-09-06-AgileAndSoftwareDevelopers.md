@@ -30,7 +30,7 @@ As the Internet became widespread and connection speeds escalated, it became eas
 
 Easier Access to Data
 ---------------------
-[Big Data][bigdata] is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted adversing. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.
+[Big Data][bigdata] is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted advertising. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.
 
 One branch of data is feedback. Let's take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user's demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer's personality.
 

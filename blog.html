@@ -90,6 +90,21 @@
               
   
   <div class='post'>
+    <span class='date'>29 Sep 2014</span>
+    <h1><a href='/blog/opinion/2014/09/29/HackathonsForABetterWorld.html'>Hackathons for a Better World</a></h1>
+    <div class='body'><p>For those of you who do not know what a hackathon is, a hackathon is an event in which teams compete to create a product that will solve a real-world problem. Most of the people who attend hackathons are programmers or hackers, but hackathons are open to anyone who feels creative.</p>
+
+<p>Last week, I attended <a href="http://hackgt.com/">HackGT</a>, a hackathon at <a href="http://www.gatech.edu/">Georgia Tech</a>. I was shocked by the amount of money that was spent on organizing this event. Aside from the food and travel reimbursements for 1,000 hackers, the grand prize itself was valued at about $140,000 ($10,000 in cash, $50,000 investment, $60,000 in Azure credits, and a trip to Boston). I estimate that the event gathered over $250,000 from sponsors.</p>
+
+<p>It is amazing how companies are willing to put such an enormous amount of money to sponsor hackathons. However, what is even more amazing is the possibility of gathering the greatest minds in the universe and putting them under a single roof for 48 hours. Volunteers bring them food, drinks, and even pillows! To an outside viewer, a hackathon looks like a homeless shelter; to the competitors, a hachathon is heaven.</p>
+
+<p>Over the weekend, hackers escape their lives&#39; duties and look at the world from a different angle. Every once in a while, people should take a break from the real world to keep their creativity ignited. A person can read a novel and go to wonderland. They can also go to a hackathon and turn our world into wonderland.</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>06 Sep 2014</span>
     <h1><a href='/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html'>How Agile Changed the Software Development Workplace</a></h1>
     <div class='body'><p>In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the process, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.</p>
@@ -119,7 +134,7 @@
 
 <h2>Easier Access to Data</h2>
 
-<p><a href="http://www.sas.com/en_us/insights/big-data/what-is-big-data.html">Big Data</a> is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted adversing. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.</p>
+<p><a href="http://www.sas.com/en_us/insights/big-data/what-is-big-data.html">Big Data</a> is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted advertising. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.</p>
 
 <p>One branch of data is feedback. Let&#39;s take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user&#39;s demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer&#39;s personality.</p>
 
@@ -262,107 +277,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>20 Jul 2014</span>
-    <h1><a href='/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html'>How to host multiple websites using Express.js</a></h1>
-    <div class='body'><p>Hosting multiple websites using NodeJS and Express is made very simple using Express&#39;s <a href="https://github.com/expressjs/vhost">virtual hosts</a>. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&#39;s see!</p>
-
-<h2>Our Workspace</h2>
-
-<p>For demonstration, let us assume that we own two domain names: potato.com and tomato.com. We want www.potato.com to direct to the potato website, which is located in a directory named potato, and we want www.tomato.com to direct to the tomato website, which is located in a directory named tomato. For simplicity&#39;s sake, both websites are static websites.</p>
-
-<h2>Creating a Virtual Host</h2>
-
-<p>As I mentioned earlier, a virtual host is an Express app. This is not entirely true. A virtual host wraps up an application into a middleware. After it is wrapped up, we can use it in our main application. The code below shows how to create a virtual host (or vhost).</p>
-
-<div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-    <span class="c1">//parses request body and populates request.body</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//checks request.body for HTTP method overrides</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//Where to serve static content</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
-    <span class="c1">//Show errors</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
-
-    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
-<span class="p">}</span></code></pre></div>
-
-<p>For our potato and tomato app, we will need to create two virtual hosts as follows:</p>
-
-<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">potatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.potato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;potato&quot;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">tomatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.tomato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;tomato&quot;</span><span class="p">);</span></code></pre></div>
-
-<h2>Using the Virtual Hosts</h2>
-
-<p>Using the virtual hosts is as simple as using any piece of middleware. All we have to do is pass them to app.use:</p>
-
-<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">potatoHost</span><span class="p">);</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">tomatoHost</span><span class="p">);</span></code></pre></div>
-
-<h2>The Full Server Code</h2>
-
-<div class="highlight"><pre><code class="js"><span class="c1">// Module dependencies.</span>
-<span class="kd">var</span> <span class="nx">application_root</span> <span class="o">=</span> <span class="nx">__dirname</span><span class="p">,</span>
-    <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">);</span>
-
-<span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-    <span class="c1">//parses request body and populates request.body</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//checks request.body for HTTP method overrides</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//Where to serve static content</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
-    <span class="c1">//Show errors</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
-
-    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="c1">//Create server</span>
-<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-
-<span class="c1">//Create the virtual hosts</span>
-<span class="kd">var</span> <span class="nx">potatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.potato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;potato&quot;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">tomatoHost</span> <span class="o">=</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="s2">&quot;www.tomato.com&quot;</span><span class="p">,</span> <span class="s2">&quot;tomato&quot;</span><span class="p">);</span>
-
-<span class="c1">//Use the virtual hosts</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">potatoHost</span><span class="p">);</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">tomatoHost</span><span class="p">);</span>
-
-<span class="c1">//Start server</span>
-<span class="kd">var</span> <span class="nx">port</span> <span class="o">=</span> <span class="mi">80</span><span class="p">;</span>
-<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span> <span class="nx">port</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;Express server listening on port %d in %s mode&#39;</span><span class="p">,</span> <span class="nx">port</span><span class="p">,</span> <span class="nx">app</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">env</span> <span class="p">);</span>
-<span class="p">});</span></code></pre></div>
-
-<h2>Testing the Server</h2>
-
-<p>In order to see the server work, we must own both domain names and set their addresses to that of our server. Since we do not own the domain names and the process is arduous, we will modify the hosts file to make those domain names point to our local machine.</p>
-
-<p>On Windows, the hosts file can be found in c:\windows\system32\drivers\etc</p>
-
-<p>On Mac or Linux, the hosts file can be found in /etc</p>
-
-<p>The hosts file may be hidden on some systems. If you do not see it in the directory, make sure that you enable viewing hidden files from your folder options or control panel.</p>
-
-<p>Open the hosts file, add the following lines of code to the bottom of the file, and save it.</p>
-
-<div class="highlight"><pre><code class="sh">127.0.0.1 www.potato.com
-127.0.0.1 www.tomato.com</code></pre></div>
-
-<p>Now, run your NodeJS application and navigate to www.potato.com and www.tomato.com from any browser. Voila! You should now be directed to the potato website and the tomato website respectively. Give yourself a pat on the back and have some chicken alfredo with a potato and a tomato on the side.</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html'>How to host multiple websites using Express.js</a></th>
+      <td>20 Jul 2014</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/web/2014/06/26/NodeRestAPITutorial.html'>How to build a scalable REST API using Node.JS and Express</a></th>
