@@ -30,3 +30,6 @@ After students graduate from high schools, they go to universities. Some go to t
 I have countless friends who went to community colleges or smaller universities planning to transfer in the future. Later, most of them decided to stay where they were. They found university to be more difficult than they had expected, and they gave up the idea of transferring.
 
 At Georgia Tech, I met many people from the other end of the spectrum. They were admitted to Georgia Tech as freshmen. Later in their lives, they struggled a lot with their studies. Now, their main goal is to pass and earn a degree from Georgia Tech. They are accepting the reluctantly accepting the challenge.
+
+[ksu]: http://kennesaw.edu/
+[gatech]: http://www.gatech.edu/
