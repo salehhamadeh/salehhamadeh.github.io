@@ -90,6 +90,39 @@
               
   
   <div class='post'>
+    <span class='date'>10 Oct 2014</span>
+    <h1><a href='/blog/opinion/2014/10/10/TransferStudentsAreSmarterThanAverage.html'>Transfer Students are Smarter than the Average Student at Their University</a></h1>
+    <div class='body'><p>Yesterday, I met with a friend who, like me, transferred from [Kennesaw State University][ksu]. We had a good conversation, and after we parted, I had a strange thought: &quot;Why aren&#39;t [Georgia Tech][gatech] students as intelligent as KSU students?&quot; </p>
+
+<p>Georgia Tech has one of the top engineering programs in the United States, while KSU is only well-known in the Southeast; therefore, there must be an error in my formula.</p>
+
+<p>I pondered over the idea for a moment and thought specifically about the KSU students whom I thought were extraordinary. Among those students, 6 transferred to Georgia Tech, 1 transferred to Georgia State University, 1 joined the PhD program at Emory University, 3 transferred to University of Georgia, and 3 are still at KSU.</p>
+
+<p>This made me realize an unusual fact. My friends from KSU are not smarter than Georgia Tech students because they went to KSU. They are smarter because most of them are transfer students.</p>
+
+<p>After reflecting on my experience as a tranfer students, I feel confident about generalizing my hypothesis to include all students across all universities. Here is why:</p>
+
+<h2>All Transfer Students Embrace Challenge</h2>
+
+<p>During my senior year of high school, I applied to the top universities in the United States, and my backup plan was to go to Kennesaw State University. As you would expect, I was rejected everywhere except in KSU, so I ended up going there.</p>
+
+<p>At KSU, I was admitted into the honors program. I had an amazing time there. School was easy. The atmosphere was relaxing. I had a good relationship with all my professors. Everything was wonderful. However, occasionally I felt that I was different from the majority of the students at the university. For some reason, my brain was telling me that I was not in the right place. I never wanted to earn an easy degree. I want my college experience to be challenging and to give me the greatest amount of knowledge possible. I also want to be surrounded with people who thought like me. For these reasons, I decided to transfer to Georgia Tech.</p>
+
+<p>Students who transfer do that because they are looking for more challenge. They know that it will be harder than what they are used to, yet they take the leap.</p>
+
+<h2>Many Non-Transfer Students go with the Flow</h2>
+
+<p>After students graduate from high schools, they go to universities. Some go to top-notch and Ivy League universities, others go to average universities that serve their local area, and yet others go to community colleges. All these students have one thing in common: they do not know what is ahead of them.</p>
+
+<p>I have countless friends who went to community colleges or smaller universities planning to transfer in the future. Later, most of them decided to stay where they were. They found university to be more difficult than they had expected, and they gave up the idea of transferring.</p>
+
+<p>At Georgia Tech, I met many people from the other end of the spectrum. They were admitted to Georgia Tech as freshmen. Later in their lives, they struggled a lot with their studies. Now, their main goal is to pass and earn a degree from Georgia Tech. They are accepting the reluctantly accepting the challenge.</p>
+</div>
+  </div>
+  
+
+  
+  <div class='post'>
     <span class='date'>29 Sep 2014</span>
     <h1><a href='/blog/opinion/2014/09/29/HackathonsForABetterWorld.html'>Hackathons for a Better World</a></h1>
     <div class='body'><p>For those of you who do not know what a hackathon is, a hackathon is an event in which teams compete to create a product that will solve a real-world problem. Most of the people who attend hackathons are programmers or hackers, but hackathons are open to anyone who feels creative.</p>
@@ -201,85 +234,17 @@
   
 
   
-  <div class='post'>
-    <span class='date'>31 Jul 2014</span>
-    <h1><a href='/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html'>How to verify phone numbers using Twilio and Parse</a></h1>
-    <div class='body'><p>Do you want to create an app that relies on a user&#39;s phone number to function? If so, you have probably heard about <a href="https://www.twilio.com/">Twilio</a>. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, <a href="https://parse.com/">Parse</a> has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&#39;t it? Let&#39;s get started.</p>
-
-<h2>Parse Cloud Functions</h2>
-
-<p>We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls <a href="https://www.parse.com/docs/cloud_code_guide">Cloud Functions</a>. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user&#39;s number.</p>
-
-<h2>Creating Your First Cloud Function</h2>
-
-<p>To start developing Cloud Functions, you must first have Parse&#39;s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the <a href="https://parse.com/docs/cloud_code_guide">Parse Cloud Code Guide</a>.</p>
-
-<h2>Send Verification Code</h2>
-
-<p>The first Cloud Function that we need to write is the one that send the verification code to the user&#39;s phone. Luckily, Parse comes with bundled with a <a href="https://www.parse.com/docs/cloud_modules_guide#twilio">Twilio Cloud Module</a>. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing <Your Twilio Account Sid> and <Your Twilio Auth Token> with their respective values from your Twilio dashboard.</p>
-
-<div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">twilio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;twilio&#39;</span><span class="p">)(</span><span class="s1">&#39;&lt;Your Twilio Account Sid&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;Your Twilio Auth Token&gt;&#39;</span><span class="p">);</span></code></pre></div>
-
-<p>Now, you have all you need to define your verfication code cloud function. I will call this function sendVerificationCode, but you can have any name that you like. The function is defined as follows:</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;sendVerificationCode&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">999999</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
-    <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">,</span> <span class="nx">verificationCode</span><span class="p">);</span>
-    <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
-    
-    <span class="nx">twilio</span><span class="p">.</span><span class="nx">sendSms</span><span class="p">({</span>
-        <span class="nx">From</span><span class="o">:</span> <span class="s2">&quot;&lt;Your Twilio phone number&gt;&quot;</span><span class="p">,</span>
-        <span class="nx">To</span><span class="o">:</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">,</span>
-        <span class="nx">Body</span><span class="o">:</span> <span class="s2">&quot;Your verification code is &quot;</span> <span class="o">+</span> <span class="nx">verificationCode</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
-    <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">responseData</span><span class="p">)</span> <span class="p">{</span> 
-        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-          <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
-          <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">});</span>
-<span class="p">});</span></code></pre></div>
-
-<p>This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user&#39;s record. Then, it sends that code to the user via Twilio.</p>
-
-<h2>Verify Phone Number</h2>
-
-<p>The second Cloud Function that we need to define is the one that verifies the user&#39;s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">Parse</span><span class="p">.</span><span class="nx">Cloud</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s2">&quot;verifyPhoneNumber&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nx">User</span><span class="p">.</span><span class="nx">current</span><span class="p">();</span>
-    <span class="kd">var</span> <span class="nx">verificationCode</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;phoneVerificationCode&quot;</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">verificationCode</span> <span class="o">==</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneVerificationCode</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">user</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;phoneNumber&quot;</span><span class="p">,</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">phoneNumber</span><span class="p">);</span>
-        <span class="nx">user</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
-        <span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="s2">&quot;Success&quot;</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="nx">response</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Invalid verification code.&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">});</span></code></pre></div>
-
-<p>As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user&#39;s phone number to the number that the user included in his request.</p>
-
-<h2>Deploying the Cloud Functions</h2>
-
-<p>At this point, you are done with your server-side logic. Go ahead and save the main.js file. Then, use the command line to go to the root directory of your cloud code. When you are there, run the following command to push your code to Parse:</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">parse</span> <span class="nx">deploy</span></code></pre></div>
-
-<h2>Next Steps</h2>
-
-<p>Now that your backend is ready to roll, it is time to connect your client-side. With Parse&#39;s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.</p>
-
-<p>Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.</p>
-</div>
-  </div>
-  
-
-  
     
     <h3>Older Posts</h3>
     <table class='post-list'>
+    
+    <tr>
+      <th><a href='/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html'>How to verify phone numbers using Twilio and Parse</a></th>
+      <td>31 Jul 2014</td>
+    </tr>
+  
+
+  
     
     <tr>
       <th><a href='/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html'>How to host multiple websites using Express.js</a></th>
