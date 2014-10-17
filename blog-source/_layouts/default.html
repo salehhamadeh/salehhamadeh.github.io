@@ -31,13 +31,6 @@
           });
         </script>
         <!-- AddThis Smart Layers END -->
-        {% if page.title contains "Saleh Hamadeh's Blog" %}
-          <!-- Mailchimp Styles -->
-          <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-          </style>
-        {% endif %}
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/stylesheets/syntax.css">
@@ -70,6 +63,9 @@
             <div class="col-md-8 col-md-offset-1">
               {{ content }}
             </div>
+            <div class="col-md-3">
+              {% include ads.html %}
+            </div>
           </div>
           {% if page.path contains '_post' %}
             <div id="endpage-box" class="endpage-box"></div>
@@ -95,11 +91,6 @@
         {% include footer.html %}
 
         <script src="/bootstrap/js/bootstrap.min.js"></script>
-
-        {% if page.title contains "Saleh Hamadeh's Blog" %}
-          <!-- Mailchimp -->
-          <script src="/js/mailchimp.js"></script>
-        {% endif %}
 
         <script type="text/javascript">
           var _gaq = _gaq || [];
