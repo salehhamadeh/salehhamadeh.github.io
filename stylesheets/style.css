@@ -44,6 +44,11 @@ span.date {
   float: left;
 }
 
+/* Book list on right side */
+#booklist li {
+  margin-bottom: 20px;
+}
+
 /* ---------- Other posts table -------------- */
 table.post-list {
   width: 100%;
