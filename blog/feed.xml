@@ -8,6 +8,21 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Coding on a Tablet</title>
+				<description>&lt;p&gt;Yesterday, the first day of finals, my computer decided to stop functioning. Since most of my finals are in Computer Science classes, I had to be able to program to study. The only devices I have in hand are my smartphone and my tablet. What can I do?&lt;/p&gt;
+
+&lt;p&gt;I chose to try the tablet since it had a bigger screen. Of course, iOS does not give me any freedom. So, how do  I overcome that? I remembered my cloud Ubuntu virtual machine. If I could only access my server&amp;#39;s shell, I can run emacs to edit code and compile all my Java programs from the command line. I did a Google search and stumbled upon a nifty tool called Serveauditor. This is my SSH client to freedom.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/ipad-ssh-screenshot.png&quot; alt=&quot;Screenshot&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Using Serverauditor, I was able to both practice for my data structures final and write this blog post. As I do that, I continue to believe the saying, &amp;quot;if there is a will, there is a way.&amp;quot;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 09 Dec 2014 00:15:00 -0500</pubDate>
+				<link>http://www.shamadeh.com/blog/hacks/2014/12/09/CodingOnATablet.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/hacks/2014/12/09/CodingOnATablet.html</guid>
+			</item>
+		
+			<item>
 				<title>Transfer Students are Smarter than the Average Student at Their University</title>
 				<description>&lt;p&gt;Yesterday, I met with a friend who, like me, transferred from &lt;a href=&quot;http://kennesaw.edu/&quot;&gt;Kennesaw State University&lt;/a&gt;. We had a good conversation, and after we parted, I had a strange thought: &amp;quot;Why aren&amp;#39;t &lt;a href=&quot;http://www.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt; students as intelligent as KSU students?&amp;quot; &lt;/p&gt;
 
@@ -634,43 +649,6 @@
 				<pubDate>Wed, 28 May 2014 04:45:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</guid>
-			</item>
-		
-			<item>
-				<title>Web Security: Unvalidated Redirects</title>
-				<description>&lt;p&gt;Did you expect to be on Google or some other page but found yourself here? Then, let me tell you that you were a victim to one of the top 10 web security threats: &lt;a href=&quot;https://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards&quot;&gt;Unvalidated Redirects&lt;/a&gt;. Do not worry, you are in safe hands (this blog).&lt;/p&gt;
-
-&lt;h2&gt;What Happened?&lt;/h2&gt;
-
-&lt;p&gt;The link that you clicked is probably a redirection link, such as those found in Google&amp;#39;s search results. Companies like Google and Twitter use redirection links to track where their users are going. It helps them gather information and hide information. For example, using redirection URLs, websites can:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;  Track where their userbase is going.&lt;/li&gt;
-&lt;li&gt;  Hide referral information (search query strings, etc...) from the websites that the users are redirected to.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Why is this a Threat?&lt;/h2&gt;
-
-&lt;p&gt;Most users who surf the web do not look at their address bar on every page they visit. To most of them, seeing that a link starts with www.google.com is enough to make the link trustworthy. Now if a malicious user creates a website that clones Google&amp;#39;s login page and sends a redirection URL that starts with www.google.com, the victims are only 1 step close to sending out their password.&lt;/p&gt;
-
-&lt;p&gt;Other users may use this security weakness to get more traffic. If the &amp;quot;bad&amp;quot; users serve ads, they make more money.&lt;/p&gt;
-
-&lt;h2&gt;What Defenses can Web Developers Take to Keep their Websites Safe?&lt;/h2&gt;
-
-&lt;p&gt;The easiest way to keep your sites safe is to stay away from redirection using query string parameters. If this is not something that you can easily do, here are some strategies that you can use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;  Keep a hash map of URLs. In other words, instead of having the URL in the query string, have a key that refers to that URL there. In this way, only the URLs for the keys that YOU define are redirectable.&lt;/li&gt;
-&lt;li&gt;  A better method is to have a domain name dedicated to URL redirections. &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt; uses &lt;a href=&quot;https://support.twitter.com//entries/109623&quot;&gt;t.co&lt;/a&gt; to track its users&amp;#39; whereabouts while explicitly showing them that they will be redirected. &lt;a href=&quot;https://www.yahoo.com/&quot;&gt;Yahoo&lt;/a&gt; uses r.search.yahoo.com for the same purpose.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;What Defenses can Users Take to Stay Safe?&lt;/h2&gt;
-
-&lt;p&gt;Look at the full URL before visiting a link. The first part of it does not tell you everything. For some URLs, this practice can be tedious. In that case, look at the URL every time you are about to submit a form or enter sensitive information.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 06 Apr 2014 06:00:00 -0400</pubDate>
-				<link>http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/04/06/Unvalidated-Redirects.html</guid>
 			</item>
 		
 
