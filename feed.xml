@@ -8,6 +8,43 @@
 		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Why I still do not have a data plan</title>
+				<description>&lt;p&gt;Almost every week I get asked the question, &amp;quot;Why don&amp;#39;t you have a data plan?&amp;quot;. Everyone assumes that the reason is to save money. When I say that I just do not want one, people move forward to the next question, &amp;quot;Why not?&amp;quot;. In this post, I hope to clearly show you why I am against having a data plan.&lt;/p&gt;
+
+&lt;h2&gt;Attention Killer&lt;/h2&gt;
+
+&lt;p&gt;Imagine that a professor is giving a complex lecture. A student raises his hand, and the professor takes the student&amp;#39;s question. After the professor answers it, two other students raise their hands. The professor answers both of their questions. By the time the professor goes back to the lecture, the professor and the students will lose track of the point at which the lecture was interrupted.&lt;/p&gt;
+
+&lt;p&gt;The same rule applies to your everyday life. You may be reading a book at a coffee shop. Then, your phone whistles (I am an Android fan). You check your phone and find that Facebook sent you a notification saying that some of your friends have birthdays. You click on it to see whom and wish them happy birthday. Then, you go back to your book. After a couple of minutes, your phone whistles. You check your phone to find the message, &amp;quot;Log in to sync Facebook with your other apps.&amp;quot; Clear notifications. Go back to your book.&lt;/p&gt;
+
+&lt;p&gt;Push notifications are attention killers, no matter whether you open them or not. Hearing them makes you feel uncomfortable, seeing them distracts, and opening them takes you on an endless tangent.&lt;/p&gt;
+
+&lt;h2&gt;&amp;quot;Connected&amp;quot; Friends&lt;/h2&gt;
+
+&lt;p&gt;When I am hanging out with friends or attending social events, nothing bothers me more than seeing people scrolling through their phones. Sometimes I hold myself and stare at them until they stop. One time I did that, and my friend asked me to keep on talking. I did and then asked him a question. His reply was, &amp;quot;I am hearing you. Go on.&amp;quot; He surely was hearing me, but he had no idea what I was saying.&lt;/p&gt;
+
+&lt;p&gt;This 24/7 access to fast Internet is deteriorating our social skills. When friends sit together, they no longer have anything to say. What they end up doing is taking selfies, posting them online, and spending the rest of the night commenting and liking each other&amp;#39;s photos. These behaviors are a threat to our society because they take us away from deep thought and philosophy. As Albert Einstein said, &amp;quot;I fear the day that technology will surpass our human interaction. The world will have a generation of idiots.&amp;quot;&lt;/p&gt;
+
+&lt;h2&gt;Fleeting Memory&lt;/h2&gt;
+
+&lt;p&gt;One cannot deny that technology is pervasive, nor can one deny that it had a negative effect on our memories. What makes people distinctive is their memories and thoughts. When our memories are not capable of remembering the past, we would no longer act as humans. Technology will control our actions, and we follow what all other human being do.&lt;/p&gt;
+
+&lt;p&gt;With the rise of ephemeral social networks such as SnapChat, people are no longer forming any memories. They live the moment, and the next day they live the other day&amp;#39;s moment without remembering or reflecting on the past. For example, when I attended the New Year&amp;#39;s party in downtown Atlanta, I couldn&amp;#39;t but notice how everyone was using SnapChat. During the countdown, I looked at the sky anticipating fireworks and at that minutes all that I saw were screens running SnapChat. Why are people taking the New Year&amp;#39;s countdown on SnapChat? As soon as they release the record button, everything will be gone. If they did not take a video, it will live in their memories. If they took one using the phone&amp;#39;s camera, it will live in their smartphones. However, in SnapChat it does not live. It fades away.&lt;/p&gt;
+
+&lt;h2&gt;The Need to Disconnect Arises&lt;/h2&gt;
+
+&lt;p&gt;With negative effects on my attention, social skills, and memory, why in the world will I want to get a data plan? Later, I learned that SnapChat users had points. The more views their stories get, the more points they win. Having a stress-free brain is worth much more than the points or likes that I can get if I had a data plan.&lt;/p&gt;
+
+&lt;p&gt;Some people argue that I could get a data plan and only turn the Internet on when I want to. This can help me in situations where I need GPS. However, that does not bring the comfort that one gets from disconnecting. I would like to conclude with this amazing rap that sums up my argument.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/dRl8EIhrQjQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+				<pubDate>Tue, 27 Jan 2015 05:00:00 -0500</pubDate>
+				<link>http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</guid>
+			</item>
+		
+			<item>
 				<title>Coding on a Tablet</title>
 				<description>&lt;p&gt;Yesterday, the first day of finals, my computer decided to stop functioning. Since most of my finals are in Computer Science classes, I had to be able to program to study. The only devices I have in hand are my smartphone and my tablet. What can I do?&lt;/p&gt;
 
@@ -636,19 +673,6 @@
 				<pubDate>Thu, 26 Jun 2014 08:45:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</guid>
-			</item>
-		
-			<item>
-				<title>My Internship at BrainJocks</title>
-				<description>&lt;p&gt;On January 2nd of this year, I had the pleasure of being accepted for an internship at &lt;a href=&quot;http://www.brainjocks.com&quot;&gt;BrainJocks&lt;/a&gt;. BrainJocks is a small company of around 25 dedicated employees who work hard to build beautiful websites for enterprises. The Content Management System that we use is &lt;a href=&quot;http://www.sitecore.net&quot;&gt;Sitecore&lt;/a&gt;, but I did not have the chance to use it yet. For applications, the company uses whatever best solves the problem.&lt;/p&gt;
-
-&lt;p&gt;In the projects that I work on, I use ASP.NET MVC to build an application hosted on the Azure Cloud. The best quality that I find in BrainJocks is the freedom it gives its interns. I, as an intern, not only get to learn the cutting-edge tools used in the industry, but I also get the chance to apply them into the company&amp;#39;s projects. For instance, one of the tools that I introduced to the company is Azure Media Services, which handles video processing and streaming to large-scale applications. Even though this can be tedious, it is extremely rewarding to see the team approve my plans and add it into our workflow.&lt;/p&gt;
-
-&lt;p&gt;I built a simple impress.js presentation about my experience as an Intern. Check the &lt;a href=&quot;http://shamadeh.com/co-op-presentation/index.html&quot;&gt;presentation&lt;/a&gt; now and apply immediately if you get a positive impression.&lt;/p&gt;
-</description>
-				<pubDate>Wed, 28 May 2014 04:45:00 -0400</pubDate>
-				<link>http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/05/28/InterningAtBrainJocks.html</guid>
 			</item>
 		
 
