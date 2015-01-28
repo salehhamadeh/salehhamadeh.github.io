@@ -23,7 +23,7 @@ This 24/7 access to fast Internet is deteriorating our social skills. When frien
 
 Fleeting Memory
 ---------------
-One cannot deny that technology is pervasive, nor can one deny that it had a negative effect on our memories. What makes people distinctive is their memories and thoughts. When our memories are not capable of remembering the past, we would no longer act as humans. Technology will control our actions, and we follow what all other human being do.
+One cannot deny that technology is pervasive, nor can one deny that it had a negative effect on our memories. What makes people distinctive is their memories and thoughts. When our memories are not capable of remembering the past, we would no longer act as humans. Technology will control our actions, and we follow what all other human beings do.
 
 With the rise of ephemeral social networks such as SnapChat, people are no longer forming any memories. They live the moment, and the next day they live the other day's moment without remembering or reflecting on the past. For example, when I attended the New Year's party in downtown Atlanta, I couldn't but notice how everyone was using SnapChat. During the countdown, I looked at the sky anticipating fireworks and at that minutes all that I saw were screens running SnapChat. Why are people taking the New Year's countdown on SnapChat? As soon as they release the record button, everything will be gone. If they did not take a video, it will live in their memories. If they took one using the phone's camera, it will live in their smartphones. However, in SnapChat it does not live. It fades away.
 
