@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "How to host multiple websites using Express.js"
+title:  "How to host multiple websites using Express.js 4"
 date:   2014-07-20 10:15:00
 categories: [web, nodejs, express]
 ---
 
-Hosting multiple websites using NodeJS and Express is made very simple using Express's [virtual hosts][vhost]. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let's see!
+Hosting multiple websites using NodeJS and Express is made very simple using Express's [virtual hosts][vhost]. As of Express 4, vhost is no longer bundled with Express and therefore should be installed separately.
+
+Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let's see!
 
 Our Workspace
 -------------
@@ -18,17 +20,7 @@ As I mentioned earlier, a virtual host is an Express app. This is not entirely t
 {% highlight js %}
 
 function createVirtualHost(domainName, dirPath) {
-    var vhost = express();
-    //parses request body and populates request.body
-    vhost.use( express.bodyParser() );
-    //checks request.body for HTTP method overrides
-    vhost.use( express.methodOverride() );
-    //Where to serve static content
-    vhost.use( express.static( dirPath ) );
-    //Show errors
-    vhost.use( express.errorHandler({ dumpExceptions: true, showStack: true }));
-
-    return express.vhost(domainName, vhost)
+    return vhost(domainName, express.static( dirPath ));
 }
 
 {% endhighlight %}
@@ -60,20 +52,11 @@ The Full Server Code
 
 // Module dependencies.
 var application_root = __dirname,
-    express = require( 'express' );
+    express = require( 'express' ),
+    vhost = require( 'vhost' );
 
 function createVirtualHost(domainName, dirPath) {
-    var vhost = express();
-    //parses request body and populates request.body
-    vhost.use( express.bodyParser() );
-    //checks request.body for HTTP method overrides
-    vhost.use( express.methodOverride() );
-    //Where to serve static content
-    vhost.use( express.static( dirPath ) );
-    //Show errors
-    vhost.use( express.errorHandler({ dumpExceptions: true, showStack: true }));
-
-    return express.vhost(domainName, vhost)
+    return vhost(domainName, express.static( dirPath ));
 }
 
 //Create server

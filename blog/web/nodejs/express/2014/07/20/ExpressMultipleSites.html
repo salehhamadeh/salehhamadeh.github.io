@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>How to host multiple websites using Express.js</title>
+        <title>How to host multiple websites using Express.js 4</title>
         <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
         <meta name="author" content="Saleh Hamadeh" />
         <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
@@ -94,8 +94,10 @@
             <div class="col-md-8 col-md-offset-1">
               <div class="post">
 	<span class='date'>20 Jul 2014</span>
-	<h1><a href=''>How to host multiple websites using Express.js</a></h1>
-	<div class='body'><p>Hosting multiple websites using NodeJS and Express is made very simple using Express&#39;s <a href="https://github.com/expressjs/vhost">virtual hosts</a>. Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&#39;s see!</p>
+	<h1><a href=''>How to host multiple websites using Express.js 4</a></h1>
+	<div class='body'><p>Hosting multiple websites using NodeJS and Express is made very simple using Express&#39;s <a href="https://github.com/expressjs/vhost">virtual hosts</a>. As of Express 4, vhost is no longer bundled with Express and therefore should be installed separately.</p>
+
+<p>Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&#39;s see!</p>
 
 <h2>Our Workspace</h2>
 
@@ -106,17 +108,7 @@
 <p>As I mentioned earlier, a virtual host is an Express app. This is not entirely true. A virtual host wraps up an application into a middleware. After it is wrapped up, we can use it in our main application. The code below shows how to create a virtual host (or vhost).</p>
 
 <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-    <span class="c1">//parses request body and populates request.body</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//checks request.body for HTTP method overrides</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//Where to serve static content</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
-    <span class="c1">//Show errors</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
-
-    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">));</span>
 <span class="p">}</span></code></pre></div>
 
 <p>For our potato and tomato app, we will need to create two virtual hosts as follows:</p>
@@ -136,20 +128,11 @@
 
 <div class="highlight"><pre><code class="js"><span class="c1">// Module dependencies.</span>
 <span class="kd">var</span> <span class="nx">application_root</span> <span class="o">=</span> <span class="nx">__dirname</span><span class="p">,</span>
-    <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">);</span>
+    <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;express&#39;</span> <span class="p">),</span>
+    <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span> <span class="s1">&#39;vhost&#39;</span> <span class="p">);</span>
 
 <span class="kd">function</span> <span class="nx">createVirtualHost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">vhost</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-    <span class="c1">//parses request body and populates request.body</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">bodyParser</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//checks request.body for HTTP method overrides</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">methodOverride</span><span class="p">()</span> <span class="p">);</span>
-    <span class="c1">//Where to serve static content</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">)</span> <span class="p">);</span>
-    <span class="c1">//Show errors</span>
-    <span class="nx">vhost</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span> <span class="nx">express</span><span class="p">.</span><span class="nx">errorHandler</span><span class="p">({</span> <span class="nx">dumpExceptions</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">showStack</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
-
-    <span class="k">return</span> <span class="nx">express</span><span class="p">.</span><span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">vhost</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">vhost</span><span class="p">(</span><span class="nx">domainName</span><span class="p">,</span> <span class="nx">express</span><span class="p">.</span><span class="kr">static</span><span class="p">(</span> <span class="nx">dirPath</span> <span class="p">));</span>
 <span class="p">}</span>
 
 <span class="c1">//Create server</span>
@@ -220,8 +203,8 @@
                 
                   , {
                     title: "Coding on a Tablet",
-                    date: "09 Dec 2014",
-                    url: "/blog/hacks/2014/12/09/CodingOnATablet.html"
+                    date: "08 Dec 2014",
+                    url: "/blog/hacks/2014/12/08/CodingOnATablet.html"
                   }
                 
                   , {
