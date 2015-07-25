@@ -1,7 +1,0 @@
-name: Saleh Hamadeh's Blog
-markdown: redcarpet
-highlighter: pygments
-destination: _site/
-permalink: /blog/:categories/:year/:month/:day/:title.html
-description: Saleh Hamadeh's personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.
-url: http://www.shamadeh.com

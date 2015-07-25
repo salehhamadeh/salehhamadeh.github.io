@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Moving the Blog to Jekyll</title>
+        <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
+        <meta name="author" content="Saleh Hamadeh" />
+        <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="" href="/blog/feed.xml">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins and for endpage-box) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Twitter Bootstrap -->
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- AddThis Smart Layers BEGIN -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fee1032ce6a513"></script>
+        <script type="text/javascript">
+          addthis.layers({
+            'theme' : 'transparent',
+            'share' : {
+              'position' : 'left',
+              'numPreferredServices' : 5
+            }   
+          });
+        </script>
+        <!-- AddThis Smart Layers END -->
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/stylesheets/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+
+        <!-- Related article box code -->
+        
+          <link rel="stylesheet" href="/stylesheets/endpage-box.css">
+          <script src="/js/jquery.endpage-box.min.js"></script>
+          <script type="text/javascript">
+            $(window).load( function() {
+              $("#endpage-box").endpage_box({
+                animation: "fade",
+                from: "90%",
+                to: "1000%",
+              });
+            });
+          </script>
+        
+    </head>
+    <body>
+      <div id="wrap">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/index.html">About Me</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li class="active">
+          <a href="/blog.html">Blog</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/salehhamadeh" target="_blank"><i class="fa fa-facebook fa-lg"></i><span class="sr-only">Facebook Profile</span></a></li>
+        <li><a href="https://twitter.com/salehhamadeh" target="_blank"><i class="fa fa-twitter fa-lg"></i><span class="sr-only">Twitter Profile</span></a></li>
+        <li><a href="https://github.com/salehhamadeh" target="_blank"><i class="fa fa-github fa-lg"></i><span class="sr-only">Github Profile</span></a></li>
+        <li><a href="http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2" target="_blank"><i class="fa fa-linkedin fa-lg"></i><span class="sr-only">LinkedIn Profile</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <div class="container">
+          <div class="row">
+            <h1>Saleh Hamadeh's Blog</h1>
+            <div class="col-md-8 col-md-offset-1">
+              <div class="post">
+	<span class='date'>24 Dec 2013</span>
+	<h1><a href=''>Moving the Blog to Jekyll</a></h1>
+	<div class='body'><p>After two hours of non-stop coding, I crafted this blog and added it to my website. Of course, this would have not been possible without the contributions of the open-source community, namely <a href="http://jekyllrb.com">Jekyll</a>, <a href="http://pages.github.com">Github Pages</a>, and <a href="https://github.com/schacon/schacon.github.com">Scott Chacon</a>.</p>
+
+<p>For those who have never heard of Jekyll, Jekyll is a tool for creating blogs. I chose Jekyll for the following reasons:</p>
+
+<ul>
+  <li>It generates static websites.</li>
+  <li>It is fully customizable.</li>
+</ul>
+
+<p>I will clarify what I mean by a static site. Unlike Wordpress and most other blogging tools, Jekyll does not need a database or back-end scripting. When I first read about that, it was impossible to believe. The site was saying that the blog works without data, which is essential for any blog. If this was true, then anyone can use Jekyll to host a blog using any of the free file servers. I can host a blog on Dropbox. I can host a blog using Apache ONLY. It turns out that what Jekyll claimed was true. Instead of being the blog, Jekyll is the blog generator. It takes in markdown files or text files, runs them through several parsers and templates, and creates a complete site with HTML and CSS. Since Jekyll blogs do not need any back-end scripting, it was the perfect tool for hosting a blog on Github Pages.</p>
+
+<p>Since I use many tools to develop my website (<a href="http://jquery.com">jQuery</a>, <a href="http://getbootstrap.com">Twitter Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, …), I prefer to use tools that do not conflict with the others. I love the tools that give the developers the freedom to use any other libraries and that focus on one thing and do it perfectly. Jekyll met both of my needs. As a website generator, it gives me the blog out of the oven. I did not use any extra link or script tags. Jekyll granted me full customization of the shape of my blog. Using the <a href="http://docs.shopify.com/themes/liquid-basics">Liquid</a> template language, I was able to seemlessly integrate the blog posts with my website. Even though the blog and the site are two different projects on my computer, the blog appears to be part of the website when it is hosted online.</p>
+
+<p>Jekyll was not only the best choice for my blog, but was also extremely easy to learn. I encourage anyone who is interested in Jekyll to install it, create an empty blog (it comes with all the necessary files), and skim through the blog’s source code. Look at the code, tweak it, and read Jekyll’s getting started guide, and you will have your own static and fully-customizable blog in no time.</p>
+
+</div>
+	
+    	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'shamadeh'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  	
+</div>
+
+
+            </div>
+          </div>
+          
+            <div id="endpage-box" class="endpage-box"></div>
+            <script>
+              var related_posts = [{}
+                
+                  , {
+                    title: "Why I still do not have a data plan",
+                    date: "27 Jan 2015",
+                    url: "/opinion/2015/01/27/WhyNoDataPlan.html"
+                  }
+                
+                  , {
+                    title: "Coding on a Tablet",
+                    date: "08 Dec 2014",
+                    url: "/hacks/2014/12/08/CodingOnATablet.html"
+                  }
+                
+                  , {
+                    title: "Transfer Students are Smarter than the Average Student at Their University",
+                    date: "10 Oct 2014",
+                    url: "/opinion/2014/10/10/TransferStudentsAreSmarter.html"
+                  }
+                
+                  , {
+                    title: "Hackathons for a Better World",
+                    date: "29 Sep 2014",
+                    url: "/opinion/2014/09/29/HackathonsForABetterWorld.html"
+                  }
+                
+                  , {
+                    title: "How Agile Changed the Software Development Workplace",
+                    date: "06 Sep 2014",
+                    url: "/programming/2014/09/06/AgileAndSoftwareDevelopers.html"
+                  }
+                
+                  , {
+                    title: "CULC on a Wednesday Morning",
+                    date: "20 Aug 2014",
+                    url: "/life/2014/08/20/CULCOnAWednesdayMorning.html"
+                  }
+                
+                  , {
+                    title: "Back to Tech",
+                    date: "18 Aug 2014",
+                    url: "/life/2014/08/18/BackToTech.html"
+                  }
+                
+                  , {
+                    title: "How to verify phone numbers using Twilio and Parse",
+                    date: "31 Jul 2014",
+                    url: "/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html"
+                  }
+                
+                  , {
+                    title: "How to host multiple websites using Express.js 4",
+                    date: "20 Jul 2014",
+                    url: "/web/nodejs/express/2014/07/20/ExpressMultipleSites.html"
+                  }
+                
+                  , {
+                    title: "How to build a scalable REST API using Node.JS and Express",
+                    date: "26 Jun 2014",
+                    url: "/web/2014/06/26/NodeRestAPITutorial.html"
+                  }
+                
+              ];  //The first blank element is a hack to fix liquid's for loop comma problem
+
+              var post_index = function (min, max) {
+                  return Math.floor(Math.random() * (max - min + 1)) + min;
+              }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
+              $("#endpage-box").html('Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>');
+            </script>
+          
+        </div>
+
+        <div id="footer">
+  <div class="container">
+    <p class="text-center">Proudly hosted by Github Pages</p>
+  </div>
+</div>
+
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-46641204-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+      </div>
+    </body>
+</html>
