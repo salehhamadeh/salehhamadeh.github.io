@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title></title>
-		<description></description>		
-		<link></link>
+		<title>Saleh Hamadeh&#39;s Blog</title>
+		<description>Saleh Hamadeh&#39;s personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.</description>		
+		<link>http://www.shamadeh.com</link>
 		<category>CodeProject</category>
-		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="http://www.shamadeh.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Why I still do not have a data plan</title>
-				<description>&lt;p&gt;Almost every week I get asked the question, “Why don’t you have a data plan?”. Everyone assumes that the reason is to save money. When I say that I just do not want one, people move forward to the next question, “Why not?”. In this post, I hope to clearly show you why I am against having a data plan.&lt;/p&gt;
+				<description>&lt;p&gt;Almost every week I get asked the question, &amp;quot;Why don&amp;#39;t you have a data plan?&amp;quot;. Everyone assumes that the reason is to save money. When I say that I just do not want one, people move forward to the next question, &amp;quot;Why not?&amp;quot;. In this post, I hope to clearly show you why I am against having a data plan.&lt;/p&gt;
 
-&lt;h2 id=&quot;attention-killer&quot;&gt;Attention Killer&lt;/h2&gt;
-&lt;p&gt;Imagine that a professor is giving a complex lecture. A student raises his hand, and the professor takes the student’s question. After the professor answers it, two other students raise their hands. The professor answers both of their questions. By the time the professor goes back to the lecture, the professor and the students will lose track of the point at which the lecture was interrupted.&lt;/p&gt;
+&lt;h2&gt;Attention Killer&lt;/h2&gt;
 
-&lt;p&gt;The same rule applies to your everyday life. You may be reading a book at a coffee shop. Then, your phone whistles (I am an Android fan). You check your phone and find that Facebook sent you a notification saying that some of your friends have birthdays. You click on it to see whom and wish them happy birthday. Then, you go back to your book. After a couple of minutes, your phone whistles. You check your phone to find the message, “Log in to sync Facebook with your other apps.” Clear notifications. Go back to your book.&lt;/p&gt;
+&lt;p&gt;Imagine that a professor is giving a complex lecture. A student raises his hand, and the professor takes the student&amp;#39;s question. After the professor answers it, two other students raise their hands. The professor answers both of their questions. By the time the professor goes back to the lecture, the professor and the students will lose track of the point at which the lecture was interrupted.&lt;/p&gt;
+
+&lt;p&gt;The same rule applies to your everyday life. You may be reading a book at a coffee shop. Then, your phone whistles (I am an Android fan). You check your phone and find that Facebook sent you a notification saying that some of your friends have birthdays. You click on it to see whom and wish them happy birthday. Then, you go back to your book. After a couple of minutes, your phone whistles. You check your phone to find the message, &amp;quot;Log in to sync Facebook with your other apps.&amp;quot; Clear notifications. Go back to your book.&lt;/p&gt;
 
 &lt;p&gt;Push notifications are attention killers, no matter whether you open them or not. Hearing them makes you feel uncomfortable, seeing them distracts, and opening them takes you on an endless tangent.&lt;/p&gt;
 
-&lt;h2 id=&quot;connected-friends&quot;&gt;“Connected” Friends&lt;/h2&gt;
-&lt;p&gt;When I am hanging out with friends or attending social events, nothing bothers me more than seeing people scrolling through their phones. Sometimes I hold myself and stare at them until they stop. One time I did that, and my friend asked me to keep on talking. I did and then asked him a question. His reply was, “I am hearing you. Go on.” He surely was hearing me, but he had no idea what I was saying.&lt;/p&gt;
+&lt;h2&gt;&amp;quot;Connected&amp;quot; Friends&lt;/h2&gt;
 
-&lt;p&gt;This 24/7 access to fast Internet is deteriorating our social skills. When friends sit together, they no longer have anything to say. What they end up doing is taking selfies, posting them online, and spending the rest of the night commenting and liking each other’s photos. These behaviors are a threat to our society because they take us away from deep thought and philosophy. As Albert Einstein said, “I fear the day that technology will surpass our human interaction. The world will have a generation of idiots.”&lt;/p&gt;
+&lt;p&gt;When I am hanging out with friends or attending social events, nothing bothers me more than seeing people scrolling through their phones. Sometimes I hold myself and stare at them until they stop. One time I did that, and my friend asked me to keep on talking. I did and then asked him a question. His reply was, &amp;quot;I am hearing you. Go on.&amp;quot; He surely was hearing me, but he had no idea what I was saying.&lt;/p&gt;
 
-&lt;h2 id=&quot;fleeting-memory&quot;&gt;Fleeting Memory&lt;/h2&gt;
+&lt;p&gt;This 24/7 access to fast Internet is deteriorating our social skills. When friends sit together, they no longer have anything to say. What they end up doing is taking selfies, posting them online, and spending the rest of the night commenting and liking each other&amp;#39;s photos. These behaviors are a threat to our society because they take us away from deep thought and philosophy. As Albert Einstein said, &amp;quot;I fear the day that technology will surpass our human interaction. The world will have a generation of idiots.&amp;quot;&lt;/p&gt;
+
+&lt;h2&gt;Fleeting Memory&lt;/h2&gt;
+
 &lt;p&gt;One cannot deny that technology is pervasive, nor can one deny that it had a negative effect on our memories. What makes people distinctive is their memories and thoughts. When our memories are not capable of remembering the past, we would no longer act as humans. Technology will control our actions, and we follow what all other human beings do.&lt;/p&gt;
 
-&lt;p&gt;With the rise of ephemeral social networks such as SnapChat, people are no longer forming any memories. They live the moment, and the next day they live the other day’s moment without remembering or reflecting on the past. For example, when I attended the New Year’s party in downtown Atlanta, I couldn’t but notice how everyone was using SnapChat. During the countdown, I looked at the sky anticipating fireworks and at that minutes all that I saw were screens running SnapChat. Why are people taking the New Year’s countdown on SnapChat? As soon as they release the record button, everything will be gone. If they did not take a video, it will live in their memories. If they took one using the phone’s camera, it will live in their smartphones. However, in SnapChat it does not live. It fades away.&lt;/p&gt;
+&lt;p&gt;With the rise of ephemeral social networks such as SnapChat, people are no longer forming any memories. They live the moment, and the next day they live the other day&amp;#39;s moment without remembering or reflecting on the past. For example, when I attended the New Year&amp;#39;s party in downtown Atlanta, I couldn&amp;#39;t but notice how everyone was using SnapChat. During the countdown, I looked at the sky anticipating fireworks and at that minutes all that I saw were screens running SnapChat. Why are people taking the New Year&amp;#39;s countdown on SnapChat? As soon as they release the record button, everything will be gone. If they did not take a video, it will live in their memories. If they took one using the phone&amp;#39;s camera, it will live in their smartphones. However, in SnapChat it does not live. It fades away.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-need-to-disconnect-arises&quot;&gt;The Need to Disconnect Arises&lt;/h2&gt;
+&lt;h2&gt;The Need to Disconnect Arises&lt;/h2&gt;
+
 &lt;p&gt;With negative effects on my attention, social skills, and memory, why in the world will I want to get a data plan? Later, I learned that SnapChat users had points. The more views their stories get, the more points they win. Having a stress-free brain is worth much more than the points or likes that I can get if I had a data plan.&lt;/p&gt;
 
 &lt;p&gt;Some people argue that I could get a data plan and only turn the Internet on when I want to. This can help me in situations where I need GPS. However, that does not bring the comfort that one gets from disconnecting. I would like to conclude with this amazing rap that sums up my argument.&lt;/p&gt;
 
-&lt;iframe width=&quot;760&quot; height=&quot;428&quot; src=&quot;//www.youtube.com/embed/dRl8EIhrQjQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
+&lt;iframe class=&quot;youtube-video&quot; width=&quot;760&quot; height=&quot;428&quot; src=&quot;//www.youtube.com/embed/dRl8EIhrQjQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
 				<pubDate>Tue, 27 Jan 2015 02:00:00 -0800</pubDate>
-				<link>/opinion/2015/01/27/WhyNoDataPlan.html</link>
-				<guid isPermaLink="true">/opinion/2015/01/27/WhyNoDataPlan.html</guid>
+				<link>http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</guid>
 			</item>
 		
 			<item>
 				<title>Coding on a Tablet</title>
 				<description>&lt;p&gt;Yesterday, the first day of finals, my computer decided to stop functioning. Since most of my finals are in Computer Science classes, I had to be able to program to study. The only devices I have in hand are my smartphone and my tablet. What can I do?&lt;/p&gt;
 
-&lt;p&gt;I chose to try the tablet since it had a bigger screen. Of course, iOS does not give me any freedom. So, how do  I overcome that? I remembered my cloud Ubuntu virtual machine. If I could only access my server’s shell, I can run emacs to edit code and compile all my Java programs from the command line. I did a Google search and stumbled upon a nifty tool called Serverauditor. This is my SSH client to freedom.&lt;/p&gt;
+&lt;p&gt;I chose to try the tablet since it had a bigger screen. Of course, iOS does not give me any freedom. So, how do  I overcome that? I remembered my cloud Ubuntu virtual machine. If I could only access my server&amp;#39;s shell, I can run emacs to edit code and compile all my Java programs from the command line. I did a Google search and stumbled upon a nifty tool called Serverauditor. This is my SSH client to freedom.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/ipad-ssh-screenshot.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/ipad-ssh-screenshot.png&quot; alt=&quot;Screenshot&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Using Serverauditor, I was able to both practice for my data structures final and write this blog post. As I do that, I continue to believe the saying, “if there is a will, there is a way.”&lt;/p&gt;
-
+&lt;p&gt;Using Serverauditor, I was able to both practice for my data structures final and write this blog post. As I do that, I continue to believe the saying, &amp;quot;if there is a will, there is a way.&amp;quot;&lt;/p&gt;
 </description>
 				<pubDate>Mon, 08 Dec 2014 21:15:00 -0800</pubDate>
-				<link>/hacks/2014/12/08/CodingOnATablet.html</link>
-				<guid isPermaLink="true">/hacks/2014/12/08/CodingOnATablet.html</guid>
+				<link>http://www.shamadeh.com/blog/hacks/2014/12/08/CodingOnATablet.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/hacks/2014/12/08/CodingOnATablet.html</guid>
 			</item>
 		
 			<item>
 				<title>Transfer Students are Smarter than the Average Student at Their University</title>
-				<description>&lt;p&gt;Yesterday, I met with a friend who, like me, transferred from &lt;a href=&quot;http://kennesaw.edu/&quot;&gt;Kennesaw State University&lt;/a&gt;. We had a good conversation, and after we parted, I had a strange thought: “Why aren’t &lt;a href=&quot;http://www.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt; students as intelligent as KSU students?” &lt;/p&gt;
+				<description>&lt;p&gt;Yesterday, I met with a friend who, like me, transferred from &lt;a href=&quot;http://kennesaw.edu/&quot;&gt;Kennesaw State University&lt;/a&gt;. We had a good conversation, and after we parted, I had a strange thought: &amp;quot;Why aren&amp;#39;t &lt;a href=&quot;http://www.gatech.edu/&quot;&gt;Georgia Tech&lt;/a&gt; students as intelligent as KSU students?&amp;quot; &lt;/p&gt;
 
 &lt;p&gt;Georgia Tech has one of the top engineering programs in the United States, while KSU is only well-known in the Southeast; therefore, there must be an error in my formula.&lt;/p&gt;
 
@@ -69,24 +71,25 @@
 
 &lt;p&gt;After reflecting on my experience as a tranfer students, I feel confident about generalizing my hypothesis to include all students across all universities. Here is why:&lt;/p&gt;
 
-&lt;h2 id=&quot;all-transfer-students-embrace-challenge&quot;&gt;All Transfer Students Embrace Challenge&lt;/h2&gt;
+&lt;h2&gt;All Transfer Students Embrace Challenge&lt;/h2&gt;
+
 &lt;p&gt;During my senior year of high school, I applied to the top universities in the United States, and my backup plan was to go to Kennesaw State University. As you would expect, I was rejected everywhere except in KSU, so I ended up going there.&lt;/p&gt;
 
 &lt;p&gt;At KSU, I was admitted into the honors program. I had an amazing time there. School was easy. The atmosphere was relaxing. I had a good relationship with all my professors. Everything was wonderful. However, occasionally I felt that I was different from the majority of the students at the university. For some reason, my brain was telling me that I was not in the right place. I never wanted to earn an easy degree. I want my college experience to be challenging and to give me the greatest amount of knowledge possible. I also want to be surrounded with people who thought like me. For these reasons, I decided to transfer to Georgia Tech.&lt;/p&gt;
 
 &lt;p&gt;Students who transfer do that because they are looking for more challenge. They know that it will be harder than what they are used to, yet they take the leap.&lt;/p&gt;
 
-&lt;h2 id=&quot;many-non-transfer-students-go-with-the-flow&quot;&gt;Many Non-Transfer Students go with the Flow&lt;/h2&gt;
+&lt;h2&gt;Many Non-Transfer Students go with the Flow&lt;/h2&gt;
+
 &lt;p&gt;After students graduate from high schools, they go to universities. Some go to top-notch and Ivy League universities, others go to average universities that serve their local area, and yet others go to community colleges. All these students have one thing in common: they do not know what is ahead of them.&lt;/p&gt;
 
 &lt;p&gt;I have countless friends who went to community colleges or smaller universities planning to transfer in the future. Later, most of them decided to stay where they were. They found university to be more difficult than they had expected, and they gave up the idea of transferring.&lt;/p&gt;
 
 &lt;p&gt;At Georgia Tech, I met many people from the other end of the spectrum. They were admitted to Georgia Tech as freshmen. Later in their lives, they struggled a lot with their studies. Now, their main goal is to pass and earn a degree from Georgia Tech. They are accepting the reluctantly accepting the challenge.&lt;/p&gt;
-
 </description>
 				<pubDate>Fri, 10 Oct 2014 01:00:00 -0700</pubDate>
-				<link>/opinion/2014/10/10/TransferStudentsAreSmarter.html</link>
-				<guid isPermaLink="true">/opinion/2014/10/10/TransferStudentsAreSmarter.html</guid>
+				<link>http://www.shamadeh.com/blog/opinion/2014/10/10/TransferStudentsAreSmarter.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/10/10/TransferStudentsAreSmarter.html</guid>
 			</item>
 		
 			<item>
@@ -97,71 +100,74 @@
 
 &lt;p&gt;It is amazing how companies are willing to put such an enormous amount of money to sponsor hackathons. However, what is even more amazing is the possibility of gathering the greatest minds in the universe and putting them under a single roof for 48 hours. Volunteers bring them food, drinks, and even pillows! To an outside viewer, a hackathon looks like a homeless shelter; to the competitors, a hachathon is heaven.&lt;/p&gt;
 
-&lt;p&gt;Over the weekend, hackers escape their lives’ duties and look at the world from a different angle. Every once in a while, people should take a break from the real world to keep their creativity ignited. A person can read a novel and go to wonderland. They can also go to a hackathon and turn our world into wonderland.&lt;/p&gt;
-
+&lt;p&gt;Over the weekend, hackers escape their lives&amp;#39; duties and look at the world from a different angle. Every once in a while, people should take a break from the real world to keep their creativity ignited. A person can read a novel and go to wonderland. They can also go to a hackathon and turn our world into wonderland.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 29 Sep 2014 02:50:00 -0700</pubDate>
-				<link>/opinion/2014/09/29/HackathonsForABetterWorld.html</link>
-				<guid isPermaLink="true">/opinion/2014/09/29/HackathonsForABetterWorld.html</guid>
+				<link>http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</guid>
 			</item>
 		
 			<item>
 				<title>How Agile Changed the Software Development Workplace</title>
 				<description>&lt;p&gt;In the last three decades, software development has undergone a drastic change. Computer science started out as a mix of discrete mathematics and electrical engineering. As more people bought personal computers, most businesses sold their software for fixed prices. Nowadays, businesses are more user-oriented than product-oriented, and most of them depend on a steady flow of income, such as a subscription fees, rather than a fixed price. Throughout the process, offices transitioned from cubicles to open spaces, programmers from hobbyists to professionals, and products from executable programs to web applications. Two major changes fostered this transformation: Improved Connectivity and Easier Access to Data.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-waterfall-method&quot;&gt;The Waterfall Method&lt;/h2&gt;
+&lt;h2&gt;The Waterfall Method&lt;/h2&gt;
+
 &lt;p&gt;Before the days of the World-Wide Web, software was shipped in the form of floppy disks. Since companies could not easily send updates to their users, the Waterfall Method emerged. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Waterfall_model&quot;&gt;Waterfall Method&lt;/a&gt; divides the software engineering process into the following stages:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Requirements Specification: Gather information from clients and understand the problem.&lt;/li&gt;
-  &lt;li&gt;Design: Propose a solution and develop a model for construction.&lt;/li&gt;
-  &lt;li&gt;Implementation: Develop the full application.&lt;/li&gt;
-  &lt;li&gt;Verification: Customer uses the application and confirms that it works as expected.&lt;/li&gt;
-  &lt;li&gt;Testing: Heavily test application.&lt;/li&gt;
-  &lt;li&gt;Shipping: Customer uses or publishes his application.&lt;/li&gt;
+&lt;li&gt;Requirements Specification: Gather information from clients and understand the problem.&lt;/li&gt;
+&lt;li&gt;Design: Propose a solution and develop a model for construction.&lt;/li&gt;
+&lt;li&gt;Implementation: Develop the full application.&lt;/li&gt;
+&lt;li&gt;Verification: Customer uses the application and confirms that it works as expected.&lt;/li&gt;
+&lt;li&gt;Testing: Heavily test application.&lt;/li&gt;
+&lt;li&gt;Shipping: Customer uses or publishes his application.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png&quot; alt=&quot;Waterfall Method Comic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/waterfall-comic.png&quot; alt=&quot;Waterfall Method Comic&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;When I first saw the photo above, I immediately thought that this comic was nonsense. In the couple of internships that I had, everyone on the team had a say on the project and met with the customers to define the products. I only understood the meaning of this comic when I had an interview at a company that showed me the cubicle that I will work in. It was dark and quiet, definitely not my kind.&lt;/p&gt;
 
-&lt;h2 id=&quot;improved-connectivity&quot;&gt;Improved Connectivity&lt;/h2&gt;
+&lt;h2&gt;Improved Connectivity&lt;/h2&gt;
+
 &lt;p&gt;The main reason companies were managed that way was the low level of connectivity people had back in the day. When a company spots a bug after it delivered its product, it will need to send floppy disks with the patches to all the consumers who bought the original application. Releasing a newer version of an application was a process that took several months and had enormous costs.&lt;/p&gt;
 
 &lt;p&gt;As the Internet became widespread and connection speeds escalated, it became easier, faster, and cheaper for companies to release updates for their software. Programmers need no longer worry about all the edge cases and every single security loophole before releasing the application. As more bugs are discovered, the programmers fix them and publish the updates.&lt;/p&gt;
 
-&lt;h2 id=&quot;easier-access-to-data&quot;&gt;Easier Access to Data&lt;/h2&gt;
+&lt;h2&gt;Easier Access to Data&lt;/h2&gt;
+
 &lt;p&gt;&lt;a href=&quot;http://www.sas.com/en_us/insights/big-data/what-is-big-data.html&quot;&gt;Big Data&lt;/a&gt; is a controversial topic nowadays. Data is the premise of some of the booming information industries, such as business intelligence, marketing automation, and targeted advertising. What once required going to libraries and searching stacks of dusty books can now be done with a Google search.&lt;/p&gt;
 
-&lt;p&gt;One branch of data is feedback. Let’s take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user’s demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer’s personality.&lt;/p&gt;
+&lt;p&gt;One branch of data is feedback. Let&amp;#39;s take mobile apps as an example scenario. When software companies release an app and publish it to the Google Play store or Apple App Store, they get instant feedback from the users. They know the user&amp;#39;s demographics, ratings, and all other usage statistics. Back in the day, getting feedback took so much effort, and it did not provide data as valuable as what we can get nowadays. Interviewing a person for feedback or sending him a message is not the same as the user writing the feedback right after the user runs the app. During interviews, people are usually affected by the environment and the interviewer&amp;#39;s personality.&lt;/p&gt;
 
 &lt;p&gt;If one user has a problem, then there are other users who have the same problem. Therefore, user suggestions help companies build software that appeals to the majority.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-agile-methodology-emerges&quot;&gt;The Agile Methodology Emerges&lt;/h2&gt;
+&lt;h2&gt;The Agile Methodology Emerges&lt;/h2&gt;
+
 &lt;p&gt;Soon enough, the world realized that the Waterfall Methodology no longer fits our era. The goal of the waterfall method was to get the application right the first time. That was a need because shipping or deploying software was a costly process. Now that deployments can be done in a matter of minutes or hours, the concept of continuous refinement started appearing. Not only can developers deploy apps quickly, but developers can also get instant feedback from their customers. Fast deployments and instant feedback are the foundation of the &lt;a href=&quot;http://agilemethodology.org/&quot;&gt;Agile Methodology&lt;/a&gt;. The general stages of the Agile software development stages are:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Design and implement a small set of features.&lt;/li&gt;
-  &lt;li&gt;Publish the app.&lt;/li&gt;
-  &lt;li&gt;Listen to user feedback.&lt;/li&gt;
-  &lt;li&gt;Select new features based on user feedback and go back to step 1.&lt;/li&gt;
+&lt;li&gt;Design and implement a small set of features.&lt;/li&gt;
+&lt;li&gt;Publish the app.&lt;/li&gt;
+&lt;li&gt;Listen to user feedback.&lt;/li&gt;
+&lt;li&gt;Select new features based on user feedback and go back to step 1.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/agile-comic.png&quot; alt=&quot;Agile Method Comic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/agile-comic.png&quot; alt=&quot;Agile Method Comic&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Unlike the Waterfall Method, the Agile Method is against writing a full-blown plan. Plans are based on estimations and hypotheses, which are incorrect most of the time. A customer may want an app for arranging parties at first, but then he realizes that he really wants a social network. To increase customer satisfaction, software developers do not ask for everything and then build the product. Instead, software developers work with the customer to build the product. At the same time, the customer is frequently presented with demos and is in track with the internal tasks for managing the project.&lt;/p&gt;
 
-&lt;p&gt;Although “stop planning and start coding,” works for some projects, the better solution is “plan only for what you need at the moment.”&lt;/p&gt;
+&lt;p&gt;Although &amp;quot;stop planning and start coding,&amp;quot; works for some projects, the better solution is &amp;quot;plan only for what you need at the moment.&amp;quot;&lt;/p&gt;
 
-&lt;h2 id=&quot;the-workplace-shift&quot;&gt;The Workplace Shift&lt;/h2&gt;
-&lt;p&gt;The history of software engineering is completely changing the way we view computer science. When I meet new people and tell them that I am studying computer science, they think that I will spend the rest of my life in a dark cubicle typing an endless stream of zeroes and ones. Most people, excuse me for generalizing, view computer programming as the job for people who do not like to engage with society. Although this notion may apply to the programmers of the 80’s, I forcefully refute that this is the case nowadays. Agile is transforming the software development workplace. Programmers are becoming engineers, and open offices are replacing cubicle.&lt;/p&gt;
+&lt;h2&gt;The Workplace Shift&lt;/h2&gt;
+
+&lt;p&gt;The history of software engineering is completely changing the way we view computer science. When I meet new people and tell them that I am studying computer science, they think that I will spend the rest of my life in a dark cubicle typing an endless stream of zeroes and ones. Most people, excuse me for generalizing, view computer programming as the job for people who do not like to engage with society. Although this notion may apply to the programmers of the 80&amp;#39;s, I forcefully refute that this is the case nowadays. Agile is transforming the software development workplace. Programmers are becoming engineers, and open offices are replacing cubicle.&lt;/p&gt;
 
 &lt;p&gt;To get a better idea of what programmers or software developers do and how their workplace looks like, check out &lt;a href=&quot;http://brainjocks.com/company&quot;&gt;BrainJocks&lt;/a&gt;, the company where I currently intern.&lt;/p&gt;
-
 </description>
 				<pubDate>Sat, 06 Sep 2014 02:50:00 -0700</pubDate>
-				<link>/programming/2014/09/06/AgileAndSoftwareDevelopers.html</link>
-				<guid isPermaLink="true">/programming/2014/09/06/AgileAndSoftwareDevelopers.html</guid>
+				<link>http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</guid>
 			</item>
 		
 			<item>
@@ -170,11 +176,11 @@
 
 &lt;p&gt;For the first time, I will include a photo in a blog post. The photo below is taken from the 2nd floor of the Clough Undergraduate Learning Center, which is also known as CULC. The space below is right in front of my Data Structures and Algorithms lecture class, which fits 200 people. The photo the before-class feeling of Georgia Tech students.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/20140820_092235%20(3).jpg&quot; alt=&quot;CULC photo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/20140820_092235%20(3).jpg&quot; alt=&quot;CULC photo&quot;&gt;&lt;/p&gt;
 </description>
 				<pubDate>Wed, 20 Aug 2014 02:40:00 -0700</pubDate>
-				<link>/life/2014/08/20/CULCOnAWednesdayMorning.html</link>
-				<guid isPermaLink="true">/life/2014/08/20/CULCOnAWednesdayMorning.html</guid>
+				<link>http://www.shamadeh.com/blog/life/2014/08/20/CULCOnAWednesdayMorning.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/08/20/CULCOnAWednesdayMorning.html</guid>
 			</item>
 		
 			<item>
@@ -192,94 +198,100 @@
 &lt;p&gt;In the United States, I worked full-time at &lt;a href=&quot;http://www.brainjocks.com&quot;&gt;BrainJocks&lt;/a&gt; for the next 6 weeks. In these weeks, I learned more about building complex digital systems than I had ever learned in school. Test-Driven Development, Unit Testing, Dependency Injection, Inversion of Control, and ASP.NET MVC are just a little of what I learned about.&lt;/p&gt;
 
 &lt;p&gt;The professor is here now. I need to stop typing and focus on lecture. Oh, actually she is playing some techno before lecture. This semester is gonna be amazing!&lt;/p&gt;
-
 </description>
 				<pubDate>Mon, 18 Aug 2014 02:40:00 -0700</pubDate>
-				<link>/life/2014/08/18/BackToTech.html</link>
-				<guid isPermaLink="true">/life/2014/08/18/BackToTech.html</guid>
+				<link>http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</guid>
 			</item>
 		
 			<item>
 				<title>How to verify phone numbers using Twilio and Parse</title>
-				<description>&lt;p&gt;Do you want to create an app that relies on a user’s phone number to function? If so, you have probably heard about &lt;a href=&quot;https://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt;. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, &lt;a href=&quot;https://parse.com/&quot;&gt;Parse&lt;/a&gt; has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users’ phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn’t it? Let’s get started.&lt;/p&gt;
+				<description>&lt;p&gt;Do you want to create an app that relies on a user&amp;#39;s phone number to function? If so, you have probably heard about &lt;a href=&quot;https://www.twilio.com/&quot;&gt;Twilio&lt;/a&gt;. Twilio provides an API for developers to send and receive text messages as well as calls. On the other hand, &lt;a href=&quot;https://parse.com/&quot;&gt;Parse&lt;/a&gt; has gained much popularity as a mobile app backend. Using Twilio along with Parse, you can verify your users&amp;#39; phone numbers and store them in a database using fewer than 35 lines of server-side code. Sounds too good to be true, doesn&amp;#39;t it? Let&amp;#39;s get started.&lt;/p&gt;
 
-&lt;h2 id=&quot;parse-cloud-functions&quot;&gt;Parse Cloud Functions&lt;/h2&gt;
-&lt;p&gt;We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls &lt;a href=&quot;https://www.parse.com/docs/cloud_code_guide&quot;&gt;Cloud Functions&lt;/a&gt;. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user’s number.&lt;/p&gt;
+&lt;h2&gt;Parse Cloud Functions&lt;/h2&gt;
 
-&lt;h2 id=&quot;creating-your-first-cloud-function&quot;&gt;Creating Your First Cloud Function&lt;/h2&gt;
-&lt;p&gt;To start developing Cloud Functions, you must first have Parse’s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the &lt;a href=&quot;https://parse.com/docs/cloud_code_guide&quot;&gt;Parse Cloud Code Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We need to store the code that communicates with Twilio somewhere on the server. This code is placed in what Parse calls &lt;a href=&quot;https://www.parse.com/docs/cloud_code_guide&quot;&gt;Cloud Functions&lt;/a&gt;. Simply, Cloud Functions are functions that run on the server. However, they are triggered by the clients, which makes them act as API endpoints. For our purposes, we need to define two Cloud Functions: one to send the verification code to the user and one to verify the user&amp;#39;s number.&lt;/p&gt;
 
-&lt;h2 id=&quot;send-verification-code&quot;&gt;Send Verification Code&lt;/h2&gt;
-&lt;p&gt;The first Cloud Function that we need to write is the one that send the verification code to the user’s phone. Luckily, Parse comes with bundled with a &lt;a href=&quot;https://www.parse.com/docs/cloud_modules_guide#twilio&quot;&gt;Twilio Cloud Module&lt;/a&gt;. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing &lt;your twilio=&quot;&quot; account=&quot;&quot; sid=&quot;&quot;&gt; and &lt;your twilio=&quot;&quot; auth=&quot;&quot; token=&quot;&quot;&gt; with their respective values from your Twilio dashboard.&lt;/your&gt;&lt;/your&gt;&lt;/p&gt;
+&lt;h2&gt;Creating Your First Cloud Function&lt;/h2&gt;
+
+&lt;p&gt;To start developing Cloud Functions, you must first have Parse&amp;#39;s Command Line Tool installed on your machine. Since Parse did a great job in explaining this process, I will not repeat it here. If you have never written a Cloud Function before, please follow the Getting Started section of the &lt;a href=&quot;https://parse.com/docs/cloud_code_guide&quot;&gt;Parse Cloud Code Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Send Verification Code&lt;/h2&gt;
+
+&lt;p&gt;The first Cloud Function that we need to write is the one that send the verification code to the user&amp;#39;s phone. Luckily, Parse comes with bundled with a &lt;a href=&quot;https://www.parse.com/docs/cloud_modules_guide#twilio&quot;&gt;Twilio Cloud Module&lt;/a&gt;. In other words, you do not need to install a Twilio client for your Parse function. All you need to do is import it. To import it, put the following line at the top of your main.js file, replacing &lt;Your Twilio Account Sid&gt; and &lt;Your Twilio Auth Token&gt; with their respective values from your Twilio dashboard.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;twilio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;twilio&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;Your Twilio Account Sid&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;Your Twilio Auth Token&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now, you have all you need to define your verfication code cloud function. I will call this function sendVerificationCode, but you can have any name that you like. The function is defined as follows:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Cloud&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;sendVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;999999&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;999999&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    
     &lt;span class=&quot;nx&quot;&gt;twilio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendSms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-	    &lt;span class=&quot;nx&quot;&gt;From&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;Your Twilio phone number&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	    &lt;span class=&quot;nx&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	    &lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Your verification code is &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;From&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;Your Twilio phone number&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;Body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Your verification code is &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.&amp;quot;&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;responseData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
-	    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	      &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
-	      &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+          &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user’s record. Then, it sends that code to the user via Twilio.&lt;/p&gt;
+&lt;p&gt;This function accepts the phone number as a parameter, as seen in request.params.phoneNumber. It generates a verification code and stores it in the user&amp;#39;s record. Then, it sends that code to the user via Twilio.&lt;/p&gt;
 
-&lt;h2 id=&quot;verify-phone-number&quot;&gt;Verify Phone Number&lt;/h2&gt;
-&lt;p&gt;The second Cloud Function that we need to define is the one that verifies the user’s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:&lt;/p&gt;
+&lt;h2&gt;Verify Phone Number&lt;/h2&gt;
+
+&lt;p&gt;The second Cloud Function that we need to define is the one that verifies the user&amp;#39;s phone number and stores it in the database. I will call this function verifyPhoneNumber, and it will take the phone number and the verification code as parameters. It is defined as follows:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Cloud&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;verifyPhoneNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneVerificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Invalid verification code.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneVerificationCode&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;verificationCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneVerificationCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;phoneNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;phoneNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Invalid verification code.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user’s phone number to the number that the user included in his request.&lt;/p&gt;
+&lt;p&gt;As you can see, this function first checks if the verification code that the user sends matches that which was saved in the database. If it is, it sets the user&amp;#39;s phone number to the number that the user included in his request.&lt;/p&gt;
 
-&lt;h2 id=&quot;deploying-the-cloud-functions&quot;&gt;Deploying the Cloud Functions&lt;/h2&gt;
+&lt;h2&gt;Deploying the Cloud Functions&lt;/h2&gt;
+
 &lt;p&gt;At this point, you are done with your server-side logic. Go ahead and save the main.js file. Then, use the command line to go to the root directory of your cloud code. When you are there, run the following command to push your code to Parse:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deploy&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;Now that your backend is ready to roll, it is time to connect your client-side. With Parse’s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.&lt;/p&gt;
+&lt;h2&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Now that your backend is ready to roll, it is time to connect your client-side. With Parse&amp;#39;s SDK, all you need to do is use the Call Cloud Function command. This differs from platform to platform, so refer to the Parse documentation to find the command for calling a Cloud Function from your client app.&lt;/p&gt;
 
 &lt;p&gt;Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.&lt;/p&gt;
-
 </description>
 				<pubDate>Thu, 31 Jul 2014 00:50:00 -0700</pubDate>
-				<link>/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</link>
-				<guid isPermaLink="true">/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</guid>
+				<link>http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</guid>
 			</item>
 		
 			<item>
 				<title>How to host multiple websites using Express.js 4</title>
-				<description>&lt;p&gt;Hosting multiple websites using NodeJS and Express is made very simple using Express’s &lt;a href=&quot;https://github.com/expressjs/vhost&quot;&gt;virtual hosts&lt;/a&gt;. As of Express 4, vhost is no longer bundled with Express and therefore should be installed separately.&lt;/p&gt;
+				<description>&lt;p&gt;Hosting multiple websites using NodeJS and Express is made very simple using Express&amp;#39;s &lt;a href=&quot;https://github.com/expressjs/vhost&quot;&gt;virtual hosts&lt;/a&gt;. As of Express 4, vhost is no longer bundled with Express and therefore should be installed separately.&lt;/p&gt;
 
-&lt;p&gt;Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let’s see!&lt;/p&gt;
+&lt;p&gt;Using virtual hosts, you do not need to worry about using a reverse proxy to forward your visitors to different ports. Simply, a virtual host is an Express app tied to a domain name. What does that mean in code? Let&amp;#39;s see!&lt;/p&gt;
 
-&lt;h2 id=&quot;our-workspace&quot;&gt;Our Workspace&lt;/h2&gt;
-&lt;p&gt;For demonstration, let us assume that we own two domain names: potato.com and tomato.com. We want www.potato.com to direct to the potato website, which is located in a directory named potato, and we want www.tomato.com to direct to the tomato website, which is located in a directory named tomato. For simplicity’s sake, both websites are static websites.&lt;/p&gt;
+&lt;h2&gt;Our Workspace&lt;/h2&gt;
 
-&lt;h2 id=&quot;creating-a-virtual-host&quot;&gt;Creating a Virtual Host&lt;/h2&gt;
+&lt;p&gt;For demonstration, let us assume that we own two domain names: potato.com and tomato.com. We want www.potato.com to direct to the potato website, which is located in a directory named potato, and we want www.tomato.com to direct to the tomato website, which is located in a directory named tomato. For simplicity&amp;#39;s sake, both websites are static websites.&lt;/p&gt;
+
+&lt;h2&gt;Creating a Virtual Host&lt;/h2&gt;
+
 &lt;p&gt;As I mentioned earlier, a virtual host is an Express app. This is not entirely true. A virtual host wraps up an application into a middleware. After it is wrapped up, we can use it in our main application. The code below shows how to create a virtual host (or vhost).&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createVirtualHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;domainName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dirPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -291,14 +303,15 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;potatoHost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createVirtualHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;www.potato.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;potato&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tomatoHost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createVirtualHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;www.tomato.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;tomato&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;using-the-virtual-hosts&quot;&gt;Using the Virtual Hosts&lt;/h2&gt;
+&lt;h2&gt;Using the Virtual Hosts&lt;/h2&gt;
+
 &lt;p&gt;Using the virtual hosts is as simple as using any piece of middleware. All we have to do is pass them to app.use:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;potatoHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tomatoHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;the-full-server-code&quot;&gt;The Full Server Code&lt;/h2&gt;
+&lt;h2&gt;The Full Server Code&lt;/h2&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Module dependencies.&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;application_root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;__dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -326,7 +339,8 @@
     &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Express server listening on port %d in %s mode&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;settings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;testing-the-server&quot;&gt;Testing the Server&lt;/h2&gt;
+&lt;h2&gt;Testing the Server&lt;/h2&gt;
+
 &lt;p&gt;In order to see the server work, we must own both domain names and set their addresses to that of our server. Since we do not own the domain names and the process is arduous, we will modify the hosts file to make those domain names point to our local machine.&lt;/p&gt;
 
 &lt;p&gt;On Windows, the hosts file can be found in c:\windows\system32\drivers\etc&lt;/p&gt;
@@ -341,21 +355,22 @@
 127.0.0.1 www.tomato.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now, run your NodeJS application and navigate to www.potato.com and www.tomato.com from any browser. Voila! You should now be directed to the potato website and the tomato website respectively. Give yourself a pat on the back and have some chicken alfredo with a potato and a tomato on the side.&lt;/p&gt;
-
 </description>
 				<pubDate>Sun, 20 Jul 2014 03:15:00 -0700</pubDate>
-				<link>/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</link>
-				<guid isPermaLink="true">/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</guid>
+				<link>http://www.shamadeh.com/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</guid>
 			</item>
 		
 			<item>
 				<title>How to build a scalable REST API using Node.JS and Express</title>
 				<description>&lt;p&gt;When I build an API, I like to have it as light-weight and scalable as possible. At the same time, I want to be able to easily add or remove features with the least amount of effort possible. Because &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.JS&lt;/a&gt; and &lt;a href=&quot;http://expressjs.com/&quot;&gt;Express&lt;/a&gt; give control over the inner workings of a web application, they are the perfect fit.&lt;/p&gt;
 
-&lt;h2 id=&quot;what-will-we-build&quot;&gt;What will we build?&lt;/h2&gt;
+&lt;h2&gt;What will we build?&lt;/h2&gt;
+
 &lt;p&gt;We will build a RESTful API for a library. A library has books, accounts, DVDs, and many more things. As I always do, I will approach the problem by building an API for books only, and then scaling it to include all the other library items.&lt;/p&gt;
 
-&lt;h2 id=&quot;first-rollout-build-a-dumb-server&quot;&gt;First Rollout: Build a Dumb Server&lt;/h2&gt;
+&lt;h2&gt;First Rollout: Build a Dumb Server&lt;/h2&gt;
+
 &lt;p&gt;Before we start writing code, we need to fetch the dependencies. Even though the only dependency is Express, I like to keep a package.json file in case I ever decide to add other dependencies in the future. So, the first thing we will do is create a file called package.json and put the following code in it:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -367,13 +382,13 @@
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Now open up your terminal or command line and go to the project’s directory. Type&lt;/p&gt;
+&lt;p&gt;Now open up your terminal or command line and go to the project&amp;#39;s directory. Type&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;npm install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;to install Express. It will be installed in the node_modules directory.&lt;/p&gt;
 
-&lt;p&gt;Now that we have all the dependencies ready, let’s create a simple server that will capture requests and respond with a Hello World.&lt;/p&gt;
+&lt;p&gt;Now that we have all the dependencies ready, let&amp;#39;s create a simple server that will capture requests and respond with a Hello World.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Module dependencies.&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;application_root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;__dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -456,19 +471,22 @@
 
 &lt;p&gt;to start the server. The server should response with the hardcoded data when you try to get a book and should echo back the data when you try to do another operation, such as inserting, deleting, or updating.&lt;/p&gt;
 
-&lt;h2 id=&quot;from-dumb-to-restful&quot;&gt;From Dumb to RESTful&lt;/h2&gt;
+&lt;h2&gt;From Dumb to RESTful&lt;/h2&gt;
+
 &lt;p&gt;Before we can use real data in our API, we must understand the two fundamental requirements for every API. These two fundamental requirements are communication and storage.&lt;/p&gt;
 
 &lt;p&gt;Communication refers to the way in which data is passed back-and-forth between the server and the clients. Since we are building a RESTful API, our communication protocol is &lt;a href=&quot;http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol&quot;&gt;HTTP&lt;/a&gt;, which we dealt with using Express.&lt;/p&gt;
 
 &lt;p&gt;Storage refers to the medium and format in which data is stored. For example, data can be stored on a database server, in a file, or in memory. To fulfill this requirement, I like to start by using MongoDB to store my data. To access the &lt;a href=&quot;http://www.mongodb.org/&quot;&gt;MongoDB&lt;/a&gt; database from Node.JS, we will use an NPM package called &lt;a href=&quot;http://mongoosejs.com/&quot;&gt;Mongoose&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;setting-up-the-database&quot;&gt;Setting up the Database&lt;/h2&gt;
+&lt;h2&gt;Setting up the Database&lt;/h2&gt;
+
 &lt;p&gt;Before you start using real data in your API, you need to install MongoDB or use a third-party service like MongoHQ. Please refer to the instructions on the MongoDB website to install MongoDB.&lt;/p&gt;
 
-&lt;p&gt;After you install MongoDB, create a database called library_database. Then, add a collection named “books” to the database. Run the database server (mongod), and you should be all set.&lt;/p&gt;
+&lt;p&gt;After you install MongoDB, create a database called library_database. Then, add a collection named &amp;quot;books&amp;quot; to the database. Run the database server (mongod), and you should be all set.&lt;/p&gt;
 
-&lt;h2 id=&quot;second-rollout-use-real-data&quot;&gt;Second Rollout: Use Real Data&lt;/h2&gt;
+&lt;h2&gt;Second Rollout: Use Real Data&lt;/h2&gt;
+
 &lt;p&gt;As always, before we start writing any code, we must have all the dependencies ready. The new dependency that we will introduce for this rollout is Mongoose. To install Mongoose, modify your package.json file to look as follows:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -587,10 +605,12 @@
 
 &lt;p&gt;Here we go, our REST API is now ready to roll.&lt;/p&gt;
 
-&lt;h2 id=&quot;evident-patterns&quot;&gt;Evident Patterns&lt;/h2&gt;
+&lt;h2&gt;Evident Patterns&lt;/h2&gt;
+
 &lt;p&gt;As we were building our RESTful API, some interesting patterns emerged. For example, the router code block can be swapped with another router code block to add new functionality. In this case, it makes more sense to enclose our routing logic in a separate file. As our code grows, we will also have more schemas, models, and logic to worry about. All of these will eventually need to move out of the server file.&lt;/p&gt;
 
-&lt;h2 id=&quot;refactor-code&quot;&gt;Refactor Code&lt;/h2&gt;
+&lt;h2&gt;Refactor Code&lt;/h2&gt;
+
 &lt;p&gt;There are hundreds of ways to improve our code. For demonstration, we will move the routing logic out of the server.js.&lt;/p&gt;
 
 &lt;p&gt;First, create a new file called router.js. In that file, create a function named registerRoutes that takes in the Express app and Mongoose as parameters. Then, move all the routing logic from server.js to the newly created function. The contents of router.js will be something like this:&lt;/p&gt;
@@ -629,13 +649,13 @@
 
 &lt;p&gt;The last step is to register the routes from server.js. All you have to do is require your router and call the registerRoutes method in place of your old router.&lt;/p&gt;
 
-&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;Congratulations! You did it. You built a RESTful API. However, having the API is only one step of the journey. The more important lesson that you need to learn is to take your journey one step at a time. First, create a dumb app. Then, make it smarter. Then, refactor. The cycle goes on and on. The moral of this lesson is that refactoring is a crucial step in software development. Just like you cannot build a skyscraper with a shaky fundamental, you cannot build web applications with bad code. Farewell and good luck on your journey.&lt;/p&gt;
+&lt;h2&gt;Next Steps&lt;/h2&gt;
 
+&lt;p&gt;Congratulations! You did it. You built a RESTful API. However, having the API is only one step of the journey. The more important lesson that you need to learn is to take your journey one step at a time. First, create a dumb app. Then, make it smarter. Then, refactor. The cycle goes on and on. The moral of this lesson is that refactoring is a crucial step in software development. Just like you cannot build a skyscraper with a shaky fundamental, you cannot build web applications with bad code. Farewell and good luck on your journey.&lt;/p&gt;
 </description>
 				<pubDate>Thu, 26 Jun 2014 05:45:00 -0700</pubDate>
-				<link>/web/2014/06/26/NodeRestAPITutorial.html</link>
-				<guid isPermaLink="true">/web/2014/06/26/NodeRestAPITutorial.html</guid>
+				<link>http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</guid>
 			</item>
 		
 

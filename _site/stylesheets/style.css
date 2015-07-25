@@ -101,6 +101,14 @@ div.post {
   color: black;
 }
 
+.post img {
+  max-width: 100%;
+}
+
+.post .youtube-video {
+  max-width: 100%;
+}
+
 /*------------ Endpage-box ---------------*/
 .endpage-box {
   color: white;

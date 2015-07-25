@@ -33,5 +33,5 @@ With negative effects on my attention, social skills, and memory, why in the wor
 
 Some people argue that I could get a data plan and only turn the Internet on when I want to. This can help me in situations where I need GPS. However, that does not bring the comfort that one gets from disconnecting. I would like to conclude with this amazing rap that sums up my argument.
 
-<iframe width="760" height="428" src="//www.youtube.com/embed/dRl8EIhrQjQ" frameborder="0" allowfullscreen></iframe>
+<iframe class="youtube-video" width="760" height="428" src="//www.youtube.com/embed/dRl8EIhrQjQ" frameborder="0" allowfullscreen></iframe>
 
