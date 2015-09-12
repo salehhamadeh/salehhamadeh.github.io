@@ -37,7 +37,7 @@ title: Saleh Hamadeh
 		<h1>Latest Blog Post</h1>
 		<h2>{{site.posts[0].title}}</h2>
 	</div>
-	<p>{{site.posts[0].content| truncatewords:100}}<a href="#">See more</a></p>
+	<p>{{site.posts[0].content| truncatewords:100}}<a href="{{ site.posts[0].url }}">See more</a></p>
 	<p class="section-footer"><a class="button" href="blog.html">Visit Blog</a></p>
 </div>
 <div id="projects" class="section">
