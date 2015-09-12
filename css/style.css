@@ -1,0 +1,332 @@
+/******************************************
+Color         Blue Theme    Gold Theme
+-----         ----------    ----------
+Regular       #2692a9       #e9d100
+Dark          #26454d       #3e3913
+White-ish     #dff2f3       #f5f3e5
+Low-sat       #5d9ba5       #aca240
+Bright        #39d2f4       #fde500
+*******************************************/
+
+body {
+	color: #26454d;
+	background-color: #dff2f3;
+	background: -webkit-linear-gradient(#39d2f4, #2692a9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#39d2f4, #2692a9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#39d2f4, #2692a9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#39d2f4, #2692a9); /* Standard syntax */
+}
+
+h1, h2, h3 {
+	margin: 0.5rem 0 0 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+a {
+	color: #aca240;
+	text-decoration: none;
+}
+
+.button {
+	padding: 0.7896rem;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	color: black;
+	background-color: #fde500;
+	color: #3e3913;
+	text-decoration: none;
+}
+
+.section {
+	margin: 1.75rem;
+	padding: 1rem;
+	border: 1px solid black;
+	background-color: #fafafa;
+	border-radius: 0.5rem;
+}
+
+.section-header {
+	margin-top: 0.2632rem;
+	padding-bottom: 0.4211rem;
+	border-bottom: 2px solid #5d9ba5;
+}
+
+.section-footer {
+	margin-top: 2rem;
+	text-align: right;
+}
+
+#nav-bar {
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: right;
+}
+
+nav a {
+	display: inline-block;
+	padding: 1rem;
+	font-weight: bold;
+	color: #26454d;
+}
+
+nav a:first-child {
+	color: #eff;
+	background-color: #2692a9;
+}
+
+#about img {
+	width: 100%;
+}
+
+#leadership img {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#projects ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#projects li {
+	margin: 1.5rem 0;
+}
+
+#projects h2 {
+	margin: 0 0 0.5rem 0;
+}
+
+#projects img {
+	width: 50%;
+}
+
+.project-type {
+	border: 1px solid #5d9ba5;
+	border-radius: 0.25rem;
+	background-color: #f5f3e5;
+	color: #39d2f4;
+	font-size: 1rem;
+	padding: 3px 3px 0 3px;
+}
+
+#contact .email {
+	color: #26454d;
+}
+
+#social-icons {
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+#social-icons .fa {
+	padding: 0 0.5rem;
+}
+
+.icon-facebook {
+	color: #3a5699;
+}
+
+.icon-twitter {
+	color: #5aabf3;
+}
+
+.icon-github {
+	color: #000;
+}
+
+.icon-linkedin {
+	color: #2584c1;
+}
+
+@media screen and (min-width: 768px) {
+	.section {
+		margin: 1.75rem 3.5rem;
+	}
+
+	#nav-bar {
+		text-align: left;
+	}
+
+	#about {
+		width: 25%;
+		margin-right: 0;
+	}
+
+	#leadership {
+		width: 50%;
+		margin-left: 2rem;
+	}
+
+	#projects {
+		overflow: hidden;
+	}
+
+	#projects li {
+		box-sizing: border-box;
+		width: 25%;
+		float: left;
+	}
+
+	#projects img {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	#contact {
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.double-section {
+		overflow: hidden;
+	}
+
+	.double-section .section {
+		float: left;
+	}
+}
+
+/* Invisible but readable by screen readers */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.hidden-xs {
+		display: none;
+	}
+}
+
+/****************************************************
+  Everything below here for BLOG
+*****************************************************/
+#blog .section-header {
+	text-align: center;
+}
+
+.post {
+	margin-top: 2rem;
+	line-height: 1.5rem;
+}
+
+.post a {
+	color: #aca240;
+}
+
+.post h1 a {
+	color: #26454d;
+}
+
+.post img, .post .youtube-video {
+	width: 100%;
+}
+
+.post h1 {
+	line-height: 2rem;
+}
+
+.post h1 {
+	margin-top: 1.25rem;
+	padding-bottom: 1rem;
+	text-decoration: none;
+	border-bottom: 1px dashed black;
+	font-size: 2rem;
+}
+
+.post h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 1.75rem;
+	margin-bottom: 0;
+}
+
+.post p {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+/* Used for date above each post title */
+span.date {
+	background: #248;
+	padding: 0.4em 0.6em 0.3em;
+	font-weight: bold;
+	color: white;
+	border-bottom: 3px solid #226;
+}
+
+.endpage-box {
+	box-sizing: border-box;
+	width: 80%;
+	right: 10%;
+	bottom: 5%;
+	color: #2692a9;
+	text-align: center;
+}
+
+/* ---------- Other posts table -------------- */
+table.post-list {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.post-list a {
+	color: #262;
+	font-weight: bold;
+}
+
+table.post-list a:hover {
+	text-decoration: underline;
+}
+
+table.post-list th {
+	text-align: left;
+}
+
+table.post-list td, table.post-list th {
+	padding: 0.5em 0.3em;
+	border-bottom: 1px solid #2c3e50;
+}
+
+table.post-list tr:last-child td, table.post-list tr:last-child th {
+	border-bottom: 0;
+}
+
+/*------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+	#blog .section-header h1 {
+		font-size: 2.5rem;	
+	}
+	
+	#blog-content {
+		padding: 0 4rem;
+	}
+
+	.endpage-box {
+		width: 40%;
+		right: 5%;
+		text-align: left;
+	}
+}

@@ -1,5 +1,5 @@
 
-name: Saleh Hamadeh's Blog
+name: Saleh Hamadeh's Website
 markdown: redcarpet
 highlighter: pygments
 destination: _site/

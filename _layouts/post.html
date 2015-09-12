@@ -2,12 +2,38 @@
 layout: default
 ---
 
-<div class="post">
-	<span class='date'>{{page.date | date_to_string}}</span>
-	<h1><a href='{{post.url}}'>{{page.title}}</a></h1>
-	<div class='body'>{{content}}</div>
-	{% if page.path contains '_post' %}
-    	{% include disqus.html %}
-  	{% endif %}
-</div>
+<header id="nav-bar">
+  <nav>
+    <a href="/blog.html">Back to Blog</a>
+  </nav>
+</header>
 
+<div id="blog" class="section">
+  <div id="blog-content">
+    <div class='post'>
+      <span class='date'>{{page.date | date_to_string}}</span>
+      <h1><a href='{{post.url}}'>{{page.title}}</a></h1>
+      <div class='body'>{{content}}</div>
+    </div>
+
+    {% include disqus.html %}
+
+    <div id="endpage-box" class="endpage-box"></div>
+    <script>
+      var related_posts = [{}
+        {% for post in site.related_posts %}
+          , {
+            title: "{{ post.title }}",
+            date: "{{ post.date | date_to_string}}",
+            url: "{{ post.url }}"
+          }
+        {% endfor %}
+      ];  //The first blank element is a hack to fix liquid's for loop comma problem
+
+      var post_index = function (min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      }(1, related_posts.length); //Get a random integer between 1 and related_posts.length
+      $("#endpage-box").html('Related Post<br /><a href="' + related_posts[post_index].url + '">' + related_posts[post_index].title + '</a>');
+    </script>
+  </div>
+</div>

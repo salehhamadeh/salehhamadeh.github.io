@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Saleh Hamadeh&#39;s Blog</title>
+		<title>Saleh Hamadeh&#39;s Website</title>
 		<description>Saleh Hamadeh&#39;s personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.</description>		
 		<link>http://www.shamadeh.com</link>
 		<category>CodeProject</category>
@@ -39,7 +39,7 @@
 
 &lt;iframe class=&quot;youtube-video&quot; width=&quot;760&quot; height=&quot;428&quot; src=&quot;//www.youtube.com/embed/dRl8EIhrQjQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
-				<pubDate>Tue, 27 Jan 2015 02:00:00 -0800</pubDate>
+				<pubDate>Tue, 27 Jan 2015 05:00:00 -0500</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2015/01/27/WhyNoDataPlan.html</guid>
 			</item>
@@ -54,9 +54,9 @@
 
 &lt;p&gt;Using Serverauditor, I was able to both practice for my data structures final and write this blog post. As I do that, I continue to believe the saying, &amp;quot;if there is a will, there is a way.&amp;quot;&lt;/p&gt;
 </description>
-				<pubDate>Mon, 08 Dec 2014 21:15:00 -0800</pubDate>
-				<link>http://www.shamadeh.com/blog/hacks/2014/12/08/CodingOnATablet.html</link>
-				<guid isPermaLink="true">http://www.shamadeh.com/blog/hacks/2014/12/08/CodingOnATablet.html</guid>
+				<pubDate>Tue, 09 Dec 2014 00:15:00 -0500</pubDate>
+				<link>http://www.shamadeh.com/blog/hacks/2014/12/09/CodingOnATablet.html</link>
+				<guid isPermaLink="true">http://www.shamadeh.com/blog/hacks/2014/12/09/CodingOnATablet.html</guid>
 			</item>
 		
 			<item>
@@ -87,7 +87,7 @@
 
 &lt;p&gt;At Georgia Tech, I met many people from the other end of the spectrum. They were admitted to Georgia Tech as freshmen. Later in their lives, they struggled a lot with their studies. Now, their main goal is to pass and earn a degree from Georgia Tech. They are accepting the reluctantly accepting the challenge.&lt;/p&gt;
 </description>
-				<pubDate>Fri, 10 Oct 2014 01:00:00 -0700</pubDate>
+				<pubDate>Fri, 10 Oct 2014 04:00:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2014/10/10/TransferStudentsAreSmarter.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/10/10/TransferStudentsAreSmarter.html</guid>
 			</item>
@@ -102,7 +102,7 @@
 
 &lt;p&gt;Over the weekend, hackers escape their lives&amp;#39; duties and look at the world from a different angle. Every once in a while, people should take a break from the real world to keep their creativity ignited. A person can read a novel and go to wonderland. They can also go to a hackathon and turn our world into wonderland.&lt;/p&gt;
 </description>
-				<pubDate>Mon, 29 Sep 2014 02:50:00 -0700</pubDate>
+				<pubDate>Mon, 29 Sep 2014 05:50:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/opinion/2014/09/29/HackathonsForABetterWorld.html</guid>
 			</item>
@@ -165,7 +165,7 @@
 
 &lt;p&gt;To get a better idea of what programmers or software developers do and how their workplace looks like, check out &lt;a href=&quot;http://brainjocks.com/company&quot;&gt;BrainJocks&lt;/a&gt;, the company where I currently intern.&lt;/p&gt;
 </description>
-				<pubDate>Sat, 06 Sep 2014 02:50:00 -0700</pubDate>
+				<pubDate>Sat, 06 Sep 2014 05:50:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/programming/2014/09/06/AgileAndSoftwareDevelopers.html</guid>
 			</item>
@@ -178,7 +178,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/20140820_092235%20(3).jpg&quot; alt=&quot;CULC photo&quot;&gt;&lt;/p&gt;
 </description>
-				<pubDate>Wed, 20 Aug 2014 02:40:00 -0700</pubDate>
+				<pubDate>Wed, 20 Aug 2014 05:40:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/life/2014/08/20/CULCOnAWednesdayMorning.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/08/20/CULCOnAWednesdayMorning.html</guid>
 			</item>
@@ -199,7 +199,7 @@
 
 &lt;p&gt;The professor is here now. I need to stop typing and focus on lecture. Oh, actually she is playing some techno before lecture. This semester is gonna be amazing!&lt;/p&gt;
 </description>
-				<pubDate>Mon, 18 Aug 2014 02:40:00 -0700</pubDate>
+				<pubDate>Mon, 18 Aug 2014 05:40:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/life/2014/08/18/BackToTech.html</guid>
 			</item>
@@ -275,7 +275,7 @@
 
 &lt;p&gt;Of course, this is not the best solution to verify phone numbers. It has some drawbacks, such as the user using a different phone number in the verification step. This tutorial is meant to demonstrate how Twilio and Parse can be used together. Now, it is time to use your head and come up with a better and more secure solution. Have fun coding.&lt;/p&gt;
 </description>
-				<pubDate>Thu, 31 Jul 2014 00:50:00 -0700</pubDate>
+				<pubDate>Thu, 31 Jul 2014 03:50:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/mobile/twilio/parse/2014/07/31/VerifyPhoneNumbersTwilioAndParse.html</guid>
 			</item>
@@ -356,7 +356,7 @@
 
 &lt;p&gt;Now, run your NodeJS application and navigate to www.potato.com and www.tomato.com from any browser. Voila! You should now be directed to the potato website and the tomato website respectively. Give yourself a pat on the back and have some chicken alfredo with a potato and a tomato on the side.&lt;/p&gt;
 </description>
-				<pubDate>Sun, 20 Jul 2014 03:15:00 -0700</pubDate>
+				<pubDate>Sun, 20 Jul 2014 06:15:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/nodejs/express/2014/07/20/ExpressMultipleSites.html</guid>
 			</item>
@@ -653,7 +653,7 @@
 
 &lt;p&gt;Congratulations! You did it. You built a RESTful API. However, having the API is only one step of the journey. The more important lesson that you need to learn is to take your journey one step at a time. First, create a dumb app. Then, make it smarter. Then, refactor. The cycle goes on and on. The moral of this lesson is that refactoring is a crucial step in software development. Just like you cannot build a skyscraper with a shaky fundamental, you cannot build web applications with bad code. Farewell and good luck on your journey.&lt;/p&gt;
 </description>
-				<pubDate>Thu, 26 Jun 2014 05:45:00 -0700</pubDate>
+				<pubDate>Thu, 26 Jun 2014 08:45:00 -0400</pubDate>
 				<link>http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</link>
 				<guid isPermaLink="true">http://www.shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html</guid>
 			</item>
