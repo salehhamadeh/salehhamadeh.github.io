@@ -122,6 +122,11 @@ nav a:first-child {
 	padding: 3px 3px 0 3px;
 }
 
+#contact .fa {
+	width: 10%;
+	text-align: center;
+}
+
 #contact .email {
 	color: #26454d;
 }
