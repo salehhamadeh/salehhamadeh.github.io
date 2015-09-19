@@ -7,7 +7,12 @@
     <meta name="author" content="Saleh Hamadeh" />
     <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
 
-    <title>{{ page.title }}</title>
+    {% comment %}Used to check if this is a post page{% endcomment %}
+    {% if page.id %}
+      <title>{{ page.title }} | Saleh Hamadeh's Blog</title>
+    {% else %}
+      <title>{{ page.title }}</title>
+    {% endif %}
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/blog/feed.xml">
