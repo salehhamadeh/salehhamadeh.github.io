@@ -1,7 +1,7 @@
 
 name: Saleh Hamadeh's Website
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 destination: _site/
 permalink: /blog/:categories/:year/:month/:day/:title.html
 description: Saleh Hamadeh's personal website. I am a cutting-edge web and app developer living in the Greater Atlanta Area.
