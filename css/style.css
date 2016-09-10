@@ -94,6 +94,10 @@ nav a:first-child {
 	margin-top: 1rem;
 }
 
+#latest-post img, #latest-post .youtube-video {
+	width: 100%;
+}
+
 #projects ul {
 	list-style-type: none;
 	margin: 0;
