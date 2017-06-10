@@ -9,7 +9,7 @@ Yesterday, the first day of finals, my computer decided to stop functioning. Sin
 
 I chose to try the tablet since it had a bigger screen. Of course, iOS does not give me any freedom. So, how do  I overcome that? I remembered my cloud Ubuntu virtual machine. If I could only access my server's shell, I can run emacs to edit code and compile all my Java programs from the command line. I did a Google search and stumbled upon a nifty tool called Serverauditor. This is my SSH client to freedom.
 
-![Screenshot](https://dl.dropboxusercontent.com/u/163831352/shamadeh.com%20assets/ipad-ssh-screenshot.png)
+![Screenshot](/images/ipad-ssh-screenshot.png)
 
 Using Serverauditor, I was able to both practice for my data structures final and write this blog post. As I do that, I continue to believe the saying, "if there is a will, there is a way."
 

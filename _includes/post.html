@@ -1,0 +1,16 @@
+<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header>
+    <a href="{{ page.url }}">
+      <h1 itemprop="name">{{ page.title }}</h1>
+      <time itemprop="dateCreated" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+        {{ page.date | date: "%-d %B %Y" }}
+      </time>
+    </a>
+  </header>
+
+  <div class="body" itemprop="articleBody">
+    {{ page.content | markdownify }}
+  </div>
+
+</article>

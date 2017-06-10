@@ -1,341 +1,461 @@
-/******************************************
-Color         Blue Theme    Gold Theme
------         ----------    ----------
-Regular       #2692a9       #e9d100
-Dark          #26454d       #3e3913
-White-ish     #dff2f3       #f5f3e5
-Low-sat       #5d9ba5       #aca240
-Bright        #39d2f4       #fde500
-*******************************************/
+/* Eric Meyer's CSS reset */
 
-body {
-	color: #26454d;
-	background-color: #dff2f3;
-	background: -webkit-linear-gradient(#39d2f4, #2692a9); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#39d2f4, #2692a9); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#39d2f4, #2692a9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#39d2f4, #2692a9); /* Standard syntax */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
 }
 
-h1, h2, h3 {
-	margin: 0.5rem 0 0 0;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
-h1 {
-	font-size: 1.75rem;
-}
-
-h2 {
-	font-size: 1.25rem;
-	font-weight: normal;
+html {
+  font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-	color: #aca240;
-	text-decoration: none;
+  text-decoration: none;
+  color: #902;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.button {
-	padding: 0.7896rem;
-	border: 1px solid black;
-	border-radius: 0.5rem;
-	color: black;
-	background-color: #fde500;
-	color: #3e3913;
-	text-decoration: none;
+a:hover {
+  border-bottom: 2px solid #902;
 }
 
-.section {
-	margin: 1.75rem;
-	padding: 1rem;
-	border: 1px solid black;
-	background-color: #fafafa;
-	border-radius: 0.5rem;
+a:active {
+  position: relative;
+  top: 1px;
+  border-bottom-width: 1px;
 }
 
-.section-header {
-	margin-top: 0.2632rem;
-	padding-bottom: 0.4211rem;
-	border-bottom: 2px solid #5d9ba5;
+::selection {
+  color: #fff;
+  background-color: #902;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #902;
 }
 
-.section-footer {
-	margin-top: 2rem;
-	text-align: right;
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
-#nav-bar {
-	background-color: rgba(255, 255, 255, 0.5);
-	text-align: right;
+sup {
+  top: -.5em;
 }
 
-nav a {
-	display: inline-block;
-	padding: 1rem;
-	font-weight: bold;
-	color: #26454d;
+sub {
+  bottom: -.25em;
 }
 
-nav a:first-child {
-	color: #eff;
-	background-color: #2692a9;
+/* Site header and navigation */
+
+.site-header .logo {
+  display: block;
+  text-decoration: none;
+  border: none;
 }
 
-#about img {
-	width: 100%;
+.site-header .logo img {
+  border-radius: 999px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  -webkit-border-radius: 999px;
+  -khtml-border-radius: 999px;
+  -moz-border-radius: 999px;
 }
 
-#leadership img {
-	width: 100%;
-	margin-top: 1rem;
+.header-ad, .header-ad:hover, .header-ad:active {
+  border: 0;
+  position: static;
 }
 
-#latest-post img, #latest-post .youtube-video {
-	width: 100%;
+.header-ad img {
+  width: 100%;
 }
 
-#projects ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+/* Pagination */
+
+.pagination {
+	margin-top: 3em;
 	text-align: center;
 }
 
-#projects li {
-	margin: 1.5rem 0;
+.pagination .previous {
+  margin-right: 1em;
 }
 
-#projects h2 {
-	margin: 0 0 0.5rem 0;
+.post.pagination > div {
+  margin-bottom: 2em;
 }
 
-#projects img {
-	width: 50%;
+/* Posts and pages */
+
+article {
+  display: block;
+  margin-bottom: 1em;
 }
 
-.project-type {
-	border: 1px solid #5d9ba5;
-	border-radius: 0.25rem;
-	background-color: #f5f3e5;
-	color: #39d2f4;
-	font-size: 1rem;
-	padding: 3px 3px 0 3px;
+article header {
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em 20px;
+  border-bottom: 1px dashed #999;
 }
 
-#contact .fa {
-	width: 10%;
-	text-align: center;
+article header h1 {
+  font-size: 22pt;
+  font-weight: 900;
+  color: black;
 }
 
-#contact .email {
-	color: #26454d;
+article header:hover a h1 {
+  color: #902;
 }
 
-#social-icons {
-	margin-top: 2rem;
-	text-align: center;
-	font-size: 2rem;
+article header a {
+  border-bottom: 0;
 }
 
-#social-icons .fa {
-	padding: 0 0.5rem;
+article header time, .publication time {
+  margin-top: .5em;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #999;
 }
 
-.icon-facebook {
-	color: #3a5699;
+article header:hover a time {
+  color: #000;
 }
 
-.icon-twitter {
-	color: #5aabf3;
+article .body {
+  text-align: left;
+  padding: 0 20px;
 }
 
-.icon-github {
-	color: #000;
+article .body h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article p,
+article ul,
+article ol,
+article blockquote,
+article pre {
+  line-height: 1.75em;
+  margin-bottom: 1em;
 }
 
-.icon-linkedin {
-	color: #2584c1;
+article em {
+  font-style: italic;
 }
 
-@media screen and (min-width: 768px) {
-	.section {
-		margin: 1.75rem 3.5rem;
-	}
-
-	#nav-bar {
-		text-align: left;
-	}
-
-	#about {
-		width: 25%;
-		margin-right: 0;
-	}
-
-	#leadership {
-		width: 50%;
-		margin-left: 2rem;
-	}
-
-	#projects {
-		overflow: hidden;
-	}
-
-	#projects li {
-		box-sizing: border-box;
-		width: 25%;
-		float: left;
-	}
-
-	#projects img {
-		width: 100%;
-		max-width: 200px;
-	}
-
-	#contact {
-		width: 35%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.double-section {
-		overflow: hidden;
-	}
-
-	.double-section .section {
-		float: left;
-	}
+article strong {
+  font-weight: 900;
 }
 
-/* Invisible but readable by screen readers */
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
+article code {
+  font-family: SourceCodePro, Inconsolata, Consolas, Monaco, monospace;
 }
 
-@media screen and (max-width: 768px) {
-	.hidden-xs {
-		display: none;
-	}
+article .body h1 {
+  font-weight: 900;
+  font-size: 18pt;
+  margin-bottom: .8em;
 }
 
-/****************************************************
-  Everything below here for BLOG
-*****************************************************/
-#blog .section-header {
-	text-align: center;
+article h2 {
+  font-weight: 900;
 }
 
-.post {
-	margin-top: 2rem;
-	line-height: 1.5rem;
+article h3 {
+  text-decoration: underline;
 }
 
-.post a {
-	color: #aca240;
+article blockquote {
+  border-left: 5px solid #f0f0f0;
+  padding: 0 10px;
 }
 
-.post h1 a {
-	color: #26454d;
+article ul, article ol {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.post img, .post .youtube-video {
-	width: 100%;
+article ul li {
+  list-style-type: square;
 }
 
-.post h1 {
-	line-height: 2rem;
+article ol li {
+  list-style-type: decimal;
 }
 
-.post h1 {
-	margin-top: 1.25rem;
-	padding-bottom: 1rem;
-	text-decoration: none;
-	border-bottom: 1px dashed black;
-	font-size: 2rem;
+article pre {
+  line-height: 1em;
+  color: #fff;
+  background-color: #333;
+  white-space: pre-wrap;
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
-.post h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	margin-top: 1.75rem;
-	margin-bottom: 0;
+article pre code {
+  background-color: transparent;
 }
 
-.post p {
-	margin-top: 0.5rem;
-	margin-bottom: 1rem;
+article img, article .youtube-video {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
 }
 
-/* Used for date above each post title */
-span.date {
-	background: #248;
-	padding: 0.4em 0.6em 0.3em;
-	font-weight: bold;
-	color: white;
-	border-bottom: 3px solid #226;
+footer {
+  padding: 1em;
+  line-height: 1.5em;
 }
 
-.endpage-box {
-	box-sizing: border-box;
-	width: 80%;
-	right: 10%;
-	bottom: 5%;
-	color: #2692a9;
-	text-align: center;
+/* Big screen */
+
+@media screen and (min-width: 700px) {
+
+  .small-only { display: none }
+
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .site-header {
+    float: left;
+    width: 25%;
+    max-width: 256px;
+    height: 100%;
+    padding: 2em 20px;
+  }
+
+  .site-header .profile-name {
+  	text-align: center;
+  	font-size: 1.5em;
+  	margin-bottom: 0.5em;
+  }
+
+  .site-header .logo {
+    margin-bottom: 1em;
+  }
+
+  .site-header .logo img {
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    border: 1px solid #000;
+  }
+
+  .site-header .logo:hover img {
+    box-shadow: 0px 0px 8px 0px #902;
+    border: none;
+  }
+
+  .site-header .description {
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .site-header nav {
+    margin-bottom: 1em;
+  }
+
+  .site-header nav ul li {
+    display: block;
+    text-align: center;
+    margin: .5em 0;
+  }
+
+  .site-header nav ul li a {
+    display: inline-block;
+    padding: .5em;
+    text-align: center;
+    font-weight: 900;
+    color: #999;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all .075s ease-in;
+    -webkit-transition: all .075s ease-in;
+    -moz-transition: all .075s ease-in;
+    -o-transition: all .075s ease-in;
+  }
+
+  .site-header:hover nav ul li a {
+    color: #999;
+  }
+
+  .site-header nav ul li a:hover {
+    color: #902;
+    border-bottom: 1px solid #902;
+  }
+
+  .site-content {
+    float: left;
+    width: 72.5%;
+    margin-left: 2.5%;
+    padding-top: 1em;
+    max-width: 800px;
+    vertical-align: top;
+    background-color: #fff;
+  }
+
+  article .body pre {
+    padding: 1em;
+  }
+
+  footer {
+    width: 100%;
+    padding: 3em 20%;
+    clear: both;
+    text-align: center;
+    font-size: 80%;
+    color: #999;
+  }
+
+}
+
+/* Small screen */
+
+@media screen and (max-width: 700px) {
+
+  .big-only { display: none }
+
+  .site-header {
+    padding-top: 1em;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+
+  .site-header .logo {
+    text-align: center;
+  }
+
+  .site-header .logo img {
+    width: 128px;
+    background-color: #fff;
+  }
+
+  .site-header .description {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .site-header nav {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .site-header nav ul li {
+    display: inline-block;
+    padding: 0 .25em;
+    line-height: 1.5em;
+  }
+
+  .site-header nav ul li a {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #999;
+  }
+
+  .site-header nav ul li a:hover {
+    color: #902;
+  }
+
+  article header h1 {
+    font-weight: 900;
+  }
+
+  article .body pre {
+    padding: 1em .5em;
+  }
+
+  footer {
+    margin-top: 1em;
+    background-color: #f0f0f0;
+  }
+
+}
+
+/* HLJS Monokai, modified */
+
+.hljs{display:block;#272822;color:#DDD;padding:.5em}.hljs-tag,.hljs-tag .hljs-title,.hljs-keyword,.hljs-literal,.hljs-strong,.hljs-change,.hljs-winutils,.hljs-flow,.lisp .hljs-title,.clojure .hljs-built_in,.nginx .hljs-title,.tex .hljs-special{color:#F92672}.hljs .hljs-constant,.asciidoc .hljs-code{color:#66D9EF}.hljs-code,.hljs-class .hljs-title,.hljs-header{color:#FFF}.hljs-link_label,.hljs-attribute,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-value,.hljs-regexp{color:#BF79DB}.hljs-link_url,.hljs-tag .hljs-value,.hljs-string,.hljs-bullet,.hljs-subst,.hljs-title,.hljs-emphasis,.haskell .hljs-type,.hljs-preprocessor,.hljs-pragma,.ruby .hljs-class .hljs-parent,.hljs-built_in,.sql .hljs-aggregate,.django .hljs-template_tag,.django .hljs-variable,.smalltalk .hljs-class,.hljs-javadoc,.django .hljs-filter .hljs-argument,.smalltalk .hljs-localvars,.smalltalk .hljs-array,.hljs-attr_selector,.hljs-pseudo,.hljs-addition,.hljs-stream,.hljs-envvar,.apache .hljs-tag,.apache .hljs-cbracket,.tex .hljs-command,.hljs-prompt{color:#A6E22E}.hljs-comment,.java .hljs-annotation,.smartquote,.hljs-blockquote,.hljs-horizontal_rule,.python .hljs-decorator,.hljs-template_comment,.hljs-pi,.hljs-doctype,.hljs-deletion,.hljs-shebang,.apache .hljs-sqbracket,.tex .hljs-formula{color:#75715E}.hljs-keyword,.hljs-literal,.css .hljs-id,.hljs-phpdoc,.hljs-title,.hljs-header,.haskell .hljs-type,.vbscript .hljs-built_in,.sql .hljs-aggregate,.rsl .hljs-built_in,.smalltalk .hljs-class,.diff .hljs-header,.hljs-chunk,.hljs-winutils,.bash .hljs-variable,.apache .hljs-tag,.tex .hljs-special,.hljs-request,.hljs-status{font-weight:700}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata{opacity:0.5}
+
+/* And finally, print styles */
+
+@media print {
+  .site-header, .pagination {
+    display: none;
+  }
 }
 
 /* ---------- Other posts table -------------- */
+.older-posts {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.older-posts h1 {
+  font-weight: 900;
+  line-height: 1.75em;
+  margin-bottom: 1em;
+}
 table.post-list {
 	width: 100%;
 	border-collapse: collapse;
 }
 
-table.post-list a {
-	color: #262;
-	font-weight: bold;
-}
-
-table.post-list a:hover {
-	text-decoration: underline;
-}
-
-table.post-list th {
-	text-align: left;
-}
-
 table.post-list td, table.post-list th {
 	padding: 0.5em 0.3em;
-	border-bottom: 1px solid #2c3e50;
 }
 
 table.post-list tr:last-child td, table.post-list tr:last-child th {
 	border-bottom: 0;
 }
 
-/*------------------------------------------------- */
-@media screen and (min-width: 768px) {
+/* ---------- Publications page -------------- */
+.publication {
+  overflow: hidden;
+  margin-bottom: 2.5em;
+}
 
-	#blog .section-header h1 {
-		font-size: 2.5rem;	
-	}
-	
-	#blog-content {
-		padding: 0 4rem;
-	}
+.publication header {
+  padding: 0;
+  border: none;
+}
 
-	.endpage-box {
-		width: 40%;
-		right: 5%;
-		text-align: left;
-	}
+.publication header h2 {
+  margin-bottom: 0.5em;
+}
+
+.publication header time {
+  font-size: 0.9em;
+}
+
+.publication img {
+  float: left;
+  margin: 0 1em 0 0;
 }

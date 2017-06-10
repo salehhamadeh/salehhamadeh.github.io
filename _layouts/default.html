@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
-    <meta name="author" content="Saleh Hamadeh" />
-    <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saleh Hamadeh's official blog. I write about technology, programming, hacks, and my personal life." />
+  <meta name="author" content="Saleh Hamadeh" />
+  <meta name="keywords" content="Saleh Hamadeh, Blog, Technology, Programming" />
 
-    {% comment %}Used to check if this is a post page{% endcomment %}
-    {% if page.id %}
-      <title>{{ page.title }} | Saleh Hamadeh's Blog</title>
-    {% else %}
-      <title>{{ page.title }}</title>
-    {% endif %}
+  <title>{{ page.title }} | Saleh Hamadeh</title>
 
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/blog/feed.xml">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/blog/feed.xml">
 
-	<!-- Normalize.css -->
-	<link rel="stylesheet" type="text/css" href="/normalize.css" />
+  <!-- Normalize.css -->
+  <link rel="stylesheet" type="text/css" href="/normalize.css" />
 
-	<!-- Font Awesome -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-	<!-- syntax highlighting CSS -->
-	<link rel="stylesheet" href="/css/syntax.css">
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
 
-  <!-- Related article box code -->
-  {% if page.path contains '_post' %}
-    <link rel="stylesheet" href="/css/endpage-box.css">
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="/js/jquery.endpage-box.min.js"></script>
-    <script type="text/javascript">
-      $(window).load( function() {
-        $("#endpage-box").endpage_box({
-          animation: "fade",
-          from: "90%",
-          to: "1000%",
-        });
-      });
-    </script>
-  {% endif %}
-
-	<!-- Custom styles -->
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
-	{{ content }}
+  <header class="site-header">
 
-	<script type="text/javascript">
+    <h1 class="profile-name">Saleh Hamadeh</h1>
+
+    <a href="/" class="logo">
+      <img src="/images/profile-pic-2.png" alt="Saleh Hamadeh">
+    </a>
+
+    <div class="description">I'm a full-stack web developer obsessed with productivity and performance</div>
+
+    <nav role="navigation"><ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/saleh-hamadeh-resume.pdf">Resume</a></li>
+    </ul></nav>
+
+  </header>
+
+  <div class="site-content" role="main">{{ content }}</div>
+
+  <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-46641204-1']);
       _gaq.push(['_trackPageview']);
