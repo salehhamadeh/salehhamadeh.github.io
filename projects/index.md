@@ -14,7 +14,7 @@ RTP Customs is a wheel repair shop based in Acworth, Georgia. Before I worked wi
 <a href="http://www.gtwebdev.org/" target="_blank"  rel="noopener">
 	<img src="/images/gt-webdev-screenshot.png" alt="gt-webdev" />
 </a>
-gt-webdev is Georgia Tech's web development student organization. During my time as technical officer and president of the club, I led the development of the organization's website, grew its <a href="https://www.youtube.com/channel/UCeYFMyequcLiFv0evR7x8hg/feed" target="_blank"  rel="noopener">Youtube channel</a> from having 2 videos to having 13 videos, and grew its <a href="https://www.facebook.com/GtWebdev" target="_blank"  rel="noopener">Facebook page</a> from having 270 likes to having 549 likes.
+gt-webdev is Georgia Tech's web development student organization. During my time as technical officer and president of the club, I led the development of the organization's website, grew its <a href="https://www.youtube.com/channel/UCeYFMyequcLiFv0evR7x8hg/feed" target="_blank"  rel="noopener">Youtube channel</a> from having 2 videos to having 13 videos, and helped grow its <a href="https://www.facebook.com/GtWebdev" target="_blank"  rel="noopener">Facebook page</a> from having 270 likes to having 549 likes.
 
 # Diclopedia
 <a href="https://play.google.com/store/apps/details?id=org.salications.diclopedia&hl=en" target="_blank"  rel="noopener">
