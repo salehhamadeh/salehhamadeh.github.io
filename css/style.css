@@ -265,8 +265,6 @@ footer {
     background-color: #fff;
     display: block;
     margin: 0 auto;
-    padding-top: 50px;
-    border: 1px solid #000;
   }
 
   .site-header .logo:hover img {
