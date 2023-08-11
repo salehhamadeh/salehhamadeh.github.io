@@ -1,25 +1,15 @@
 ---
-layout: default
-title: Blog
+title: About
+author: Saleh Hamadeh
+layout: page
 ---
 
-<div id="blog-content">
-  {% for post in site.posts %}
-    {% if forloop.index < 6 %}
-      {% assign page=post %}
-      {% include post.html %}
-    {% else %}
-      {% if forloop.index == 6 %}
-      <div class="older-posts">
-        <h1>Older Posts</h1>
-        <table class='post-list'>
-        {% endif %}
-        <tr>
-          <th><a href='{{ post.url }}'>{{ post.title }}</a></th>
-          <td>{{ post.date | date_to_string }}</td>
-        </tr>
-      </div>
-    {% endif %}
-  {% endfor %}
-  </table>
-</div>
+<p>I am a full-stack software developer based in San Francisco. I work on <a href="https://www.google.com/maps/reserve/" target="_blank" rel="noopener">Reserve with Google</a>, helping users make reservations and appointments from Google Search and Maps. Before Google, I worked on <a href="https://www.google.com/maps/reserve/" target="_blank" rel="noopener">Redfin</a>&#39;s search team.</p>
+
+<p>I graduated from <a href="http://www.gatech.edu" target="_blank" rel="noopener">Georgia Tech</a> with a degree in Computer Science with concentration in devices and modeling/simulation. While attending college, I interned at <a href="https://www.yahoo.com/" target="_blank" rel="noopener">Yahoo!</a> and <a href="http://brainjocks.com/" target="_blank" rel="noopener">BrainJocks</a> as a frontend developer intern and a .NET developer intern, respectively.</p>
+
+<p>When I&#39;m free, I like to hike, write, sit in coffee shops, and help small business get online.</p>
+
+<p>If you have an interesting project for me or just want to talk, hit me up on <a href="mailto:saleh@shamadeh.com">email</a> or <a href="http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2">LinkedIn</a>.</p>
+
+{% include goodreads.html %}
